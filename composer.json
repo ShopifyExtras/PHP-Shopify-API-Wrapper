@@ -1,0 +1,32 @@
+{
+    "name": "ShopifyExtras/Shopify-PHP-API-Wrapper",
+    "description": "Shopify PHP (Guzzle) API Wrapper",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "http://www.shopifyextras.com",
+    "authors": [
+        {
+            "name": "Andrew Cargill",
+            "email": "help@shopifyextras.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "~4.2"
+    },
+    "require": {
+        "php": ">=5.4",
+        "guzzlehttp/guzzle": "~5.0.3",
+        "guzzlehttp/guzzle-services": "~0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shopify\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shopify\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
+}
