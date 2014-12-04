@@ -244,7 +244,7 @@ return array(
                     "description" => "The products ID number."
                 ),
                 "product" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
                         "id" => array(
                             "type" => "number",
