@@ -25,6 +25,11 @@ return array(
             "summary" => "Retrieve a list of all product variants.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "ID of the product."
+                ),
                 "limit" => array(
                     "type" => "number",
                     "location" => "uri",
