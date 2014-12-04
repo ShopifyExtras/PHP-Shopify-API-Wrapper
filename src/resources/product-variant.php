@@ -220,7 +220,7 @@ return array(
          *    reference: http://docs.shopify.com/api/product_variant
          */
         "updateProductVariant" => array(
-            "httpMethod" => "POST",
+            "httpMethod" => "PUT",
             "uri" => "/admin/variants/{id}.json",
             "summary" => "Update a product variant.",
             "responseModel" => "defaultJsonResponse",
@@ -231,7 +231,7 @@ return array(
                     "description" => "The ID of the variant."
                 ),
                 "variant" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
                     	"id" => array(
                             "type" => "string",
