@@ -23,7 +23,69 @@ return array(
             "httpMethod" => "GET",
             "uri" => "/admin/custom_collections.json",
             "summary" => "Get a list of all custom collections that contain a given product",
-            "responseModel" => "defaultJsonResponse"
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "limit" => array(
+                    "type" => "integer",
+                    "location" => "uri",
+                    "description" => "Amount of results (default: 50) (maximum: 250)"
+                ),
+                "page" => array(
+                    "type" => "integer",
+                    "location" => "uri",
+                    "description" => "Page to show (default: 1)"
+                ),
+                "since_id" => array(
+                    "type" => "integer",
+                    "location" => "uri",
+                    "description" => "Restrict results to after the specified ID"
+                ),
+                "title" => array(
+	                "type" => "string",
+	                "location" => "uri",
+	                "description" => "Filter by custom collection title"
+                ),
+                "product_id" => array(
+	                "type" => "integer",
+	                "location" => "uri",
+	                "description" => "Filter by product id"
+                ),
+                "handle" => array(
+	                "type" => "string",
+	                "location" => "uri",
+	                "description" => "Filter by custom collection handle"
+                ),
+                "updated_at_min" => array(
+	                "type" => "string",
+	                "location" => "uri",
+	                "description" => "Show custom collections last updated after date (format: 2008-12-31 03:00)"
+                ),
+                "updated_at_max" => array(
+	                "type" => "string",
+	                "location" => "uri",
+	                "description" => "Show custom collections last updated before date (format: 2008-12-31 03:00)"
+                ),
+                "published_at_min" => array(
+	                "type" => "string",
+	                "location" => "uri",
+	                "description" => "Show custom collections published after date (format: 2008-12-31 03:00)"
+                ),
+                "published_at_max" => array(
+	                "type" => "string",
+	                "location" => "uri",
+	                "description" => "Show custom collections published before date (format: 2008-12-31 03:00)"
+                ),
+                "published_status" => array(
+	                "type" => "string",
+	                "location" => "uri",
+	                "description" => "published - Show only published custom collections. unpublished - Show only unpublished custom collections. any - Show all custom collections (default)"
+                ),
+                "fields" => array(
+	                "type" => "string",
+	                "location" => "uri",
+	                "description" => "comma-separated list of fields to include in the response"
+                ),
+            ),
         ),
         
         /**
