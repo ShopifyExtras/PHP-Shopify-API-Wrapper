@@ -27,12 +27,12 @@ return array(
             "parameters" => array(
                 "page" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Page to show (default: 1)."
                 ),
                 "limit" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Collects per page (default: 50) (maximum: 250)."
                 ),
                 "fields" => array(
