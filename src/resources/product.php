@@ -27,12 +27,12 @@ return array(
             "parameters" => array(
                 "limit" => array(
                     "type" => "integer",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Amount of results (default: 50) (maximum: 250)"
                 ),
                 "page" => array(
                     "type" => "integer",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Page to show (default: 1)"
                 ),
                 "since_id" => array(
