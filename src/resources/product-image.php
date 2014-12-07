@@ -25,14 +25,19 @@ return array(
             "summary" => "Retrieve a list of all Product images.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
+                "id" => array(
+                    "type" => "string",
+                    "location" => "uri",
+                    "description" => "The ID of the Product."
+                ),
                 "since_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID."
                 ),
                 "fields" => array(
                     "type" => "integer",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )
