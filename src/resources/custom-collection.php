@@ -132,59 +132,59 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "custom_collection" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
                         "body_html" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "handle" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "image" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "metafield" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "metafields" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "published" => array(
                             "type" => "boolean",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "published_at" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "published_scope" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "sort_order" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "template_suffix" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "title" => array(
                             "type" => "boolean",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "collects" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "image" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         )
                     )
                 )
@@ -208,63 +208,63 @@ return array(
                     "location" => "uri",
                 ),
                 "custom_collection" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
                         "id" => array(
                             "type" => "number",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "body_html" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "handle" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "image" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "metafield" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "metafields" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "published" => array(
                             "type" => "boolean",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "published_at" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "published_scope" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "sort_order" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "template_suffix" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "title" => array(
                             "type" => "boolean",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "collects" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "image" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         )
                     )
                 )

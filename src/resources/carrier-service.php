@@ -59,7 +59,7 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "carrier_service" => array(
-	                "location" => "postField",
+	                "location" => "json",
 	                "parameters" => array(
 		                "name" => array(
 		                    "type" => "string",
@@ -83,12 +83,12 @@ return array(
 		                ),
 		                "carrier_service_type" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "Distinguishes between api or legacy carrier services."
 		                ),
 		                "active" => array(
 		                    "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => ""
 		                )
 	                )
@@ -114,41 +114,41 @@ return array(
                     "description" => "he ID number of the carrier service."
 	            ),
                 "carrier_service" => array(
-	                "location" => "postField",
+	                "location" => "json",
 	                "parameters" => array(
 		                "id" => array(
 		                    "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The ID number of the carrier service."
 		                ),
 		                "name" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The name of the shipping service as seen by merchants and their customers."
 		                ),
 		                "callback_url" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "States the URL endpoint that shopify needs to retrieve shipping rates. This must be a public URL."
 		                ),
 		                "format" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "Default: json."
 		                ),
 		                "service_discovery" => array(
 		                    "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "States if merchants are able to send dummy data to your service through the Shopify admin to see shipping rate examples. Valid values are true and false."
 		                ),
 		                "carrier_service_type" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "Distinguishes between api or legacy carrier services."
 		                ),
 		                "active" => array(
 		                    "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => ""
 		                )
 	                )

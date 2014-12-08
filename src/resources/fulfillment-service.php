@@ -65,47 +65,47 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "fulfillment_service" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
 						"name" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 						"callback_url" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 						"inventory_management" => array(
 		                    "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "tracking_support" => array(
 		                    "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "requires_shipping_method" => array(
 		                    "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "format" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "credential1" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "credential2_exists" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "handle" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "provider_id" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                )   
                     )
                 )
@@ -130,52 +130,52 @@ return array(
                     "description" => "The ID number of the fulfilment service."
                 ),
                 "fulfillment" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
 		                "id" => array(
 		                    "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The ID number of the fulfillment service."
 		                ),
 						"name" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 						"callback_url" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 						"inventory_management" => array(
 		                    "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "tracking_support" => array(
 		                    "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "requires_shipping_method" => array(
 		                    "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "format" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "credential1" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "credential2_exists" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "handle" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "provider_id" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                )  
                     )
                 )

@@ -156,51 +156,51 @@ return array(
                     "description" => "The ID number of the order."
                 ),
                 "fulfillment" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
 						"tracking_number" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "Single shipping number."
 		                ),
 						"tracking_numbers" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "A list of shipping numbers, provided by the shipping company."
 		                ),
 						"notify_customer" => array(
 		                    "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The ISO 3166-1 alpha-2 two-letter country code for the country. The code for a given country will be the same as the code for the same country in another shop."
 		                ),
 		                "line_items" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => ""
 		                ),
 		                "tracking_company" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The name of the shipping company."
 		                ),
 		                "tracking_url" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The URL to track the fulfillment."
 		                ),
 		                "tracking_urls" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The URLs to track the fulfillment."
 		                ),
 		                "status" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The status of the fulfillment."
 		                ),
 		                "receipt" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "Text field that provides information about the receipt."
 		                )      
                     )
@@ -231,61 +231,61 @@ return array(
                     "description" => "The ID number of the fulfilment."
                 ),
                 "fulfillment" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
                     	"order_id" => array(
 		                    "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The ID number of the order."
 		                ),
 		                "id" => array(
 		                    "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The ID number of the fulfilment."
 		                ),
 						"tracking_number" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "Single shipping number."
 		                ),
 						"tracking_numbers" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "A list of shipping numbers, provided by the shipping company."
 		                ),
 						"notify_customer" => array(
 		                    "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The ISO 3166-1 alpha-2 two-letter country code for the country. The code for a given country will be the same as the code for the same country in another shop."
 		                ),
 		                "line_items" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => ""
 		                ),
 		                "tracking_company" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The name of the shipping company."
 		                ),
 		                "tracking_url" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The URL to track the fulfillment."
 		                ),
 		                "tracking_urls" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The URLs to track the fulfillment."
 		                ),
 		                "status" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The status of the fulfillment."
 		                ),
 		                "receipt" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "Text field that provides information about the receipt."
 		                )      
                     )

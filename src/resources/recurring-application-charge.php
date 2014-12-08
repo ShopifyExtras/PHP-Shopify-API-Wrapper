@@ -68,43 +68,43 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "recurring_application_charge" => array(
-		            "location" => "postField",
+		            "location" => "json",
 		            "parameters" => array(
 		         	    "name" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		         	    "price" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "return_url" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "test" => array(
 		                    "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "trial_days" => array(
 		                    "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "activated_on" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "billing_on" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "cancelled_on" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "trial_ends_on" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                )
 					)
 	            )

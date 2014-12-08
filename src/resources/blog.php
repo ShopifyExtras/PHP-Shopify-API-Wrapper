@@ -94,37 +94,37 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
 	            "blog" => array(
-		            "location" => "postField",
+		            "location" => "json",
 		            "parameters" => array(
 		                "title" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The ID of the Blog."
 		                ),
 		                "commentable" => array(
 			                "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "Indicates whether readers can post comments to the blog and if comments are moderated or not. Possible values are: no (default): Readers cannot post comments to blog articles. moderate: Readers can post comments to blog articles, but comments must be moderated before they appear.
 yes: Readers can post comments to blog articles without moderation."   
 		                ),
 		                "feedburner_location" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "URL to the feedburner location for blogs that have enabled feedburner through their store admin."
 		                ),
 		                "handle" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "A human-friendly unique string for a blog automatically generated from its title. This handle is used by the Liquid templating language to refer to the blog."
 		                ),
 		                "tags" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "Tags are additional short descriptors formatted as a string of comma-separated values. For example, if an article has three tags: tag1, tag2, tag3."
 		                ),
 		                "template_suffix" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "States the name of the template a blog is using if it is using an alternate template. If a blog is using the default blog.liquid template, the value returned is \"null\"."
 		                )
 	                )
@@ -146,46 +146,46 @@ yes: Readers can post comments to blog articles without moderation."
             "parameters" => array(
 	            "id" => array(
                     "type" => "number",
-                    "location" => "postField",
+                    "location" => "json",
                     "description" => "The ID of the Blog."
                 ),
 	            "blog" => array(
-		            "location" => "postField",
+		            "location" => "json",
 		            "parameters" => array(
 			            "id" => array(
 		                    "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The ID of the Blog."
 		                ),
 		                "title" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The ID of the Blog."
 		                ),
 		                "commentable" => array(
 			                "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "Indicates whether readers can post comments to the blog and if comments are moderated or not. Possible values are: no (default): Readers cannot post comments to blog articles. moderate: Readers can post comments to blog articles, but comments must be moderated before they appear.
 yes: Readers can post comments to blog articles without moderation."   
 		                ),
 		                "feedburner_location" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "URL to the feedburner location for blogs that have enabled feedburner through their store admin."
 		                ),
 		                "handle" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "A human-friendly unique string for a blog automatically generated from its title. This handle is used by the Liquid templating language to refer to the blog."
 		                ),
 		                "tags" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "Tags are additional short descriptors formatted as a string of comma-separated values. For example, if an article has three tags: tag1, tag2, tag3."
 		                ),
 		                "template_suffix" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "States the name of the template a blog is using if it is using an alternate template. If a blog is using the default blog.liquid template, the value returned is \"null\"."
 		                )
 	                )

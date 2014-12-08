@@ -191,56 +191,56 @@ return array(
                     "description" => "A unique numeric identifier for the blog containing the article."
                 ),
                 "article" => array(
-		            "location" => "postField",
+		            "location" => "json",
 		            "parameters" => array(
 		         	    "author" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The name of the author of this article."
 		                ),
 		         	    "title" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The title of the article."
 		                ),
 		                "author" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The name of the author of this article."
 		                ),
 		                "tags" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "Tags are additional short descriptors formatted as a string of comma-separated values. For example, if an article has three tags: tag1, tag2, tag3."
 		                ),
 		                "summary_html" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The text of the summary of the article, complete with HTML markup."
 		                ),
 		                "body_html" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The text of the body of the article, complete with HTML markup."
 		                ),
 		                "template_suffix" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "States the name of the template an article is using if it is using an alternate template. If an article is using the default article.liquid template, the value returned is \"null\"."
 		                ),
 		                "published" => array(
 		                    "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "States whether or not the article is visible. Valid values are \"true\" for published or \"false\" for hidden."
 		                ),
 		                "published_at" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The date and time when the article was published. The API returns this value in ISO 8601 format."
 		                ),
 		                "user_id" => array(
 			                "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "A unique numeric identifier for the author of the article."
 		                )
 					)
@@ -271,61 +271,61 @@ return array(
                     "description" => "A unique numeric identifier for the article you are updating."
                 ),
                 "article" => array(
-		            "location" => "postField",
+		            "location" => "json",
 		            "parameters" => array(
 		         	    "id" => array(
 		                    "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "A unique numeric identifier for the article you are updating."
 		                ),
 		         	    "author" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The name of the author of this article."
 		                ),
 		         	    "title" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The title of the article."
 		                ),
 		                "author" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The name of the author of this article."
 		                ),
 		                "tags" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "Tags are additional short descriptors formatted as a string of comma-separated values. For example, if an article has three tags: tag1, tag2, tag3."
 		                ),
 		                "summary_html" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The text of the summary of the article, complete with HTML markup."
 		                ),
 		                "body_html" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The text of the body of the article, complete with HTML markup."
 		                ),
 		                "template_suffix" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "States the name of the template an article is using if it is using an alternate template. If an article is using the default article.liquid template, the value returned is \"null\"."
 		                ),
 		                "published" => array(
 		                    "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "States whether or not the article is visible. Valid values are \"true\" for published or \"false\" for hidden."
 		                ),
 		                "published_at" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The date and time when the article was published. The API returns this value in ISO 8601 format."
 		                ),
 		                "user_id" => array(
 			                "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "A unique numeric identifier for the author of the article."
 		                )
 					)

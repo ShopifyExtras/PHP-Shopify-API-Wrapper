@@ -64,21 +64,21 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "theme" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
                         "name" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The name of the theme."
                         ),
                         "src" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => ""
                         ),
                         "role" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "Specifies how the theme is being used within the shop."
                         )
                     )
@@ -104,21 +104,21 @@ return array(
                     "description" => "The themes ID number."
                 ),
                 "product" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
                         "id" => array(
                             "type" => "number",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The themes ID number."
                         ),
                         "name" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The description of the product, complete with HTML formatting."
                         ),
                         "role" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "A human-friendly unique string for the page automatically generated from its title. This is used in shop themes by the Liquid templating language to refer to the page."
                         )
                     )

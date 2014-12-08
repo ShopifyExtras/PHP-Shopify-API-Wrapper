@@ -112,61 +112,61 @@ return array(
                     "description" => "The ID of the order."
                 ),
                 "transaction" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
                     	"amount" => array(
 		                    "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The amount of money that the transaction was for."
 		                ),
 		                "authorization" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The authorization code associated with the transaction."
                         ),
                         "gateway" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The name of the gateway the transaction was issued through. A list of gateways can be found on Shopify's Payment Gateway page."
                         ),
                         "payment_details" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "An object containing information about the credit card used for this transaction."
                         ),
                         "kind" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The kind of transaction."
                         ),
                         "receipt" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => ""
                         ),
                         "error_code" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "A standardized error code, independent of the payment provider. Value can be null."
                         ),
                         "status" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The status of the transaction. Valid values are: pending, failure, success or error."
                         ),
                         "test" => array(
                             "type" => "boolean",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The option to use the transaction for testing purposes. Valid values are true or false."
                         ),
                         "user_id" => array(
                             "type" => "number",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The unique identifier for the user."
                         ),
                         "currency" => array(
                             "type" => "number",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The three letter code (ISO 4217) for the currency used for the payment."
                         )
                     )
@@ -192,31 +192,31 @@ return array(
                     "description" => "The ID of the webhook."
                 ),
                 "webhook" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
                         "id" => array(
                             "type" => "number",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The ID of the webhook."
                         ),
                         "topic" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The event that will trigger the webhook. Valid values are: orders/create, orders/delete, orders/updated, orders/paid, orders/cancelled, orders/fulfilled, orders/partially_fulfilled, order_transactions/create, carts/create, carts/update, checkouts/create, checkouts/update, checkouts/delete, refunds/create, products/create, products/update, products/delete, collections/create, collections/update, collections/delete, customer_groups/create, customer_groups/update, customer_groups/delete, customers/create, customers/enable, customers/disable, customers/update, customers/delete, fulfillments/create, fulfillments/update, shop/update, disputes/create, disputes/update, app/uninstalled,"
                         ),
                         "address" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The URI where the webhook should send the POST request when the event occurs."
                         ),
                         "format" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The format in which the webhook should send the data. Valid values are json and xml."
                         ),
                         "metafield_namespaces" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "(Optional) An array of namespaces for metafields that should be included in webhooks."
                         )
                     )

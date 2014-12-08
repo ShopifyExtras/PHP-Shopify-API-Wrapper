@@ -189,26 +189,26 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
 	            "metafield" => array(
-		            "location" => "postField",
+		            "location" => "json",
 		            "parameters" => array(
 		         	    "namespace" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The Namespace for the Metafield."
 		                ),
 		                "key" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The Key for the Metafield."
 		                ),
 		                "value" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The Value of the Metafield."
 		                ),
 		                "value_type" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The Value Type of the Metafield."
 		                )
 					)
@@ -234,26 +234,26 @@ return array(
                     "description" => "The ID of the Product."
                 ),
 	            "metafield" => array(
-		            "location" => "postField",
+		            "location" => "json",
 		            "parameters" => array(
 		         	    "namespace" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The Namespace for the Metafield."
 		                ),
 		                "key" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The Key for the Metafield."
 		                ),
 		                "value" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The Value of the Metafield."
 		                ),
 		                "value_type" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The Value Type of the Metafield."
 		                )
 					)

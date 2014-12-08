@@ -121,16 +121,16 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
 	            "redirect" => array(
-		            "location" => "postField",
+		            "location" => "json",
 		            "parameters" => array(
 		                "path" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The url path."
 		                ),
 		                "target" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The target url."
 		                )
                 	)
@@ -158,17 +158,17 @@ return array(
 	            "redirect" => array(
 		            "id" => array(
 	                    "type" => "number",
-	                    "location" => "postField",
+	                    "location" => "json",
 	                    "description" => "The ID of the redirect."
 	                ),
 	                "path" => array(
 	                    "type" => "string",
-	                    "location" => "postField",
+	                    "location" => "json",
 	                    "description" => "Show Redirects with given path."
 	                ),
 	                "target" => array(
 	                    "type" => "string",
-	                    "location" => "postField",
+	                    "location" => "json",
 	                    "description" => "Show Redirects with given target."
 	                ),
 		           

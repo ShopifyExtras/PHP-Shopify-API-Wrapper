@@ -186,41 +186,41 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
 	            "page" => array(
-		            "location" => "postField",
+		            "location" => "json",
 		            "parameters" => array(
 		                "author" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The name of the person who created the page."
 		                ),
 		                "body_html" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "Text content of the page, complete with HTML markup."
 		                ),
 		                "handle" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "A human-friendly unique string for the page automatically generated from its title. This is used in shop themes by the Liquid templating language to refer to the page."
 		                ),
 		                "published_at" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => ""
 		                ),
 		                "template_suffix" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The suffix of the liquid template being used. By default, the original template is called page.liquid, without any suffix. Any additional templates will be: page.suffix.liquid."
 		                ),
 		                "title" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The title of the page."
 		                ),
 		                "published" => array(
 			                "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => ""
 		                )
 					)
@@ -241,41 +241,41 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
 	            "page" => array(
-		            "location" => "postField",
+		            "location" => "json",
 		            "parameters" => array(
 		                "author" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The name of the person who created the page."
 		                ),
 		                "body_html" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "Text content of the page, complete with HTML markup."
 		                ),
 		                "handle" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "A human-friendly unique string for the page automatically generated from its title. This is used in shop themes by the Liquid templating language to refer to the page."
 		                ),
 		                "published_at" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => ""
 		                ),
 		                "template_suffix" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The suffix of the liquid template being used. By default, the original template is called page.liquid, without any suffix. Any additional templates will be: page.suffix.liquid."
 		                ),
 		                "title" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The title of the page."
 		                ),
 		                "published" => array(
 			                "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => ""
 		                )
 					)

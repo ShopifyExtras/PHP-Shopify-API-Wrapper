@@ -76,31 +76,31 @@ return array(
                     "description" => "A unique numeric identifier for the asset."
                 ),
                 "asset" => array(
-		            "location" => "postField",
+		            "location" => "json",
 		            "parameters" => array(
 		         	    "key" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The path to the asset within a shop. For example, the asset bg-body-green.gif is located in the assets folder."
 		                ),
 		         	    "value" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The asset that you are adding."
 		                ),
 		                "src" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "Specifies the location of an asset."
 		                ),
 		                "attachment" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "An asset attached to a store's theme."
 		                ),
 		                "source_key" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The source key copies an asset."
 		                )
 					)

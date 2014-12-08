@@ -92,47 +92,47 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "customer_saved_search" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
                         "name" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "query" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "body" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "accepts_marketing" => array(
                             "type" => "boolean",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "country" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "last_order_date" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "orders_count" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "state" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "tag" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "total_spent" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         )
                     )
                 )
@@ -156,51 +156,51 @@ return array(
                     "location" => "uri",
                 ),
                 "customer_saved_search" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
                         "id" => array(
                             "type" => "number",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "name" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "query" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "body" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "accepts_marketing" => array(
                             "type" => "boolean",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "country" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "last_order_date" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "orders_count" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "state" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "tag" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "total_spent" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         )
                     )
                 )

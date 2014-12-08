@@ -179,59 +179,59 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "comment" => array(
-		            "location" => "postField",
+		            "location" => "json",
 		            "parameters" => array(
 		         	    "body" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "body_html" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		         	    "author" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "email" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "ip" => array(
 		                    "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "blog_id" => array(
 		                    "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "article_id" => array(
 		                    "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "template_suffix" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "published" => array(
 		                    "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "published_at" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "user_id" => array(
 			                "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "status" => array(
 			                "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "user_agent" => array(
 			                "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                )
 					)
 	            )
@@ -252,66 +252,66 @@ return array(
             "parameters" => array(
             	"id" => array(
                     "type" => "string",
-                    "location" => "postField",
+                    "location" => "json",
                 ),
                 "comment" => array(
-		            "location" => "postField",
+		            "location" => "json",
 		            "parameters" => array(
 		         	    "id" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		         	    "body" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "body_html" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		         	    "author" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "email" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "ip" => array(
 		                    "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "blog_id" => array(
 		                    "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "article_id" => array(
 		                    "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "template_suffix" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "published" => array(
 		                    "type" => "boolean",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "published_at" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "user_id" => array(
 			                "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "status" => array(
 			                "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                ),
 		                "user_agent" => array(
 			                "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                )
 					)
 	            )
@@ -332,7 +332,7 @@ return array(
             "parameters" => array(
             	"id" => array(
                     "type" => "string",
-                    "location" => "postField",
+                    "location" => "json",
                 )
             )
         ),
@@ -351,7 +351,7 @@ return array(
             "parameters" => array(
             	"id" => array(
                     "type" => "string",
-                    "location" => "postField",
+                    "location" => "json",
                 )
             )
         ),
@@ -370,7 +370,7 @@ return array(
             "parameters" => array(
             	"id" => array(
                     "type" => "string",
-                    "location" => "postField",
+                    "location" => "json",
                 )
             )
         ),
@@ -389,7 +389,7 @@ return array(
             "parameters" => array(
             	"id" => array(
                     "type" => "string",
-                    "location" => "postField",
+                    "location" => "json",
                 )
             )
         ),
@@ -408,7 +408,7 @@ return array(
             "parameters" => array(
             	"id" => array(
                     "type" => "string",
-                    "location" => "postField",
+                    "location" => "json",
                 )
             )
         )

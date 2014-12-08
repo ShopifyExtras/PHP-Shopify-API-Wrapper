@@ -89,21 +89,21 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "country" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
 						"name" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The full name of the country, in English."
 		                ),
 						"code" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The ISO 3166-1 alpha-2 two-letter country code for the country. The code for a given country will be the same as the code for the same country in another shop."
 		                ),
 		                "tax" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The national sales tax rate to be applied to orders made by customers from that country."
 		                )   
                     )
@@ -129,26 +129,26 @@ return array(
                     "description" => "The unique numeric identifier for the country. It is important to note that the id for a given country in one shop will not be the same as the id for the same country in another shop."
                 ),
                 "country" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
 	                    "id" => array(
 		                    "type" => "number",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The unique numeric identifier for the country. It is important to note that the id for a given country in one shop will not be the same as the id for the same country in another shop."
 		                ),
 						"name" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The full name of the country, in English."
 		                ),
 						"code" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The ISO 3166-1 alpha-2 two-letter country code for the country. The code for a given country will be the same as the code for the same country in another shop."
 		                ),
 		                "tax" => array(
 		                    "type" => "string",
-		                    "location" => "postField",
+		                    "location" => "json",
 		                    "description" => "The national sales tax rate to be applied to orders made by customers from that country."
 		                )   
                     )

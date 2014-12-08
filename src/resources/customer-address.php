@@ -80,63 +80,63 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "address" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
                         "address1" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "address2" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "city" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "company" => array(
                             "type" => "boolean",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "first_name" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "last_name" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "phone" => array(
                             "type" => "boolean",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "province" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "country" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "zip" => array(
                             "type" => "boolean",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "name" => array(
                             "type" => "boolean",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "province_code" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "country_code" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "country_name" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         )
                     )
                 )
@@ -164,71 +164,71 @@ return array(
                     "location" => "uri",
                 ),
                 "address" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
                          "customer_id" => array(
                             "type" => "number",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "id" => array(
                             "type" => "number",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "address1" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "address2" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "city" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "company" => array(
                             "type" => "boolean",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "first_name" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "last_name" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "phone" => array(
                             "type" => "boolean",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "province" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "country" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "zip" => array(
                             "type" => "boolean",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "name" => array(
                             "type" => "boolean",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "province_code" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "country_code" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         ),
                         "country_name" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                         )
                     )
                 )

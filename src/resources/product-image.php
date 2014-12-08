@@ -131,36 +131,36 @@ return array(
                     "description" => "The ID of the product you wish to add the image to."
                 ),
                 "image" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
                         "attachment" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => ""
                         ),
                         "filename" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => ""
                         ),
                         "src" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "Specifies the location of the product image."
                         ),
                         "position" => array(
                             "type" => "number",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The order of the product image in the list. The first product image is at position 1 and is the main image for the product."
                         ),
                         "variant_ids" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "An array of variant ids associated with the image."
                         ),
                         "metafields" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "A categorization that a product can be tagged with, commonly used for filtering and searching."
                         ),
                     )
@@ -191,46 +191,46 @@ return array(
                     "description" => "The ID of the image."
                 ),
                 "image" => array(
-                    "location" => "postField",
+                    "location" => "json",
                     "parameters" => array(
                         "product_id" => array(
                             "type" => "number",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The ID of the product."
                         ),
                         "id" => array(
                             "type" => "number",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The ID of the image."
                         ),
                         "attachment" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => ""
                         ),
                         "filename" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => ""
                         ),
                         "src" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "Specifies the location of the product image."
                         ),
                         "position" => array(
                             "type" => "number",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "The order of the product image in the list. The first product image is at position 1 and is the main image for the product."
                         ),
                         "variant_ids" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "An array of variant ids associated with the image."
                         ),
                         "metafields" => array(
                             "type" => "string",
-                            "location" => "postField",
+                            "location" => "json",
                             "description" => "A categorization that a product can be tagged with, commonly used for filtering and searching."
                         ),
                     )
