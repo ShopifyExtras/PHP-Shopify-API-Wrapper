@@ -26,9 +26,10 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
-                    "type" => "string",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Product."
+                    "description" => "The ID of the Product.",
+                    "required" => true
                 )
             )
         ),
@@ -45,9 +46,10 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
-                    "type" => "string",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Product."
+                    "description" => "The ID of the Product.",
+                    "required" => true
                 )
             )
         ),
@@ -64,9 +66,10 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
-                    "type" => "string",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Variant."
+                    "description" => "The ID of the Variant.",
+                    "required" => true
                 )
             )
         ),

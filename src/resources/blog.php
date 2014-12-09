@@ -27,17 +27,17 @@ return array(
             "parameters" => array(
                 "since_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID."
                 ),
                 "handle" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Filter by Blog handle."
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -71,11 +71,12 @@ return array(
                 "id" => array(
                     "type" => "string",
                     "location" => "uri",
-                    "description" => "The ID of the Blog."
+                    "description" => "The ID of the Blog.",
+                    "required" => true
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -146,8 +147,9 @@ yes: Readers can post comments to blog articles without moderation."
             "parameters" => array(
 	            "id" => array(
                     "type" => "number",
-                    "location" => "json",
-                    "description" => "The ID of the Blog."
+                    "location" => "uri",
+                    "description" => "The ID of the Blog.",
+                    "required" => true
                 ),
 	            "blog" => array(
 		            "location" => "json",
@@ -208,8 +210,8 @@ yes: Readers can post comments to blog articles without moderation."
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the blog."
-                )
+                    "description" => "Unique numeric identifier for the blog.",
+                    "required" => true
             )
         )
         

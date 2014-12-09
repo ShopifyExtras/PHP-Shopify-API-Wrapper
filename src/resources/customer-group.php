@@ -50,9 +50,10 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
-                    "type" => "string",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Customer Group."
+                    "description" => "The ID of the Customer Group.",
+                    "required" => true
                 )
             )
         ),
@@ -69,9 +70,10 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
-                    "type" => "string",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Customer Group."
+                    "description" => "The ID of the Customer Group.",
+                    "required" => true
                 )
             )
         ),

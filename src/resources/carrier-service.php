@@ -41,7 +41,8 @@ return array(
                 "id" => array(
                     "type" => "string",
                     "location" => "uri",
-                    "description" => "The ID of the Carrier Service."
+                    "description" => "The ID of the Carrier Service.",
+                    "required" => true
                 )
             )
         ),
@@ -111,7 +112,8 @@ return array(
 	            "id" => array(
 	  	            "type" => "number",
                     "location" => "uri",
-                    "description" => "he ID number of the carrier service."
+                    "description" => "he ID number of the carrier service.",
+                    "required" => true
 	            ),
                 "carrier_service" => array(
 	                "location" => "json",
@@ -171,7 +173,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the carrier service."
+                    "description" => "Unique numeric identifier for the carrier service.",
+                    "required" => true
                 )
             )
         )

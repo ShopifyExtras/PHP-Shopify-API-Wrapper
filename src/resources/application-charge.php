@@ -27,12 +27,12 @@ return array(
             "parameters" => array(
                 "since_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID."
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -53,11 +53,12 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "A unique numeric identifier for the application charge."
+                    "description" => "A unique numeric identifier for the application charge.",
+                    "required" => true
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -115,54 +116,55 @@ return array(
             "summary" => "Activate a previously accepted one-time application charge.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
-                "api_client_id" => array(
+                "id" => array(
                     "type" => "number",
                     "location" => "uri",
+                    "description" => "A unique numeric identifier for the one-time application charge.",
+                    "required" => true
+                ),
+                "api_client_id" => array(
+                    "type" => "number",
+                    "location" => "query",
                     "description" => ""
                 ),
                 "created_at" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "The date and time when the one-time application charge was created. The API returns this value in ISO 8601 format."
-                ),
-                "id" => array(
-                    "type" => "number",
-                    "location" => "uri",
-                    "description" => "A unique numeric identifier for the one-time application charge."
                 ),
                 "price" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "The price of the the one-time application charge."
                 ),
                 "return_url" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "The URL the customer is sent to once they accept/decline a charge."
                 ),
                 "status" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "The status of the application charge. Valid values are: pending: The application charge is pernding. accepted: The application charge has been accepted. declined: The application charge has been declined."
                 ),
                 "test" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "States whether or not the application charge is a test transaction. Valid values are \"true\" or \"null\"."
                 ),
                 "updated_at" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "The date and time when the charge was last updated. The API returns this value in ISO 8601 format."
                 ),
                 "charge_type" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => ""
                 ),
                 "decorated_return_url" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => ""
                 )
             )
@@ -175,23 +177,25 @@ return array(
          */
         "getArticle" => array(
             "httpMethod" => "GET",
-            "uri" => "/admin/blogs/{blog_id}/articles/{articleId}.json",
+            "uri" => "/admin/blogs/{blog_id}/articles/{article_id}.json",
             "summary" => "Get a single article by its ID and the ID of the parent blog.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "blog_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Blog."
+                    "description" => "The ID of the Blog.",
+                    "required" => true
                 ),
-                "articleId" => array(
+                "article_id" => array(
 	                "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Article."
+                    "description" => "The ID of the Article.",
+                    "required" => true
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "comma-separated list of fields to include in the response."
                 )
             )
@@ -211,7 +215,8 @@ return array(
                 "blog_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "A unique numeric identifier for the blog containing the article."
+                    "description" => "A unique numeric identifier for the blog containing the article.",
+                    "required" => true
                 ),
                 "article" => array(
 		            "location" => "json",

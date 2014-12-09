@@ -41,11 +41,12 @@ return array(
                 "id" => array(
                     "type" => "string",
                     "location" => "uri",
-                    "description" => "The ID of the theme."
+                    "description" => "The ID of the theme.",
+                    "required" => true
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -101,7 +102,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The themes ID number."
+                    "description" => "The themes ID number.",
+                    "required" => true
                 ),
                 "product" => array(
                     "location" => "json",
@@ -141,7 +143,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the theme."
+                    "description" => "Unique numeric identifier for the theme.",
+                    "required" => true
                 )
             )
         )

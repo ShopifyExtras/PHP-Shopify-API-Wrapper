@@ -27,67 +27,67 @@ return array(
             "parameters" => array(
                 "limit" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Amount of results (default: 50) (maximum: 250)."
                 ),
                 "page" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Page to show (default: 1)."
                 ),
                 "since_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID."
                 ),
                 "created_at_min" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Show orders created after date (format: 2008-12-31 03:00)."
                 ),
                 "created_at_max" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Show orders created before date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_min" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Show orders last updated after date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_max" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Show orders last updated before date (format: 2008-12-31 03:00)."
                 ),
                 "processed_at_min" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Show orders imported after date (format: 2008-12-31 03:00)."
                 ),
                 "processed_at_max" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Show orders imported before date (format: 2008-12-31 03:00)."
                 ),
                 "status" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => ""
                 ),
                 "financial_status" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => ""
                 ),
                 "fulfillment_status" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => ""
                 ),
                 "fields" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -108,11 +108,12 @@ return array(
                 "id" => array(
                     "type" => "string",
                     "location" => "uri",
-                    "description" => "The ID of the order."
+                    "description" => "The ID of the order.",
+                    "required" => true
                 ),
                 "fields" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -132,37 +133,37 @@ return array(
             "parameters" => array(
                 "created_at_min" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Count orders created after date (format: 2008-12-31 03:00)."
                 ),
                 "created_at_max" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Count orders created before date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_min" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Count orders last updated after date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_max" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Count orders last updated before date (format: 2008-12-31 03:00)."
                 ),
                 "status" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => ""
                 ),
                 "financial_status" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => ""
                 ),
                 "fulfillment_status" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => ""
                 )
             )
@@ -183,7 +184,8 @@ return array(
             	"id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the order."
+                    "description" => "The ID of the order.",
+                    "required" => true
                 )
             )
         ),
@@ -203,7 +205,8 @@ return array(
             	"id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the order."
+                    "description" => "The ID of the order.",
+                    "required" => true
                 )
             )
         ),
@@ -223,7 +226,8 @@ return array(
             	"id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the order."
+                    "description" => "The ID of the order.",
+                    "required" => true
                 ),
                 "order" => array(
                     "location" => "json",
@@ -498,7 +502,8 @@ return array(
             	"id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the order."
+                    "description" => "The ID of the order.",
+                    "required" => true
                 ),
             	"order" => array(
             		"location" => "json",
@@ -738,7 +743,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the order."
+                    "description" => "Unique numeric identifier for the order.",
+                    "required" => true
                 )
             )
         )

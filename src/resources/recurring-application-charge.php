@@ -27,11 +27,11 @@ return array(
             "parameters" => array(
                 "since_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                 ),
                 "fields" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                 )
             )
         ),
@@ -51,6 +51,7 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
+                    "required" => true
                 )
             )
         ),
@@ -125,6 +126,7 @@ return array(
 	            "id" => array(
                     "type" => "number",
                     "location" => "uri",
+                    "required" => true
                 )
             )
         ),
@@ -144,6 +146,7 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
+                    "required" => true
                 )
             )
         )

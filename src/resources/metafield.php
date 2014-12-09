@@ -26,53 +26,53 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "limit" => array(
-                    "type" => "integer",
-                    "location" => "uri",
+                    "type" => "number",
+                    "location" => "query",
                     "description" => "Amount of results (default: 50) (maximum: 250)"
                 ),
                 "since_id" => array(
-                    "type" => "integer",
-                    "location" => "uri",
+                    "type" => "number",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID"
                 ),
                 "created_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show metafields created after date (format: 2008-12-31 03:00)"
                 ),
                 "created_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show metafields created before date (format: 2008-12-31 03:00)"
                 ),
                 "updated_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show metafields last updated after date (format: 2008-12-31 03:00)"
                 ),
                 "updated_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show metafields last updated before date (format: 2008-12-31 03:00)"
                 ),
                 "namepace" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show metafields with given namespace"
                 ),
                 "key" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show metafields with given key"
                 ),
                 "value_type" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "string - Show only metafields with string value types. integer - Show only metafields with integer value types"
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response"
                 ),
             )
@@ -93,7 +93,8 @@ return array(
                 "id" => array(
                     "type" => "string",
                     "location" => "uri",
-                    "description" => "The ID of the Product."
+                    "description" => "The ID of the Product.",
+                    "required" => true
                 )
             )
         ),
@@ -124,9 +125,10 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
-                    "type" => "string",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Product."
+                    "description" => "The ID of the Product.",
+                    "required" => true
                 )
             )
         ),
@@ -144,9 +146,10 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
-                    "type" => "string",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Metafield."
+                    "description" => "The ID of the Metafield.",
+                    "required" => true
                 )
             )
         ),
@@ -159,19 +162,21 @@ return array(
          */
         "getProductMetafield" => array(
             "httpMethod" => "GET",
-            "uri" => "/admin/products/{id}/metafields/{metafieldId}.json",
+            "uri" => "/admin/products/{id}/metafields/{metafield_id}.json",
             "summary" => "Get a single product metafield by its ID",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
-                    "type" => "string",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Product."
+                    "description" => "The ID of the Product.",
+                    "required" => true
                 ),
-                "metafieldId" => array(
-                    "type" => "string",
+                "metafield_id" => array(
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Metafield."
+                    "description" => "The ID of the Metafield.",
+                    "required" => true
                 )
             )
         ),
@@ -229,9 +234,10 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
 	            "id" => array(
-                    "type" => "integer",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Product."
+                    "description" => "The ID of the Product.",
+                    "required" => true
                 ),
 	            "metafield" => array(
 		            "location" => "json",
@@ -274,9 +280,10 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
 	            "id" => array(
-                    "type" => "integer",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Product."
+                    "description" => "The ID of the Product.",
+                    "required" => true
                 ),
 	            "metafield" => array(
 		            "location" => "json",
@@ -309,20 +316,27 @@ return array(
          */
         "updateProductMetafield" => array(
             "httpMethod" => "PUT",
-            "uri" => "/admin/products/{id}/metafields/{metafieldId}.json",
+            "uri" => "/admin/products/{id}/metafields/{metafield_id}.json",
             "summary" => "Update a Product Metafield",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
 	            "id" => array(
-                    "type" => "integer",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Product."
+                    "description" => "The ID of the Product.",
+                    "required" => true
                 ),
+                "metafield_id" {
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Metafield.",
+                    "required" => true
+                }
 	            "metafield" => array(
 		            "location" => "json",
 		            "parameters" => array(
 		         	    "metafieldId" => array(
-		                    "type" => "integer",
+		                    "type" => "number",
 		                    "location" => "json",
 		                    "description" => "The ID for the Metafield."
 		                ),
@@ -354,9 +368,10 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
 	            "id" => array(
-                    "type" => "integer",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Metafield."
+                    "description" => "The ID of the Metafield.",
+                    "required" => true
                 )             
             )
         ),
@@ -374,14 +389,16 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
 	            "id" => array(
-                    "type" => "integer",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Product."
+                    "description" => "The ID of the Product.",
+                    "required" => true
                 ),
                 "metafieldId" => array(
-                    "type" => "integer",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Metafield."
+                    "description" => "The ID of the Metafield.",
+                    "required" => true
                 )             
             )
         ),

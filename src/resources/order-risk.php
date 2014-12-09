@@ -28,7 +28,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The unique ID number for the order."
+                    "description" => "The unique ID number for the order.",
+                    "required" => true
                 )
             )
         ),
@@ -48,12 +49,14 @@ return array(
                 "order_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The unique ID number for the order."
+                    "description" => "The unique ID number for the order.",
+                    "required" => true
                 ),
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The unique ID of the order risk."
+                    "description" => "The unique ID of the order risk.",
+                    "required" => true
                 )
             )
         ),
@@ -73,12 +76,14 @@ return array(
 	            "order_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The id of the order the order risk belongs to."
+                    "description" => "The id of the order the order risk belongs to.",
+                    "required" => true
                 ),
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "A unique numeric identifier for the order risk."
+                    "description" => "A unique numeric identifier for the order risk.",
+                    "required" => true
                 ),
 	            "risk" => array(
 		            "location" => "json",
@@ -138,12 +143,14 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the order risk."
+                    "description" => "Unique numeric identifier for the order risk.",
+                    "required" => true
                 ),
                 "order_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the order."
+                    "description" => "Unique numeric identifier for the order.",
+                    "required" => true
                 )
             )
         )

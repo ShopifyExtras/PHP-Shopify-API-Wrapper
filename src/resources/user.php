@@ -41,7 +41,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the user."
+                    "description" => "The ID of the user.",
+                    "required" => true
                 )
             )
         )

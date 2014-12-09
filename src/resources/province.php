@@ -28,16 +28,17 @@ return array(
                 "country_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The id of the country the province belongs to."
+                    "description" => "The id of the country the province belongs to.",
+                    "required" => true
                 ),
                 "since_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID."
                 ),
                 "fields" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -58,11 +59,12 @@ return array(
                 "country_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The id of the country the province belongs to."
+                    "description" => "The id of the country the province belongs to.",
+                    "required" => true
                 ),
                 "since_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID."
                 )
             )
@@ -83,16 +85,18 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The id of the province."
+                    "description" => "The id of the province.",
+                    "required" => true
                 ),
                 "country_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The id of the country the province belongs to."
+                    "description" => "The id of the country the province belongs to.",
+                    "required" => true
                 ),
                 "since_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID."
                 )
             )
@@ -113,17 +117,23 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The id of the province."
+                    "description" => "The id of the province.",
+                    "required" => true
                 ),
                 "country_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The id of the country the province belongs to."
+                    "description" => "The id of the country the province belongs to.",
+                    "required" => true
                 ),
-                "tax" => array(
-                    "type" => "string",
-                    "location" => "uri",
-                    "description" => "New tax rate."
+                "province" => array(
+                    "parameters" => array(
+                         "tax" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "New tax rate."
+                        )
+                    )
                 )
             )
         ),

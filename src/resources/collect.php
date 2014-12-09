@@ -37,17 +37,17 @@ return array(
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 ),
                 "product_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "List only collects for a certain product."
                 ),
                 "collection_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "List only collects for a certain collection."
                 )
             )
@@ -67,12 +67,12 @@ return array(
             "parameters" => array(
                 "product_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "List only collects for a certain product."
                 ),
                 "collection_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "List only collects for a certain collection."
                 )
             )
@@ -93,11 +93,12 @@ return array(
                 "id" => array(
                     "type" => "string",
                     "location" => "uri",
-                    "description" => "The ID of the Collect."
+                    "description" => "The ID of the Collect.",
+                    "required" => true
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )

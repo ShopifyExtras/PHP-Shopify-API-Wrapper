@@ -52,9 +52,10 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
-                    "type" => "string",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Saved Search."
+                    "description" => "The ID of the Saved Search.",
+                    "required" => true
                 )
             )
         ),
@@ -72,9 +73,10 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
-                    "type" => "string",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Saved Search."
+                    "description" => "The ID of the Saved Search.",
+                    "required" => true
                 )
             )
         ),
@@ -154,6 +156,7 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
+                    "required" => true
                 ),
                 "customer_saved_search" => array(
                     "location" => "json",
@@ -222,7 +225,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the CustomerSavedSearch."
+                    "description" => "Unique numeric identifier for the CustomerSavedSearch.",
+                    "required" => true
                 )
             )
         )

@@ -28,16 +28,17 @@ return array(
                 "id" => array(
                     "type" => "integer",
                     "location" => "uri",
-                    "description" => "The ID of the Customer."
+                    "description" => "The ID of the Customer.",
+                    "required" => true
                 ),
                 "limit" => array(
 	                "type" => "integer",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Amount of results (default: 50) (maximum: 250)"
                 ),
                 "page" => array(
 	             	"type" => "integer",
-	             	"location" => "uri",
+	             	"location" => "query",
 	             	"description" => "Page to show (default: 1)"   
                 )
             )
@@ -57,12 +58,14 @@ return array(
                 "id" => array(
                     "type" => "integer",
                     "location" => "uri",
-                    "description" => "The ID of the Customer."
+                    "description" => "The ID of the Customer.",
+                    "required" => true
                 ),
                 "addressId" => array(
                     "type" => "integer",
                     "location" => "uri",
-                    "description" => "The ID of the Address."
+                    "description" => "The ID of the Address.",
+                    "required" => true
                 )
             )
         ),
@@ -158,10 +161,12 @@ return array(
                 "customer_id" => array(
                     "type" => "number",
                     "location" => "uri",
+                    "required" => true
                 ),
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
+                    "required" => true
                 ),
                 "address" => array(
                     "location" => "json",
@@ -250,10 +255,12 @@ return array(
                 "customer_id" => array(
                     "type" => "number",
                     "location" => "uri",
+                    "required" => true
                 ),
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
+                    "required" => true
                 )
             )
         ),
@@ -272,7 +279,8 @@ return array(
             "parameters" => array(
                 "id" => array(
                     "type" => "number",
-                    "location" => "uri"
+                    "location" => "uri",
+                    "required" => true
                 ),
                 "address_ids[]" => array(
                     "type" => "string",
@@ -296,10 +304,12 @@ return array(
                 "customer_id" => array(
                     "type" => "number",
                     "location" => "uri",
+                    "required" => true
                 ),
                 "id" => array(
                     "type" => "string",
                     "location" => "uri",
+                    "required" => true
                 )
             )
         )

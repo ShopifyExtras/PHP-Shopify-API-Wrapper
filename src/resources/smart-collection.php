@@ -27,62 +27,62 @@ return array(
             "parameters" => array(
                 "limit" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Amount of results."
                 ),
                 "page" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Page to show."
                 ),
                 "since_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID."
                 ),
                 "title" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show smart collections with given title."
                 ),
                 "product_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show smart collections that includes given product."
                 ),
                 "handle" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Filter by smart collection handle."
                 ),
                 "updated_at_min" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show smart collections last updated after date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_max" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show smart collections last updated before date (format: 2008-12-31 03:00)."
                 ),
                 "published_at_min" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show smart collections published after date (format: 2008-12-31 03:00)."
                 ),
                 "published_at_max" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show smart collections published before date (format: 2008-12-31 03:00)."
                 ),
                 "published_status" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => ""
                 ),
                 "fields" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Ccomma-separated list of fields to include in the response."
                 )
             )
@@ -102,37 +102,37 @@ return array(
             "parameters" => array(
                 "title" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show smart collections with given title."
                 ),
                 "product_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show smart collections that includes given product."
                 ),
                 "updated_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show smart collections last updated after date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show smart collections last updated before date (format: 2008-12-31 03:00)."
                 ),
                 "published_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show smart collections published after date (format: 2008-12-31 03:00)."
                 ),
                 "published_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show smart collections published before date (format: 2008-12-31 03:00)."
                 ),
                 "published_status" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => ""
                 )
             )
@@ -153,11 +153,12 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the smartcollection."
+                    "description" => "The ID of the smartcollection.",
+                    "required" => true
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -253,7 +254,8 @@ return array(
             	"id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the smart collection."
+                    "description" => "The ID of the smart collection.",
+                    "required" => true
                 ),
                 "smart_collection" => array(
                     "location" => "json",
@@ -338,7 +340,8 @@ return array(
             	"id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the smart collection."
+                    "description" => "The ID of the smart collection.",
+                    "required" => true
                 ),
                 "smart_collection" => array(
                     "location" => "json",
@@ -378,7 +381,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the smart collection."
+                    "description" => "Unique numeric identifier for the smart collection.",
+                    "required" => true
                 )
             )
         )

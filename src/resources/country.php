@@ -27,12 +27,12 @@ return array(
             "parameters" => array(
                 "since_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID."
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -66,11 +66,12 @@ return array(
                 "id" => array(
                     "type" => "string",
                     "location" => "uri",
-                    "description" => "The ID of the Country."
+                    "description" => "The ID of the Country.",
+                    "required" => true
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -126,7 +127,8 @@ return array(
 	            "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The unique numeric identifier for the country. It is important to note that the id for a given country in one shop will not be the same as the id for the same country in another shop."
+                    "description" => "The unique numeric identifier for the country. It is important to note that the id for a given country in one shop will not be the same as the id for the same country in another shop.",
+                    "required" => true
                 ),
                 "country" => array(
                     "location" => "json",
@@ -171,7 +173,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the country."
+                    "description" => "Unique numeric identifier for the country.",
+                    "required" => true
                 )
             )
         )

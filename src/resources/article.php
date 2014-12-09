@@ -28,61 +28,62 @@ return array(
                 "blog_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Blog."
+                    "description" => "The ID of the Blog.",
+                    "required" => true
                 ),
                 "limit" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Amount of results (default: 50)(maximum: 250)."
                 ),
                 "page" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Page to show (default: 1)."
                 ),
                 "since_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID."
                 ),
                 "created_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show articles created after date (format: 2008-12-31 03:00)."
                 ),
                 "created_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show articles created before date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show articles last updated after date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show articles last updated before date (format: 2008-12-31 03:00)."
                 ),
                 "published_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show articles published after date (format: 2008-12-31 03:00)."
                 ),
                 "published_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show articles published before date (format: 2008-12-31 03:00)."
                 ),
                 "published_status" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "published - Show only published articles. unpublished - Show only unpublished articles. any - Show all articles (default)."
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "comma-separated list of fields to include in the response."
                 )
             )
@@ -103,41 +104,42 @@ return array(
                 "blog_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Blog."
+                    "description" => "The ID of the Blog.",
+                    "required" => true
                 ),
                 "created_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Count articles created after date (format: 2008-12-31 03:00)."
                 ),
                 "created_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Count articles created before date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Count articles last updated after date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Count articles last updated before date (format: 2008-12-31 03:00)."
                 ),
                 "published_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Count articles published after date (format: 2008-12-31 03:00)."
                 ),
                 "published_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Count articles published before date (format: 2008-12-31 03:00)."
                 ),
                 "published_status" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "published - Count only published articles. unpublished - Count only unpublished articles. any - Count all articles (default)."
                 )
             )
@@ -151,23 +153,25 @@ return array(
          */
         "getArticle" => array(
             "httpMethod" => "GET",
-            "uri" => "/admin/blogs/{blog_id}/articles/{articleId}.json",
+            "uri" => "/admin/blogs/{blog_id}/articles/{article_id}.json",
             "summary" => "Get a single article by its ID and the ID of the parent blog.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "blog_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Blog."
+                    "description" => "The ID of the Blog.",
+                    "required" => true
                 ),
-                "articleId" => array(
+                "article_id" => array(
 	                "type" => "number",
-                    "location" => "uri",
-                    "description" => "The ID of the Article."
+                    "location" => "query",
+                    "description" => "The ID of the Article.",
+                    "required" => true
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "comma-separated list of fields to include in the response."
                 )
             )
@@ -188,7 +192,8 @@ return array(
                 "blog_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "A unique numeric identifier for the blog containing the article."
+                    "description" => "A unique numeric identifier for the blog containing the article.",
+                    "required" => true
                 ),
                 "article" => array(
 		            "location" => "json",
@@ -263,12 +268,14 @@ return array(
                 "blog_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "A unique numeric identifier for the blog containing the article."
+                    "description" => "A unique numeric identifier for the blog containing the article.",
+                    "required" => true
                 ),
                 "article_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "A unique numeric identifier for the article you are updating."
+                    "description" => "A unique numeric identifier for the article you are updating.",
+                    "required" => true
                 ),
                 "article" => array(
 		            "location" => "json",
@@ -276,7 +283,7 @@ return array(
 		         	    "id" => array(
 		                    "type" => "number",
 		                    "location" => "json",
-		                    "description" => "A unique numeric identifier for the article you are updating."
+		                    "description" => "A unique numeric identifier for the article you are updating.",
 		                ),
 		         	    "author" => array(
 		                    "type" => "string",
@@ -385,16 +392,17 @@ return array(
                 "blog_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the blog."
+                    "description" => "Unique numeric identifier for the blog.",
+                    "required" => true
                 ),
                 "popular" => array(
                     "type" => "boolean",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "A flag to indicate only to a certain number of the most popular tags."
                 ),
                 "limit" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "The number of tags to return."
                 )
             )
@@ -415,12 +423,14 @@ return array(
                 "blog_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the blog."
+                    "description" => "Unique numeric identifier for the blog.",
+                    "required" => true
                 ),
                 "article_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the article."
+                    "description" => "Unique numeric identifier for the article.",
+                    "required" => true
                 )
             )
         )

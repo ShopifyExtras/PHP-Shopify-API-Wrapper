@@ -28,16 +28,18 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the refund."
+                    "description" => "The ID of the refund.",
+                    "required" => true
                 ),
                 "order_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the order."
+                    "description" => "The ID of the order.",
+                    "required" => true
                 ),
                 "fields" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )

@@ -27,42 +27,42 @@ return array(
             "parameters" => array(
                 "limit" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Amount of results (Default: 50) (Maximum: 250)."
                 ),
                 "page" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Page to show (default: 1)."
                 ),
                 "since_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID."
                 ),
                 "created_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show checkouts created after date (format: 2008-12-31 03:00)."
                 ),
                 "created_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show checkouts created before date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show checkouts last updated after date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show checkouts last updated before date (format: 2008-12-31 03:00)."
                 ),
                 "status" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "open - All open abandoned checkouts (default). closed - Show only closed abandoned checkouts."
                 )
 			)
@@ -82,27 +82,27 @@ return array(
 			"properties" => array(
                 "created_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show checkouts created after date (format: 2008-12-31 03:00)."
                 ),
                 "created_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show checkouts created before date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show checkouts last updated after date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show checkouts last updated before date (format: 2008-12-31 03:00)."
                 ),
                 "status" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "open - All open abandoned checkouts (default). closed - Show only closed abandoned checkouts."
                 )
             )

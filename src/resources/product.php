@@ -37,67 +37,67 @@ return array(
                 ),
                 "since_id" => array(
                     "type" => "integer",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID"
                 ),
                 "vendor" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Filter by product vendor"
                 ),
                 "handle" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Filter by product handle"
                 ),
                 "product_type" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Filter by product type"
                 ),
                 "collection_id" => array(
 	                "type" => "integer",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Filter by collection id"
                 ),
                 "created_at_min" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Show products created after date (format: 2008-12-31 03:00)"
                 ),
                 "created_at_max" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Show products created before date (format: 2008-12-31 03:00)"
                 ),
                 "updated_at_min" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Show products last updated after date (format: 2008-12-31 03:00)"
                 ),
                 "updated_at_max" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Show products last updated before date (format: 2008-12-31 03:00)"
                 ),
                 "published_at_min" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Show products published after date (format: 2008-12-31 03:00)"
                 ),
                 "published_at_max" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Show products published before date (format: 2008-12-31 03:00)"
                 ),
                 "published_status" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "published - Show only published products. unpublished - Show only unpublished products. any - Show all products (default)"
                 ),
                 "fields" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "comma-separated list of fields to include in the response"
                 )
             )
@@ -129,9 +129,10 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
-                    "type" => "string",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Product."
+                    "description" => "The ID of the Product.",
+                    "required" => true
                 )
             )
         ),
@@ -241,7 +242,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The products ID number."
+                    "description" => "The products ID number.",
+                    "required" => true
                 ),
                 "product" => array(
                     "location" => "json",
@@ -341,7 +343,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the product."
+                    "description" => "Unique numeric identifier for the product.",
+                    "required" => true
                 )
             )
         )

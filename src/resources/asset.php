@@ -25,9 +25,14 @@ return array(
             "summary" => "Listing theme assets only returns metadata about each asset. You need to request assets individually in order to get their contents.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "required" => true
+                )
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -45,15 +50,16 @@ return array(
             "summary" => "Get an asset.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
-                "asset[key]" => array(
-                    "type" => "string",
-                    "location" => "uri",
-                    "description" => ""
-                ),
-                "theme_id" => array(
+                "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the theme."
+                    "description" => "The ID of the theme.",
+                    "required" => true
+                )
+                "asset[key]" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => ""
                 )
             )
         ),
@@ -73,7 +79,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "A unique numeric identifier for the asset."
+                    "description" => "A unique numeric identifier for the asset.",
+                    "required" => true
                 ),
                 "asset" => array(
 		            "location" => "json",
@@ -123,7 +130,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the theme."
+                    "description" => "The ID of the theme.",
+                    "required" => true
                 ),
                 "asset[key]" => array(
                     "type" => "number",

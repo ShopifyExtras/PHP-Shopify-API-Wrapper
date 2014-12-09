@@ -118,11 +118,12 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Webhook."
+                    "description" => "The ID of the Webhook.",
+                    "required" => true
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "A comma-separated list of the properties you want returned for each item in the result list. Use this parameter to restrict the returned list of items to showing only those properties you specify.
 "
                 )
@@ -183,8 +184,9 @@ return array(
             "parameters" => array(
                 "id" => array(
                     "type" => "number",
-                    "location" => "uri",
-                    "description" => "The ID of the webhook."
+                    "location" => "query",
+                    "description" => "The ID of the webhook.",
+                    "required" => true
                 ),
                 "webhook" => array(
                     "location" => "json",
@@ -234,7 +236,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the webhook."
+                    "description" => "The ID of the webhook.",
+                    "required" => true
                 )             
             )
         ),

@@ -28,16 +28,17 @@ return array(
                 "order_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The order ID number."
+                    "description" => "The order ID number.",
+                    "required" => true
                 ),
                 "since_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID."
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -58,7 +59,8 @@ return array(
                 "order_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The order ID number."
+                    "description" => "The order ID number.",
+                    "required" => true
                 )
             )
         ),
@@ -78,16 +80,18 @@ return array(
                 "order_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Order."
+                    "description" => "The ID of the Order.",
+                    "required" => true
                 ),
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the Transaction."
+                    "description" => "The ID of the Transaction.",
+                    "required" => true
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "A comma-separated list of the properties you want returned for each item in the result list. Use this parameter to restrict the returned list of items to showing only those properties you specify.
 "
                 )
@@ -109,7 +113,8 @@ return array(
             	"order_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the order."
+                    "description" => "The ID of the order.",
+                    "required" => true
                 ),
                 "transaction" => array(
                     "location" => "json",
@@ -189,7 +194,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the webhook."
+                    "description" => "The ID of the webhook.",
+                    "required" => true
                 ),
                 "webhook" => array(
                     "location" => "json",
@@ -239,7 +245,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the webhook."
+                    "description" => "The ID of the webhook.",
+                    "required" => true
                 )             
             )
         ),

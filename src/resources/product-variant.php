@@ -28,26 +28,27 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "ID of the product."
+                    "description" => "ID of the product.",
+                    "required" => true
                 ),
                 "limit" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Amount of results."
                 ),
                 "page" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Page to show (Default: 1)."
                 ),
                 "since_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID,"
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -68,7 +69,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of hte product."
+                    "description" => "The ID of hte product.",
+                    "required" => true
                 )
             )
         ),
@@ -88,11 +90,12 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the product variant."
+                    "description" => "The ID of the product variant.",
+                    "required" => true
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -113,7 +116,8 @@ return array(
                 "id" => array(
                     "type" => "string",
                     "location" => "uri",
-                    "description" => "The ID of the product."
+                    "description" => "The ID of the product.",
+                    "required" => true
                 ),
                 "variant" => array(
                     "location" => "json",
@@ -233,7 +237,8 @@ return array(
                 "id" => array(
                     "type" => "string",
                     "location" => "uri",
-                    "description" => "The ID of the variant."
+                    "description" => "The ID of the variant.",
+                    "required" => true
                 ),
                 "variant" => array(
                     "location" => "json",
@@ -358,12 +363,14 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the variant."
+                    "description" => "Unique numeric identifier for the variant.",
+                    "required" => true
                 ),
                 "product_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the product."
+                    "description" => "Unique numeric identifier for the product.",
+                    "required" => true
                 )
             )
         )

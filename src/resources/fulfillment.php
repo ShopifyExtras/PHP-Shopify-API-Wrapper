@@ -28,46 +28,47 @@ return array(
                 "order_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the order."
+                    "description" => "The ID of the order.",
+                    "required" => true
                 ),
                 "limit" => array(
 	                "type" => "number",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Amount of results (default: 50) (maximum: 250)."
                 ),
                 "page" => array(
 	             	"type" => "number",
-	             	"location" => "uri",
+	             	"location" => "query",
 	             	"description" => "Page to show (default: 1)."   
                 ),
                 "since_id" => array(
 	             	"type" => "number",
-	             	"location" => "uri",
+	             	"location" => "query",
 	             	"description" => "Restrict results to after the specified ID."   
                 ),
                 "created_at_min" => array(
 	             	"type" => "string",
-	             	"location" => "uri",
+	             	"location" => "query",
 	             	"description" => "Show fulfillments created after date (format: 2008-12-31 03:00)."   
                 ),
                 "created_at_max" => array(
 	             	"type" => "string",
-	             	"location" => "uri",
+	             	"location" => "query",
 	             	"description" => "Show fulfillments created before date (format: 2008-12-31 03:00)."   
                 ),
                 "updated_at_min" => array(
 	             	"type" => "string",
-	             	"location" => "uri",
+	             	"location" => "query",
 	             	"description" => "Show fulfillments last updated after date (format: 2008-12-31 03:00)."   
                 ),
                 "updated_at_max" => array(
 	             	"type" => "string",
-	             	"location" => "uri",
+	             	"location" => "query",
 	             	"description" => "Show fulfillments last updated before date (format: 2008-12-31 03:00)."   
                 ),
                 "fields" => array(
 	             	"type" => "number",
-	             	"location" => "uri",
+	             	"location" => "query",
 	             	"description" => "Comma-separated list of fields to include in the response."   
                 )
             )
@@ -85,24 +86,30 @@ return array(
             "summary" => "Get a count of all fulfillments for a given order.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
-                "created_at_min" => array(
+                "id" => array(
                     "type" => "number",
                     "location" => "uri",
+                    "description" => "The ID of the order.",
+                    "required" => true
+                ),
+                "created_at_min" => array(
+                    "type" => "number",
+                    "location" => "query",
                     "description" => "Count fulfillments created after date (format: 2008-12-31 03:00)."
                 ),
                 "created_at_max" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Count fulfillments created before date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_max" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Count fulfillments last updated after date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_max" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Count fulfillments last updated before date (format: 2008-12-31 03:00)."
                 )
             )
@@ -123,16 +130,18 @@ return array(
                 "order_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID number of the order."
+                    "description" => "The ID number of the order.",
+                    "required" => true
                 ),
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID number of the fulfillment."
+                    "description" => "The ID number of the fulfillment.",
+                    "required" => true
                 ),
                 "fields" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 ),
             )
@@ -153,7 +162,8 @@ return array(
                 "order_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID number of the order."
+                    "description" => "The ID number of the order.",
+                    "required" => true
                 ),
                 "fulfillment" => array(
                     "location" => "json",
@@ -223,12 +233,14 @@ return array(
                 "order_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID number of the order."
+                    "description" => "The ID number of the order.",
+                    "required" => true
                 ),
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID number of the fulfilment."
+                    "description" => "The ID number of the fulfilment.",
+                    "required" => true
                 ),
                 "fulfillment" => array(
                     "location" => "json",
@@ -308,12 +320,14 @@ return array(
                 "order_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID number of the order."
+                    "description" => "The ID number of the order.",
+                    "required" => true
                 ),
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID number of the fulfilment."
+                    "description" => "The ID number of the fulfilment.",
+                    "required" => true
                 )
             )
         ),
@@ -333,12 +347,14 @@ return array(
                 "order_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID number of the order."
+                    "description" => "The ID number of the order.",
+                    "required" => true
                 ),
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID number of the fulfilment."
+                    "description" => "The ID number of the fulfilment.",
+                    "required" => true
                 )
             )
         ),

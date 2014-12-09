@@ -27,67 +27,67 @@ return array(
             "parameters" => array(
                 "limit" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Amount of results (default: 50)(maximum: 250)."
                 ),
                 "page" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Page to show (default: 1)."
                 ),
                 "since_id" => array(
                     "type" => "number",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID."
                 ),
                 "title" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show pages by Title."
                 ),
                 "handle" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Filter by Page handle."
                 ),
                 "created_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show pages created after date (format: 2008-12-31 03:00)."
                 ),
                 "created_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show pages created before date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show pages last updated after date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show pages last updated before date (format: 2008-12-31 03:00)."
                 ),
                 "published_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show pages published after date (format: 2008-12-31 03:00)."
                 ),
                 "published_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Show pages published before date (format: 2008-12-31 03:00)."
                 ),
                 "published_status" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "published - Show only published pages. unpublished - Show only unpublished pages. any - Show all pages (default)."
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -107,42 +107,42 @@ return array(
             "parameters" => array(
                 "title" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Pages with a given title."
                 ),
                 "created_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Pages created after date (format: 2008-12-31 03:00)."
                 ),
                 "created_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Pages created before date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Pages last updated after date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Pages last updated before date (format: 2008-12-31 03:00)."
                 ),
                 "published_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Pages published after date (format: 2008-12-31 03:00)."
                 ),
                 "published_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Pages published before date (format: 2008-12-31 03:00)."
                 ),
                 "published_status" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "published - Show only published pages. unpublished - Show only unpublished pages. any - Show all pages (default)."
                 )
             )
@@ -163,11 +163,12 @@ return array(
                 "id" => array(
                     "type" => "string",
                     "location" => "uri",
-                    "description" => "The ID of the Page."
+                    "description" => "The ID of the Page.",
+                    "required" => true
                 ),
                 "fields" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Comma-separated list of fields to include in the response."
                 )
             )
@@ -240,6 +241,12 @@ return array(
             "summary" => "Update a page.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the page.",
+                    "required" => true
+                ),
 	            "page" => array(
 		            "location" => "json",
 		            "parameters" => array(
@@ -298,7 +305,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the page."
+                    "description" => "Unique numeric identifier for the page.",
+                    "required" => true
                 )
             )
         )

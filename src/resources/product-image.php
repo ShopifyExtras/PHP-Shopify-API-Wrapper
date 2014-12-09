@@ -29,6 +29,7 @@ return array(
                     "type" => "string",
                     "location" => "uri",
                     "description" => "The ID of the Product."
+                    "required" => true
                 ),
                 "since_id" => array(
                     "type" => "number",
@@ -55,39 +56,45 @@ return array(
             "summary" => "Get a count of all product images",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
-                "since_id" => array(
+                "id" => array(
                     "type" => "number",
                     "location" => "uri",
+                    "description" => "The ID of the product.",
+                    "required" => true
+                ),
+                "since_id" => array(
+                    "type" => "number",
+                    "location" => "query",
                     "description" => "Restrict results to after the specified ID."
                 ),
                 "created_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Count articles created after date (format: 2008-12-31 03:00)."
                 ),
                 "created_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Count articles created before date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Count articles last updated after date (format: 2008-12-31 03:00)."
                 ),
                 "updated_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Count articles last updated before date (format: 2008-12-31 03:00)."
                 ),
                 "published_at_min" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Count articles published after date (format: 2008-12-31 03:00)."
                 ),
                 "published_at_max" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Count articles published before date (format: 2008-12-31 03:00)."
                 )
             )
@@ -108,7 +115,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the product image."
+                    "description" => "The ID of the product image.",
+                    "required" => true
                 )
             )
         ),
@@ -126,9 +134,10 @@ return array(
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
-                    "type" => "string",
+                    "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the product you wish to add the image to."
+                    "description" => "The ID of the product you wish to add the image to.",
+                    "required" => true
                 ),
                 "image" => array(
                     "location" => "json",
@@ -183,12 +192,14 @@ return array(
                 "product_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the product."
+                    "description" => "The ID of the product.",
+                    "required" => true
                 ),
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID of the image."
+                    "description" => "The ID of the image.",
+                    "required" => true
                 ),
                 "image" => array(
                     "location" => "json",
@@ -253,12 +264,14 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the image."
+                    "description" => "Unique numeric identifier for the image.",
+                    "required" => true
                 ),
                 "product_id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the product."
+                    "description" => "Unique numeric identifier for the product.",
+                    "required" => true
                 )
             )
         )

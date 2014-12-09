@@ -39,27 +39,27 @@ return array(
             "parameters" => array(
                 "order" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "Field and direction to order results by (default: last_order_date DESC)"
                 ),
                 "query" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Text to search customers"
                 ),
                 "page" => array(
 	                "type" => "number",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Page to show"
                 ),
                 "limit" => array(
 	                "type" => "number",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "Amount of results"
                 ),
                 "fields" => array(
 	                "type" => "string",
-	                "location" => "uri",
+	                "location" => "query",
 	                "description" => "comma-separated list of fields to include in the response"
                 )	
             )
@@ -79,7 +79,7 @@ return array(
             "parameters" => array(
                 "id" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => "The ID of the Customer."
                 )
             )
@@ -220,14 +220,15 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The customers ID number."
+                    "description" => "The customers ID number.",
+                    "required" => true
                 ),
                 "customer" => array(
                     "location" => "json",
                     "parameters" => array(
                         "id" => array(
                             "type" => "number",
-                            "location" => "uri",
+                            "location" => "json",
                             "description" => "The customer's ID number."
                         ),
                         "first_name" => array(
@@ -352,7 +353,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the customer."
+                    "description" => "Unique numeric identifier for the customer.",
+                    "required" => true
                 )
             )
         )

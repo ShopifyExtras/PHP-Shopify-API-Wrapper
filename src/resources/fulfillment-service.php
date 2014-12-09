@@ -47,7 +47,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID number of the fulfillment service."
+                    "description" => "The ID number of the fulfillment service.",
+                    "required" => true
                 )
             )
         ),
@@ -127,7 +128,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "The ID number of the fulfilment service."
+                    "description" => "The ID number of the fulfilment service.",
+                    "required" => true
                 ),
                 "fulfillment" => array(
                     "location" => "json",
@@ -197,7 +199,8 @@ return array(
                 "id" => array(
                     "type" => "number",
                     "location" => "uri",
-                    "description" => "Unique numeric identifier for the fulfillment service."
+                    "description" => "Unique numeric identifier for the fulfillment service.",
+                    "required" => true
                 )
             )
         )
