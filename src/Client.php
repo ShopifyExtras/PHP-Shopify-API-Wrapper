@@ -46,7 +46,7 @@ class Client
      *
      * @var array
      */
-    private $settings;
+    private $settings = [];
     
     
     /**
@@ -135,7 +135,10 @@ class Client
         $this->serviceClient = new GuzzleClient(
                 $client,
                 static::$description,
-                ['emitter' => $this->baseClient->getEmitter()]
+                array(
+                    'emitter'  => $this->baseClient->getEmitter(),
+                    'defaults' => $this->settings,
+                )
             );
     }
     
@@ -235,18 +238,7 @@ class Client
     {
 		if (!$this->serviceClient) $this->buildClient();
 
-		// gather parameters to pass to service definitions
-        $settings = $this->settings;
-
-        // merge client settings/parameters and method parameters
-        $parameters[0] = isset($parameters[0])
-                             ? $parameters[0] + $settings
-                             : $settings;
-          
-        $response = call_user_func_array([$this->serviceClient, $method], $parameters);
-
-		return $response;
-		 
+        return call_user_func_array([$this->serviceClient, $method], $parameters);
     }
     
 }
