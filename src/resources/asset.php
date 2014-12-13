@@ -29,7 +29,7 @@ return array(
                     "type" => "number",
                     "location" => "uri",
                     "required" => true
-                )
+                ),
                 "fields" => array(
                     "type" => "string",
                     "location" => "query",
@@ -55,7 +55,7 @@ return array(
                     "location" => "uri",
                     "description" => "The ID of the theme.",
                     "required" => true
-                )
+                ),
                 "asset[key]" => array(
                     "type" => "string",
                     "location" => "query",

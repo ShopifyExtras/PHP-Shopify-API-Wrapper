@@ -28,7 +28,7 @@ return array(
                 "id" => array(
                     "type" => "string",
                     "location" => "uri",
-                    "description" => "The ID of the Product."
+                    "description" => "The ID of the Product.",
                     "required" => true
                 ),
                 "since_id" => array(

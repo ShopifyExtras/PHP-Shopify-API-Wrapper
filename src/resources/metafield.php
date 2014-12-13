@@ -326,12 +326,12 @@ return array(
                     "description" => "The ID of the Product.",
                     "required" => true
                 ),
-                "metafield_id" {
+                "metafield_id" => array(
                     "type" => "number",
                     "location" => "uri",
                     "description" => "The ID of the Metafield.",
                     "required" => true
-                }
+                ),
 	            "metafield" => array(
 		            "location" => "json",
 		            "parameters" => array(
