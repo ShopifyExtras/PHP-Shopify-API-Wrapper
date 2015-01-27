@@ -212,6 +212,7 @@ yes: Readers can post comments to blog articles without moderation."
                     "location" => "uri",
                     "description" => "Unique numeric identifier for the blog.",
                     "required" => true
+                )
             )
         )
         
