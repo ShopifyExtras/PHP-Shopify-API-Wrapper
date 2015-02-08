@@ -54,7 +54,7 @@ return array(
             )
         ),
 
-        
+
         /**
          *    getProductVariantCount() method
          *
@@ -74,7 +74,7 @@ return array(
                 )
             )
         ),
-        
+
 
         /**
          *    getProductVariant() method
@@ -83,7 +83,7 @@ return array(
          */
         "getProductVariant" => array(
             "httpMethod" => "GET",
-            "uri" => "/admin/product/{id}.json",
+            "uri" => "/admin/variants/{id}.json",
             "summary" => "Get a single product variant by id.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
@@ -100,7 +100,7 @@ return array(
                 )
             )
         ),
-        
+
 
          /**
          *    createProductVariant() method
@@ -374,7 +374,7 @@ return array(
                 )
             )
         )
-        
+
     ),
 
     /*
