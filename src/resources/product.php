@@ -334,7 +334,7 @@ return array(
          *
          *    reference: http://docs.shopify.com/api/product
          */
-        "deletePage" => array(
+        "deleteProduct" => array(
             "httpMethod" => "DELETE",
             "uri" => "/admin/products/{id}.json",
             "summary" => "Delete a product from the shop.",
