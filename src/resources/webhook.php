@@ -227,7 +227,7 @@ return array(
          *
          *    reference: http://docs.shopify.com/api/webhook
          */
-        "deleteRedirect" => array(
+        "deleteWebhook" => array(
             "httpMethod" => "DELETE",
             "uri" => "/admin/webhooks/{id}.json",
             "summary" => "Delete a webhook.",
