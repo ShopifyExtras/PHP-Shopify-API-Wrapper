@@ -23,7 +23,18 @@ return array(
             "httpMethod" => "GET",
             "uri" => "/admin/themes.json",
             "summary" => "Receive a list of all themes.",
-            "responseModel" => "defaultJsonResponse"
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "role" => array(
+                    "type" => "string",
+                    "location" => "json"
+                ),
+                "fields" => array(
+                    "type" => "string",
+                    "location" => "json",
+                    "description" => "Comma-separated list of fields to include in the response."
+                )
+            )
         ),
 
         
