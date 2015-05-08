@@ -63,6 +63,7 @@ return array(
         "recurring-application-charge",
         "redirect",
         "refund",
+        "script-tag",
         "shop",
         "smart-collection",
         "theme",
