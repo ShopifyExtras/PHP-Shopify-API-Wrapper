@@ -1,6 +1,6 @@
 <?php
 return array(
-	
+
 	/*
     |--------------------------------------------------------------------------
     | Service Name
@@ -9,9 +9,9 @@ return array(
     | Name of the API service these description configs are for.
     |
     */
-    
+
     "name" => "Shopify",
-    
+
     /*
     |--------------------------------------------------------------------------
     | Service Description
@@ -20,9 +20,9 @@ return array(
     | Description of the API service.
     |
     */
-    
+
     "description" => "A Shopify API Wrapper built using Guzzle - ShopifyExtras.com",
-    
+
     /*
     |--------------------------------------------------------------------------
     | Service Configurations
@@ -31,7 +31,7 @@ return array(
     | Configuration files of specfic service descriptions to load.
     |
     */
-    
+
     "services" => array(
         "auth",
         "application-charge",
@@ -63,7 +63,6 @@ return array(
         "recurring-application-charge",
         "redirect",
         "refund",
-        "script-tag",
         "shop",
         "smart-collection",
         "theme",
@@ -71,7 +70,7 @@ return array(
         "user",
         "webhook"
     ),
-    
+
     /*
     |--------------------------------------------------------------------------
     | Default models
@@ -80,7 +79,7 @@ return array(
     | Default response models for typical usage of responses
     |
     */
-    
+
     "models" => array(
         "defaultJsonResponse" => array(
             "type" => "object",
