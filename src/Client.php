@@ -14,7 +14,7 @@ class Client
      *
      * @var \Shopify\Description
      */
-    private static $description;
+    private $description;
     
 	
 	/**
@@ -128,13 +128,13 @@ class Client
     {
         $client = $this->getBaseClient();
        
-        if (!static::$description) {
+        if (!$this->description) {
             $this->reloadDescription();
         }
 
         $this->serviceClient = new GuzzleClient(
                 $client,
-                static::$description,
+                $this->description,
                 array(
                     'emitter'  => $this->baseClient->getEmitter(),
                     'defaults' => $this->settings,
@@ -168,14 +168,14 @@ class Client
     
 
     /**
-     * Description works tricky as a static
+     * Description works tricky as a 
      * property, reload as a needed.
      *
      * @return void
      */
     private function reloadDescription()
     {
-        static::$description = new Description($this->loadConfig());
+        $this->description = new Description($this->loadConfig());
     }
     
     
