@@ -64,6 +64,7 @@ return array(
         "redirect",
         "refund",
         "shop",
+        "script-tag",
         "smart-collection",
         "theme",
         "transaction",
