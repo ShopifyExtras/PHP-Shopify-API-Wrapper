@@ -91,6 +91,26 @@ return array(
             )
         ),
 
+        /**
+         *    deleteScriptTag() method
+         *
+         *    reference: http://docs.shopify.com/api/scripttag
+         */
+        "deleteScriptTag" => array(
+            "httpMethod" => "DELETE",
+            "uri" => "/admin/script_tags/{id}.json",
+            "summary" => "Delete a script tag.",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The script tag ID number.",
+                    "required" => true
+                )
+            )
+        ),
+
 
         
     ),
