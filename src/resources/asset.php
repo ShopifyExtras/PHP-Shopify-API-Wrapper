@@ -135,7 +135,7 @@ return array(
                 ),
                 "asset[key]" => array(
                     "type" => "string",
-                    "location" => "uri",
+                    "location" => "query",
                     "description" => ""
                 )
             )
