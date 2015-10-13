@@ -172,7 +172,7 @@ return array(
          */
         "createSmartCollection" => array(
             "httpMethod" => "POST",
-            "uri" => "/admin/smart_collectionsjson",
+            "uri" => "/admin/smart_collections.json",
             "summary" => "Create a new smart collection.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
