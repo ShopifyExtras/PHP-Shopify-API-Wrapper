@@ -134,7 +134,7 @@ return array(
                     "required" => true
                 ),
                 "asset[key]" => array(
-                    "type" => "number",
+                    "type" => "string",
                     "location" => "uri",
                     "description" => ""
                 )
