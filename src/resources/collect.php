@@ -52,8 +52,8 @@ return array(
                 )
             )
         ),
-        
-        
+
+
         /**
          *    getCollectCount() method
          *
@@ -77,8 +77,8 @@ return array(
                 )
             )
         ),
-        
-        
+
+
         /**
          *    getCollect() method
          *
@@ -103,7 +103,71 @@ return array(
                 )
             )
         ),
-        
+
+        /**
+         *    createCollect() method
+         *
+         *    reference: http://docs.shopify.com/api/collect
+         */
+        "createCollect" => array(
+            "httpMethod" => "POST",
+            "uri" => "/admin/collects.json",
+            "summary" => "Create a new Collect",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "collect" => array(
+                            "location" => "json",
+                            "parameters" => array(
+                                "product_id" => array(
+                                    "type" => "number",
+                                    "location" => "json",
+                                    "description" => "The product id for this Collect"
+                                ),
+                                "collection_id" => array(
+                                    "type" => "number",
+                                    "location" => "json",
+                                    "description" => "The collection id for this Collect"
+                                ),
+                                "featured" => array(
+                                    "type" => "boolean",
+                                    "location" => "json",
+                                    "description" => "Whether this is a featured Collect"
+                                ),
+                                "position" => array(
+                                    "type" => "number",
+                                    "location" => "json",
+                                    "description" => "The position of this Collect"
+                                ),
+                                "sort_value" => array(
+                                    "type" => "string",
+                                    "location" => "json",
+                                    "description" => "The sort value of this Collect"
+                                ),
+                           )
+                    )
+            )
+        ),
+
+
+        /**
+         *    deleteCollect() method
+         *
+         *    reference: http://docs.shopify.com/api/page
+         */
+        "deleteCollect" => array(
+            "httpMethod" => "DELETE",
+            "uri" => "/admin/collects/{id}.json",
+            "summary" => "Delete a Collect.",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "Unique numeric identifier for the Collect.",
+                    "required" => true
+                )
+            )
+        ),
     ),
 
     /*
