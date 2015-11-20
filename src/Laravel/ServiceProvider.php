@@ -32,10 +32,6 @@ class ServiceProvider extends LaravelServiceProvider {
         });
 
         $app = $this->app;
-
-        $this->app->error(function(UnauthorizedException $exception) use ($app) {
-            $app['log']->warning($exception);
-        });
     }
 
     /**
