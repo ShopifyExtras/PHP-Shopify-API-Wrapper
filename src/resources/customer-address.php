@@ -78,10 +78,15 @@ return array(
          */
         "createCustomerAddress" => array(
             "httpMethod" => "POST",
-            "uri" => "/admin/customers.json",
+            "uri" => "/admin/customers/{customer_id}/addresses.json",
             "summary" => "Creates a new address for a customer.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
+                "customer_id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "required" => true
+                ),
                 "address" => array(
                     "location" => "json",
                     "parameters" => array(
