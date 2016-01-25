@@ -124,7 +124,7 @@ return array(
          */
         "getProduct" => array(
             "httpMethod" => "GET",
-            "uri" => "/admin/product/{id}.json",
+            "uri" => "/admin/products/{id}.json",
             "summary" => "Retrieve a single Product",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
