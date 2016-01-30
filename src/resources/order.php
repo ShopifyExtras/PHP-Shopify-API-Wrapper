@@ -14,6 +14,25 @@ return array(
 
     "operations" => array(
 
+		/**
+		 *    getOrderMetaFields() method
+		 *
+		 *    reference: there is no docs???
+		 */
+		"getOrderMetaFields" => array(
+			"httpMethod" => "GET",
+			"uri" => "/admin/orders/{id}/metafields.json",
+			"summary" => "Retrieve a specific order.",
+			"responseModel" => "defaultJsonResponse",
+			"parameters" => array(
+				"id" => array(
+					"type" => "string",
+					"location" => "uri",
+					"description" => "The ID of the order."
+				)
+			)
+		),
+
         /**
          *    getOrders() method
          *
