@@ -69,7 +69,8 @@ return array(
         "theme",
         "transaction",
         "user",
-        "webhook"
+        "webhook",
+        "shipping-zone"
     ),
 
     /*
