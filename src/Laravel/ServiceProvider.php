@@ -14,7 +14,7 @@ class ServiceProvider extends LaravelServiceProvider {
 
     public function boot()
     {
-        $configPath = __DIR__ . '../config/config.php';
+        $configPath = __DIR__ . '/../config/config.php';
         if(function_exists('config_path')){
             $publishPath = config_path('shopify.php');
         } else {
