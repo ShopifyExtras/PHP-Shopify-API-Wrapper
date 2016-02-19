@@ -19,7 +19,7 @@ class ServiceProvider extends LaravelServiceProvider {
      */
     public function register()
     {
-        $this->app->bindShared('shopify', function($app) {
+        $this->app->singleton('shopify', function($app) {
 
             if (isset($app['config']['services']['shopify'])) {
 
