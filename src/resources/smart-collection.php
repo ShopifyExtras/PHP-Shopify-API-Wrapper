@@ -76,12 +76,12 @@ return array(
                     "description" => "Show smart collections published before date (format: 2008-12-31 03:00)."
                 ),
                 "published_status" => array(
-                    "type" => "number",
+                    "type" => "string",
                     "location" => "query",
                     "description" => ""
                 ),
                 "fields" => array(
-                    "type" => "number",
+                    "type" => "string",
                     "location" => "query",
                     "description" => "Ccomma-separated list of fields to include in the response."
                 )
@@ -96,7 +96,7 @@ return array(
          */
         "getSmartCollectionsCount" => array(
             "httpMethod" => "GET",
-            "uri" => "/admin/smart_collectoins/count.json",
+            "uri" => "/admin/smart_collections/count.json",
             "summary" => "Get a count of all smart collections that contain a given product.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
