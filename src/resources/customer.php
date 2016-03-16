@@ -73,13 +73,13 @@ return array(
          */
         "getCustomer" => array(
             "httpMethod" => "GET",
-            "uri" => "/admin/customers.json",
+            "uri" => "/admin/customers/{id}.json",
             "summary" => "Retrieve a single Customer",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
                     "type" => "string",
-                    "location" => "query",
+                    "location" => "uri",
                     "description" => "The ID of the Customer."
                 )
             )
