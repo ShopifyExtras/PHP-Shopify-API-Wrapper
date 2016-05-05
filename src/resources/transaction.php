@@ -21,7 +21,7 @@ return array(
          */
         "getTransactions" => array(
             "httpMethod" => "GET",
-            "uri" => "/admin/orders/{order_id}/transaction.json",
+            "uri" => "/admin/orders/{order_id}/transactions.json",
             "summary" => "Get a list of all transactions for a given order.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
@@ -43,7 +43,7 @@ return array(
                 )
             )
         ),
-        
+
 
         /**
          *    getTransactionCount() method
@@ -65,7 +65,7 @@ return array(
             )
         ),
 
-        
+
         /**
          *    getTransaction() method
          *
@@ -73,7 +73,7 @@ return array(
          */
         "getTransaction" => array(
             "httpMethod" => "GET",
-            "uri" => "/admin/orders/{order_id}/transaction/{id}.json",
+            "uri" => "/admin/orders/{order_id}/transactions/{id}.json",
             "summary" => "Get a single webhook by id",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
@@ -247,10 +247,10 @@ return array(
                     "location" => "uri",
                     "description" => "The ID of the webhook.",
                     "required" => true
-                )             
+                )
             )
         ),
-        
+
     ),
 
     /*
