@@ -77,8 +77,8 @@ return array(
                 ),
             )
         ),
-        
-        
+
+
         /**
          *    getProductMetafields() method
          *
@@ -98,8 +98,29 @@ return array(
                 )
             )
         ),
-        
-        
+
+
+        /**
+         *    getProductVariantMetafields() method
+         *
+         *    reference: http://docs.shopify.com/api/metafield
+         */
+        "getProductVariantMetafields" => array(
+            "httpMethod" => "GET",
+            "uri" => "/admin/variants/{id}/metafields.json",
+            "summary" => "Get metafields that belong to a variant",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Variant.",
+                    "required" => true
+                )
+            )
+        ),
+
+
         /**
          *    getMetafieldsCount() method
          *
@@ -111,8 +132,8 @@ return array(
             "summary" => "Get a count of metafields that belong to a store",
             "responseModel" => "defaultJsonResponse"
         ),
-        
-        
+
+
         /**
          *    getProductMetafieldsCount() method
          *
@@ -132,8 +153,29 @@ return array(
                 )
             )
         ),
-        
-        
+
+
+        /**
+         *    getProductVariantMetafieldsCount() method
+         *
+         *    reference: http://docs.shopify.com/api/metafield
+         */
+        "getProductVariantMetafieldsCount" => array(
+            "httpMethod" => "GET",
+            "uri" => "/admin/variants/{id}/metafields/count.json",
+            "summary" => "Get a count of metafields that belong to a variant",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Variant.",
+                    "required" => true
+                )
+            )
+        ),
+
+
         /**
          *    getMetafield() method
          *
@@ -153,8 +195,8 @@ return array(
                 )
             )
         ),
-        
-        
+
+
         /**
          *    getProductMetafield() method
          *
@@ -180,8 +222,35 @@ return array(
                 )
             )
         ),
-        
-        
+
+
+        /**
+         *    getProductMetafield() method
+         *
+         *    reference: http://docs.shopify.com/api/metafield
+         */
+        "getProductVariantMetafield" => array(
+            "httpMethod" => "GET",
+            "uri" => "/admin/variants/{id}/metafields/{metafield_id}.json",
+            "summary" => "Get a single variant metafield by its ID",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Variant.",
+                    "required" => true
+                ),
+                "metafield_id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Metafield.",
+                    "required" => true
+                )
+            )
+        ),
+
+
          /**
          *    createMetafield() method
          *
@@ -217,11 +286,11 @@ return array(
 		                    "description" => "The Value Type of the Metafield."
 		                )
 					)
-	            )               
+	            )
             )
         ),
-        
-        
+
+
          /**
          *    createProductMetafield() method
          *
@@ -263,11 +332,57 @@ return array(
 		                    "description" => "The Value Type of the Metafield."
 		                )
 					)
-	            )               
+	            )
             )
         ),
-        
-        
+
+
+        /**
+         *    createProductVariantMetafield() method
+         *
+         *    reference: http://docs.shopify.com/api/metafield
+         */
+        "createProductVariantMetafield" => array(
+            "httpMethod" => "POST",
+            "uri" => "/admin/variants/{id}/metafields.json",
+            "summary" => "Create a new metafield for a variant",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Variant.",
+                    "required" => true
+                ),
+                "metafield" => array(
+                    "location" => "json",
+                    "parameters" => array(
+                        "namespace" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Namespace for the Metafield."
+                        ),
+                        "key" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Key for the Metafield."
+                        ),
+                        "value" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Value of the Metafield."
+                        ),
+                        "value_type" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Value Type of the Metafield."
+                        )
+                    )
+                )
+            )
+        ),
+
+
         /**
          *    updateMetafield() method
          *
@@ -304,11 +419,11 @@ return array(
 		                    "description" => "The Value Type of the Metafield."
 		                )
 					)
-	            )               
+	            )
             )
         ),
-        
-        
+
+
         /**
          *    updateProductMetafield() method
          *
@@ -351,11 +466,58 @@ return array(
 		                    "description" => "The Value Type of the Metafield."
 		                )
 					)
-	            )               
+	            )
             )
         ),
-        
-        
+
+
+        /**
+         *    updateProductVariantMetafield() method
+         *
+         *    reference: http://docs.shopify.com/api/metafield
+         */
+        "updateProductVariantMetafield" => array(
+            "httpMethod" => "PUT",
+            "uri" => "/admin/variants/{id}/metafields/{metafield_id}.json",
+            "summary" => "Update a Variant Metafield",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Variant.",
+                    "required" => true
+                ),
+                "metafield_id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Metafield.",
+                    "required" => true
+                ),
+                "metafield" => array(
+                    "location" => "json",
+                    "parameters" => array(
+                        "metafieldId" => array(
+                            "type" => "number",
+                            "location" => "json",
+                            "description" => "The ID for the Metafield."
+                        ),
+                        "value" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Value of the Metafield."
+                        ),
+                        "value_type" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Value Type of the Metafield."
+                        )
+                    )
+                )
+            )
+        ),
+
+
         /**
          *    deleteMetafield() method
          *
@@ -372,11 +534,11 @@ return array(
                     "location" => "uri",
                     "description" => "The ID of the Metafield.",
                     "required" => true
-                )             
+                )
             )
         ),
-        
-        
+
+
         /**
          *    deleteProductMetafield() method
          *
@@ -399,10 +561,37 @@ return array(
                     "location" => "uri",
                     "description" => "The ID of the Metafield.",
                     "required" => true
-                )             
+                )
             )
         ),
-        
+
+
+        /**
+         *    deleteProductVariantMetafield() method
+         *
+         *    reference: http://docs.shopify.com/api/metafield
+         */
+        "deleteProductVariantMetafield" => array(
+            "httpMethod" => "DELETE",
+            "uri" => "/admin/variants/{id}/metafields/{id}.json",
+            "summary" => "Delete a Product Metafield",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Variant.",
+                    "required" => true
+                ),
+                "metafieldId" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Metafield.",
+                    "required" => true
+                )
+            )
+        ),
+
     ),
 
     /*
