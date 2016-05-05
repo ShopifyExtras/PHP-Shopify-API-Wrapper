@@ -1,5 +1,5 @@
 # Shopify API Wrapper
-By [ShopifyExtras.com](http://www.shopifyextras.com) - 24/7 Shopify Support - Bugs Resolved Same Day
+By [Zapiet.com](http://www.zapiet.com) - Zapiet - Creators of the Store Pickup + Delivery app.
 
 ### Installing via Composer
 The recommended way to install the wrapper is through
@@ -48,4 +48,4 @@ $client->getProduct(array("id" => $product_id));
 If you spot any bugs, please report it using the issue tracker. If you would like to contribute to the project please feel free to make your amends and submit a pull request.
 
 ### Professional Services
-Unfortunately we are unable to provide free technical support for the wrapper. If you require this kind of help then please contact us by emailing [help@shopifyextras.com](mailto:help@shopifyextras.com).
+Unfortunately we are unable to provide free technical support for the wrapper. If you require this kind of help then please contact us by emailing [support@zapiet.com](mailto:support@zapiet.com).
