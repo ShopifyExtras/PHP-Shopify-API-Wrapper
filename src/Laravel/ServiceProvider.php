@@ -12,6 +12,17 @@ class ServiceProvider extends LaravelServiceProvider {
      */
     protected $defer = true;
 
+    public function boot()
+    {
+        $configPath = __DIR__ . '/../config/config.php';
+        if(function_exists('config_path')){
+            $publishPath = config_path('shopify.php');
+        } else {
+            $publishPath = base_path('config/shopify.php');
+        }
+        $this->publishes([$configPath => $publishPath],'config');
+    }
+
     /**
      * Register the service provider.
      *
@@ -19,7 +30,9 @@ class ServiceProvider extends LaravelServiceProvider {
      */
     public function register()
     {
-        $this->app->bindShared('shopify', function($app) {
+        $configPath = __DIR__ . '/../config/config.php';
+        $this->mergeConfigFrom($configPath, 'shopify');
+        $this->app->singleton('shopify', function($app) {
 
             if (isset($app['config']['services']['shopify'])) {
 
