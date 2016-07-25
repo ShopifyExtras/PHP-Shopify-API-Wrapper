@@ -44,7 +44,7 @@ return array(
          *
          *    reference: http://docs.shopify.com/api/asset
          */
-        "getAssetTemplate" => array(
+        "getAsset" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/themes/{id}/assets.json",
             "summary" => "Get an asset.",
