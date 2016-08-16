@@ -26,7 +26,7 @@ require 'vendor/autoload.php';
 First you will need to initialise the client like this:
 
 ```
-$client = Shopify::settings(array(
+$client = new Shopify\Client(array(
    "shopUrl" => $shopUrl,
    "X-Shopify-Access-Token" => $accessToken
 ));
