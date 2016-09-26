@@ -108,11 +108,16 @@ return array(
 	                "type" => "string",
 	                "location" => "query",
 	                "description" => "Comma-separated list of fields to include in the response."
+                ),
+                "_apiFeatures" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Optional API features that should be enabled as part of the request."
                 )
             )
         ),
 
-        
+
         /**
          *    getOrder() method
          *
@@ -136,7 +141,7 @@ return array(
                 )
             )
         ),
-        
+
 
         /**
          *    getOrderCount() method
@@ -186,7 +191,7 @@ return array(
                 )
             )
         ),
-        
+
 
         /**
          *    closeOrder() method
@@ -761,7 +766,7 @@ return array(
                 )
             )
         )
-        
+
     ),
 
     /*
