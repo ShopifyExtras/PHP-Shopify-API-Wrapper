@@ -546,7 +546,7 @@ return array(
          */
         "deleteProductMetafield" => array(
             "httpMethod" => "DELETE",
-            "uri" => "/admin/products/{id}/metafields/{id}.json",
+            "uri" => "/admin/products/{id}/metafields/{metafieldId}.json",
             "summary" => "Delete a Product Metafield",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
@@ -573,7 +573,7 @@ return array(
          */
         "deleteProductVariantMetafield" => array(
             "httpMethod" => "DELETE",
-            "uri" => "/admin/variants/{id}/metafields/{id}.json",
+            "uri" => "/admin/variants/{id}/metafields/{metafieldId}.json",
             "summary" => "Delete a Product Metafield",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
