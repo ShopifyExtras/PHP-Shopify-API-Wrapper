@@ -119,6 +119,11 @@ return array(
                             "location" => "json",
                             "description" => "Code of the gift card."
                         ),
+                        "customer_id" => array(
+                            "type" => "number",
+                            "location" => "json",
+                            "description" => "ID of the customer gift card is issued to."
+                        ),
                         "template_suffix" => array(
                             "type" => "string",
                             "location" => "json",
