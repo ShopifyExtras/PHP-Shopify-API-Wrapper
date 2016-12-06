@@ -44,6 +44,11 @@ return array(
             "summary" => "Retrieve a list of Orders (OPEN Orders by default, use status=any for ALL orders).",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
+                "ids" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Shopify order ids to specifically fetch",
+                ),
                 "limit" => array(
                     "type" => "number",
                     "location" => "query",
@@ -108,6 +113,11 @@ return array(
 	                "type" => "string",
 	                "location" => "query",
 	                "description" => "Comma-separated list of fields to include in the response."
+                ),
+                "_apiFeatures" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Optional API features that should be enabled as part of the request."
                 )
             )
         ),
