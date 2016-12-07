@@ -108,7 +108,7 @@ return array(
          */
         "getProductImage" => array(
             "httpMethod" => "GET",
-            "uri" => "/admin/product/{id}.json",
+            "uri" => "/admin/products/{id}.json",
             "summary" => "Retrieve a single product image.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
