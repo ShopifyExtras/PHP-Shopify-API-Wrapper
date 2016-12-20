@@ -45,9 +45,9 @@ $client->getProduct(array("id" => $product_id));
 ```
 
 ### To-do / Improvements
-[ ] Batching requests in a pool
-[ ] Handling of API call limits globally
-[ ] Improved Logging
+- [ ] Batching requests in a pool
+- [ ] Handling of API call limits globally
+- [ ] Improved Logging
 
 ### Bugs & Issues
 If you spot any bugs, please report it using the issue tracker. If you would like to contribute to the project please feel free to make your amends and submit a pull request.
