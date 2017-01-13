@@ -25,7 +25,7 @@ require 'vendor/autoload.php';
 
 First you will need to initialise the client like this:
 
-```
+```php
 $client = new \Shopify\Client([
    "shopUrl" => $shopUrl,
    "X-Shopify-Access-Token" => $accessToken
@@ -35,7 +35,7 @@ $client = new \Shopify\Client([
 Then you can begin making requests like shown below. Please note that the list of requests below is not complete. All endpoints are available just take a look in the /src/resources folder for reference.
 
 ### Orders
-```
+```php
 // Get a list of all orders.
 $client->getOrders();
 
@@ -48,7 +48,7 @@ $client->getOrder(['id' => $order_id,
 ```
 
 ### Products
-```
+```php
 // Get a list of all products.
 $client->getProducts();
 
@@ -57,7 +57,7 @@ $client->getProduct(["id" => $product_id]);
 ```
 
 ### Product Variants
-```
+```php
 // Get a list of all variants for a specific product.
 $client->getProductVariants(["id" => $product_id]);
 
