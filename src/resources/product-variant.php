@@ -101,6 +101,27 @@ return array(
             )
         ),
 
+        /**
+         *    getProductVariantMetafields() method
+         *
+         *    reference: http://docs.shopify.com/api/product_variant
+         */
+        "getProductVariantMetafields" => array(
+            "httpMethod" => "GET",
+            "uri" => "/admin/variants/{id}/metafields.json",
+            "summary" => "Get a single product variants metafields by id.",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the product variant.",
+                    "required" => true
+                )
+            )
+        ),
+
+
 
          /**
          *    createProductVariant() method
