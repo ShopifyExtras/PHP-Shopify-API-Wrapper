@@ -25,23 +25,47 @@ require 'vendor/autoload.php';
 
 First you will need to initialise the client like this:
 
-```
-$client = Shopify::settings(array(
+```php
+$client = new \Shopify\Client([
    "shopUrl" => $shopUrl,
    "X-Shopify-Access-Token" => $accessToken
-));
+]);
 ```
 
-Then you can begin making requests:
-```
-// Get a list of all products.
-$client->getProducts();
+Then you can begin making requests like shown below. Please note that the list of requests below is not complete. All endpoints are available just take a look in the /src/resources folder for reference.
 
+### Orders
+```php
 // Get a list of all orders.
 $client->getOrders();
 
+// Get a specific order.
+$client->getOrder(['id' => $order_id]);
+
+// Get Order ID and Total Price for a specific order. 
+$client->getOrder(['id' => $order_id, 
+                   'fields' => 'id,total_price']);
+```
+
+### Products
+```php
+// Get a list of all products.
+$client->getProducts();
+
 // Get a specific product.
-$client->getProduct(array("id" => $product_id));
+$client->getProduct(["id" => $product_id]);
+```
+
+### Product Variants
+```php
+// Get a list of all variants for a specific product.
+$client->getProductVariants(["id" => $product_id]);
+
+// Get a specific product variant.
+$client->getProductVariant(["id" => $variant_id]);
+
+// Get metafields for a specific variant. 
+$client->getProductVariantMetafields(["id" => $variant_id]);
 ```
 
 ### To-do / Improvements
