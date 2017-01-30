@@ -1,5 +1,5 @@
 # Shopify API Wrapper
-By [Zapiet.com](http://www.zapiet.com) - Zapiet - Creators of the Store Pickup + Delivery app.
+Forked from Zapiet, moving towards batch requests & better handling of API call limits
 
 ### Installing via Composer
 The recommended way to install the wrapper is through
@@ -68,8 +68,10 @@ $client->getProductVariant(["id" => $variant_id]);
 $client->getProductVariantMetafields(["id" => $variant_id]);
 ```
 
+### To-do / Improvements
+- [ ] Batching requests in a pool
+- [ ] Handling of API call limits globally
+- [ ] Improved Logging
+
 ### Bugs & Issues
 If you spot any bugs, please report it using the issue tracker. If you would like to contribute to the project please feel free to make your amends and submit a pull request.
-
-### Professional Services
-Unfortunately we are unable to provide free technical support for the wrapper. If you require this kind of help then please contact us by emailing [support@zapiet.com](mailto:support@zapiet.com).

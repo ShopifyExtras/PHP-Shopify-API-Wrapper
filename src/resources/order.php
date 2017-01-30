@@ -122,7 +122,7 @@ return array(
             )
         ),
 
-        
+
         /**
          *    getOrder() method
          *
@@ -146,7 +146,7 @@ return array(
                 )
             )
         ),
-        
+
 
         /**
          *    getOrderCount() method
@@ -196,7 +196,7 @@ return array(
                 )
             )
         ),
-        
+
 
         /**
          *    closeOrder() method
@@ -771,7 +771,7 @@ return array(
                 )
             )
         )
-        
+
     ),
 
     /*
