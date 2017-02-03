@@ -133,6 +133,11 @@ return array(
                     "location" => "uri",
                     "description" => "The ID of the Product.",
                     "required" => true
+                ),
+		"fields" => array(
+		    "type" => "string",
+		    "location" => "query",
+   		    "description" => "comma-separated list of fields to include in the response"
                 )
             )
         ),
