@@ -394,6 +394,26 @@ return array(
                     "required" => true
                 )
             )
+        ),
+        
+        /**
+         *    searchProductVariant() method
+         *
+         *    reference: https://ecommerce.shopify.com/c/shopify-apis-and-technology/t/api-product-variant-search-183152
+         */
+        "searchProductVariant" => array(
+            "httpMethod" => "GET",
+            "uri" => "/admin/variants/search.json",
+            "summary" => "Search for a product variant (beta).",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "query" => array(
+                    "type" => "string",
+                    "location" => "uri",
+                    "description" => "Query parameters i.e sku:HELLOWORLD",
+                    "required" => true
+                )
+            )
         )
 
     ),
