@@ -73,3 +73,5 @@ If you spot any bugs, please report it using the issue tracker. If you would lik
 
 ### Professional Services
 Unfortunately we are unable to provide free technical support for the wrapper. If you require this kind of help then please contact us by emailing [support@zapiet.com](mailto:support@zapiet.com).
+
+Test the API at [RapidAPI](https://rapidapi.com/package/Shopify/functions?utm_source=ShopifyGitHub&utm_medium=button).
