@@ -21,7 +21,7 @@ return array(
     |
     */
 
-    "description" => "A Shopify API Wrapper built using Guzzle - ShopifyExtras.com",
+    "description" => "A Shopify API Wrapper built using Guzzle - Zapiet.com",
 
     /*
     |--------------------------------------------------------------------------
@@ -35,6 +35,7 @@ return array(
     "services" => array(
         "auth",
         "application-charge",
+        "application-credit",
         "article",
         "asset",
         "blog",
