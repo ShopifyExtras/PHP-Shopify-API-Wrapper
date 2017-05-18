@@ -17,8 +17,8 @@
     "require": {
         "php": ">=5.4",
         "guzzlehttp/guzzle": "~6.0",
-        "guzzlehttp/guzzle-services": "~1.0",
-        "guzzlehttp/command": "~1.0"
+        "guzzlehttp/guzzle-services": "~1.1.0",
+        "guzzlehttp/command": "~1.0.0"
     },
     "autoload": {
         "psr-4": {
