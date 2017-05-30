@@ -48,6 +48,45 @@ return array(
             )
         ),
 
+        /**
+         *    searchGiftCards() method
+         *
+         *    reference: http://docs.shopify.com/api/gift_card
+         */
+        "searchGiftCards" => array(
+            "httpMethod" => "GET",
+            "uri" => "/admin/gift_cards/search.json",
+            "summary" => "Retrieve a list of all Gift Cards",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "limit" => array(
+                    "type" => "integer",
+                    "location" => "query",
+                    "description" => "Amount of results (default: 50) (maximum: 250)"
+                ),
+                "page" => array(
+                    "type" => "integer",
+                    "location" => "query",
+                    "description" => "Page to show (default: 1)"
+                ),
+                "order" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Order of gift cards"
+                ),
+                "query" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Text to search gift cards"
+                ),
+                "fields" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "comma-separated list of fields to include in the response"
+                )
+            )
+        ),
+
 
         /**
          *    getGiftCardCount() method
@@ -76,7 +115,7 @@ return array(
          */
         "getGiftCard" => array(
             "httpMethod" => "GET",
-            "uri" => "/admin/gift_Cards/{id}.json",
+            "uri" => "/admin/gift_cards/{id}.json",
             "summary" => "Retrieve a single Gift Card",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
