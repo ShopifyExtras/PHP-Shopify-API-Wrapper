@@ -15,9 +15,9 @@ return array(
     "operations" => array(
 
         /**
-         *    getArticles() method
+         *    getShippingZone() method
          *
-         *    reference: http://docs.shopify.com/api/article
+         *    reference: https://help.shopify.com/api/reference/shipping_zone
          */
         "getShippingZones" => array(
             "httpMethod" => "GET",

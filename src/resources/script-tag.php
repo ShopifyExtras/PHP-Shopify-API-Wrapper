@@ -17,7 +17,7 @@ return array(
       /**
          *    getScriptTags() method
          *
-         *    reference: http://docs.shopify.com/api/theme
+         *    reference: https://help.shopify.com/api/reference/scripttag
          */
         "getScriptTags" => array(
             "httpMethod" => "GET",
@@ -59,7 +59,7 @@ return array(
         /**
          *    updateScriptTag() method
          *
-         *    reference: http://docs.shopify.com/api/theme
+         *    reference: https://help.shopify.com/api/reference/scripttag
          */
         "updateScriptTag" => array(
             "httpMethod" => "PUT",
@@ -94,7 +94,7 @@ return array(
         /**
          *    deleteScriptTag() method
          *
-         *    reference: http://docs.shopify.com/api/scripttag
+         *    reference: https://help.shopify.com/api/reference/scripttag
          */
         "deleteScriptTag" => array(
             "httpMethod" => "DELETE",

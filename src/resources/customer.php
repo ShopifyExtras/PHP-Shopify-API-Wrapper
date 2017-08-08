@@ -17,7 +17,7 @@ return array(
         /**
          *    getCustomers() method
          *
-         *    reference: http://docs.shopify.com/api/customer
+         *    reference: https://help.shopify.com/api/reference/customer
          */
         "getCustomers" => array(
             "httpMethod" => "GET",
@@ -29,7 +29,7 @@ return array(
         /**
          *    getCustomerCount() method
          *
-         *    reference: http://docs.shopify.com/api/customer
+         *    reference: https://help.shopify.com/api/reference/customer
          */
         "getCustomerCount" => array(
             "httpMethod" => "GET",
@@ -41,7 +41,7 @@ return array(
         /**
          *    getCustomerSearch() method
          *
-         *    reference: http://docs.shopify.com/api/customer
+         *    reference: https://help.shopify.com/api/reference/customer
          */
         "getCustomerSearch" => array(
             "httpMethod" => "GET",
@@ -81,7 +81,7 @@ return array(
         /**
          *    getCustomer() method
          *
-         *    reference: http://docs.shopify.com/api/customer
+         *    reference: https://help.shopify.com/api/reference/customer
          */
         "getCustomer" => array(
             "httpMethod" => "GET",
@@ -101,7 +101,7 @@ return array(
         /**
          *    createCustomer() method
          *
-         *    reference: http://docs.shopify.com/api/customer
+         *    reference: https://help.shopify.com/api/reference/customer
          */
         "createCustomer" => array(
             "httpMethod" => "POST",
@@ -221,7 +221,7 @@ return array(
         /**
          *    updateCustomer() method
          *
-         *    reference: http://docs.shopify.com/api/customer
+         *    reference: https://help.shopify.com/api/reference/customer
          */
         "updateCustomer" => array(
             "httpMethod" => "PUT",
@@ -354,7 +354,7 @@ return array(
         /**
          *    deleteCustomer() method
          *
-         *    reference: http://docs.shopify.com/api/customer
+         *    reference: https://help.shopify.com/api/reference/customer
          */
         "deleteCustomer" => array(
             "httpMethod" => "DELETE",

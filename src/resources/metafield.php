@@ -17,7 +17,7 @@ return array(
         /**
          *    getMetafields() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "getMetafields" => array(
             "httpMethod" => "GET",
@@ -82,7 +82,7 @@ return array(
         /**
          *    getProductMetafields() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "getProductMetafields" => array(
             "httpMethod" => "GET",
@@ -103,7 +103,7 @@ return array(
         /**
          *    getProductVariantMetafields() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "getProductVariantMetafields" => array(
             "httpMethod" => "GET",
@@ -124,7 +124,7 @@ return array(
         /**
          *    getMetafieldsCount() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "getMetafieldsCount" => array(
             "httpMethod" => "GET",
@@ -137,7 +137,7 @@ return array(
         /**
          *    getProductMetafieldsCount() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "getProductMetafieldsCount" => array(
             "httpMethod" => "GET",
@@ -158,7 +158,7 @@ return array(
         /**
          *    getProductVariantMetafieldsCount() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "getProductVariantMetafieldsCount" => array(
             "httpMethod" => "GET",
@@ -179,7 +179,7 @@ return array(
         /**
          *    getMetafield() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "getMetafield" => array(
             "httpMethod" => "GET",
@@ -200,7 +200,7 @@ return array(
         /**
          *    getProductMetafield() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "getProductMetafield" => array(
             "httpMethod" => "GET",
@@ -227,7 +227,7 @@ return array(
         /**
          *    getProductMetafield() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "getProductVariantMetafield" => array(
             "httpMethod" => "GET",
@@ -254,7 +254,7 @@ return array(
          /**
          *    createMetafield() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "createMetafield" => array(
             "httpMethod" => "POST",
@@ -294,7 +294,7 @@ return array(
          /**
          *    createProductMetafield() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "createProductMetafield" => array(
             "httpMethod" => "POST",
@@ -340,7 +340,7 @@ return array(
         /**
          *    createProductVariantMetafield() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "createProductVariantMetafield" => array(
             "httpMethod" => "POST",
@@ -386,7 +386,7 @@ return array(
         /**
          *    updateMetafield() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "updateMetafield" => array(
             "httpMethod" => "PUT",
@@ -427,7 +427,7 @@ return array(
         /**
          *    updateProductMetafield() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "updateProductMetafield" => array(
             "httpMethod" => "PUT",
@@ -474,7 +474,7 @@ return array(
         /**
          *    updateProductVariantMetafield() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "updateProductVariantMetafield" => array(
             "httpMethod" => "PUT",
@@ -521,7 +521,7 @@ return array(
         /**
          *    deleteMetafield() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "deleteMetafield" => array(
             "httpMethod" => "DELETE",
@@ -542,7 +542,7 @@ return array(
         /**
          *    deleteProductMetafield() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "deleteProductMetafield" => array(
             "httpMethod" => "DELETE",
@@ -569,7 +569,7 @@ return array(
         /**
          *    deleteProductVariantMetafield() method
          *
-         *    reference: http://docs.shopify.com/api/metafield
+         *    reference: https://help.shopify.com/api/reference/metafield
          */
         "deleteProductVariantMetafield" => array(
             "httpMethod" => "DELETE",

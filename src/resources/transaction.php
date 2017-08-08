@@ -17,7 +17,7 @@ return array(
         /**
          *    getTransactions() method
          *
-         *    reference: http://docs.shopify.com/api/transaction
+         *    reference: https://help.shopify.com/api/reference/transaction
          */
         "getTransactions" => array(
             "httpMethod" => "GET",
@@ -48,7 +48,7 @@ return array(
         /**
          *    getTransactionCount() method
          *
-         *    reference: http://docs.shopify.com/api/transaction
+         *    reference: https://help.shopify.com/api/reference/transaction
          */
         "getTransactionCount" => array(
             "httpMethod" => "GET",
@@ -69,7 +69,7 @@ return array(
         /**
          *    getTransaction() method
          *
-         *    reference: http://docs.shopify.com/api/transaction
+         *    reference: https://help.shopify.com/api/reference/transaction
          */
         "getTransaction" => array(
             "httpMethod" => "GET",
@@ -102,7 +102,7 @@ return array(
         /**
          *    createTransaction() method
          *
-         *    reference: http://docs.shopify.com/api/transaction
+         *    reference: https://help.shopify.com/api/reference/transaction
          */
         "createTransaction" => array(
             "httpMethod" => "POST",
@@ -183,7 +183,7 @@ return array(
         /**
          *    updateWebhook() method
          *
-         *    reference: http://docs.shopify.com/api/webhook
+         *    reference: https://help.shopify.com/api/reference/webhook
          */
         "updateWebhook" => array(
             "httpMethod" => "PUT",
@@ -234,7 +234,7 @@ return array(
         /**
          *    deleteWebhook() method
          *
-         *    reference: http://docs.shopify.com/api/webhook
+         *    reference: https://help.shopify.com/api/reference/webhook
          */
         "deleteRedirect" => array(
             "httpMethod" => "DELETE",

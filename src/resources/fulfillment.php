@@ -17,7 +17,7 @@ return array(
         /**
          *    getFulfillments() method
          *
-         *    reference: http://docs.shopify.com/api/fulfillment
+         *    reference: https://help.shopify.com/api/reference/fulfillment
          */
         "getFulfillments" => array(
             "httpMethod" => "GET",
@@ -78,7 +78,7 @@ return array(
         /**
          *    getFulfillmentCount() method
          *
-         *    reference: http://docs.shopify.com/api/fulfillment
+         *    reference: https://help.shopify.com/api/reference/fulfillment
          */
         "getFulfillmentCount" => array(
             "httpMethod" => "GET",
@@ -119,7 +119,7 @@ return array(
 		/**
          *    getFulfillment() method
          *
-         *    reference: http://docs.shopify.com/api/fulfillment
+         *    reference: https://help.shopify.com/api/reference/fulfillment
          */
         "getFulfillment" => array(
             "httpMethod" => "GET",
@@ -151,7 +151,7 @@ return array(
 	    /**
          *    createFulfillment() method
          *
-         *    reference: http://docs.shopify.com/api/fulfillment
+         *    reference: https://help.shopify.com/api/reference/fulfillment
          */
         "createFulfillment" => array(
             "httpMethod" => "POST",
@@ -222,7 +222,7 @@ return array(
 		/**
          *    updateFulfillment() method
          *
-         *    reference: http://docs.shopify.com/api/fulfillment
+         *    reference: https://help.shopify.com/api/reference/fulfillment
          */
         "updateFulfillment" => array(
             "httpMethod" => "PUT",
@@ -309,7 +309,7 @@ return array(
 		/**
          *    completeFulfillment() method
          *
-         *    reference: http://docs.shopify.com/api/fulfillment
+         *    reference: https://help.shopify.com/api/reference/fulfillment
          */
         "completeFulfillment" => array(
             "httpMethod" => "POST",
@@ -336,7 +336,7 @@ return array(
         /**
          *    cancelFulfillment() method
          *
-         *    reference: http://docs.shopify.com/api/fulfillment
+         *    reference: https://help.shopify.com/api/reference/fulfillment
          */
         "cancelFulfillment" => array(
             "httpMethod" => "POST",

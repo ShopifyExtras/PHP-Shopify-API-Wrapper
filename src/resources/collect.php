@@ -17,7 +17,7 @@ return array(
         /**
          *    getCollects() method
          *
-         *    reference: http://docs.shopify.com/api/collects
+         *    reference: https://help.shopify.com/api/reference/collect
          */
         "getCollects" => array(
             "httpMethod" => "GET",
@@ -57,7 +57,7 @@ return array(
         /**
          *    getCollectCount() method
          *
-         *    reference: http://docs.shopify.com/api/collects
+         *    reference: https://help.shopify.com/api/reference/collect
          */
         "getCollectCount" => array(
             "httpMethod" => "GET",
@@ -82,7 +82,7 @@ return array(
         /**
          *    getCollect() method
          *
-         *    reference: http://docs.shopify.com/api/collects
+         *    reference: https://help.shopify.com/api/reference/collect
          */
         "getCollect" => array(
             "httpMethod" => "GET",
@@ -107,7 +107,7 @@ return array(
         /**
          *    createCollect() method
          *
-         *    reference: http://docs.shopify.com/api/collect
+         *    reference: https://help.shopify.com/api/reference/collect
          */
         "createCollect" => array(
             "httpMethod" => "POST",
@@ -152,7 +152,7 @@ return array(
         /**
          *    deleteCollect() method
          *
-         *    reference: http://docs.shopify.com/api/page
+         *    reference: https://help.shopify.com/api/reference/page
          */
         "deleteCollect" => array(
             "httpMethod" => "DELETE",

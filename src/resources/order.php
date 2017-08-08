@@ -36,7 +36,7 @@ return array(
         /**
          *    getOrders() method
          *
-         *    reference: http://docs.shopify.com/api/order
+         *    reference: https://help.shopify.com/api/reference/order
          */
         "getOrders" => array(
             "httpMethod" => "GET",
@@ -126,7 +126,7 @@ return array(
         /**
          *    getOrder() method
          *
-         *    reference: http://docs.shopify.com/api/order
+         *    reference: https://help.shopify.com/api/reference/order
          */
         "getOrder" => array(
             "httpMethod" => "GET",
@@ -151,7 +151,7 @@ return array(
         /**
          *    getOrderCount() method
          *
-         *    reference: http://docs.shopify.com/api/order
+         *    reference: https://help.shopify.com/api/reference/order
          */
         "getOrderCount" => array(
             "httpMethod" => "GET",
@@ -201,7 +201,7 @@ return array(
         /**
          *    closeOrder() method
          *
-         *    reference: http://docs.shopify.com/api/order
+         *    reference: https://help.shopify.com/api/reference/order
          */
         "closeOrder" => array(
             "httpMethod" => "POST",
@@ -221,7 +221,7 @@ return array(
         /**
          *    openOrder() method
          *
-         *    reference: http://docs.shopify.com/api/order
+         *    reference: https://help.shopify.com/api/reference/order
          */
         "openOrder" => array(
             "httpMethod" => "POST",
@@ -241,7 +241,7 @@ return array(
         /**
          *    cancelOrder() method
          *
-         *    reference: http://docs.shopify.com/api/order
+         *    reference: https://help.shopify.com/api/reference/order
          */
         "cancelOrder" => array(
             "httpMethod" => "POST",
@@ -286,7 +286,7 @@ return array(
 		/**
          *    createOrder() method
          *
-         *    reference: http://docs.shopify.com/api/order
+         *    reference: https://help.shopify.com/api/reference/order
          */
         "createOrder" => array(
             "httpMethod" => "POST",
@@ -516,7 +516,7 @@ return array(
 		/**
          *    updateOrder() method
          *
-         *    reference: http://docs.shopify.com/api/order
+         *    reference: https://help.shopify.com/api/reference/order
          */
         "updateOrder" => array(
             "httpMethod" => "PUT",
@@ -756,7 +756,7 @@ return array(
         /**
          *    deleteOrder() method
          *
-         *    reference: http://docs.shopify.com/api/order
+         *    reference: https://help.shopify.com/api/reference/order
          */
         "deleteOrder" => array(
             "httpMethod" => "DELETE",

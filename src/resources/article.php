@@ -17,7 +17,7 @@ return array(
         /**
          *    getArticles() method
          *
-         *    reference: http://docs.shopify.com/api/reference/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "getArticles" => array(
             "httpMethod" => "GET",
@@ -108,7 +108,7 @@ return array(
         /**
          *    getArticlesCount() method
          *
-         *    reference: http://docs.shopify.com/api/reference/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "getArticlesCount" => array(
             "httpMethod" => "GET",
@@ -164,7 +164,7 @@ return array(
         /**
          *    getArticle() method
          *
-         *    reference: http://docs.shopify.com/api/reference/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "getArticle" => array(
             "httpMethod" => "GET",
@@ -196,7 +196,7 @@ return array(
         /**
          *    createArticle() method
          *
-         *    reference: http://docs.shopify.com/api/reference/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "createArticle" => array(
             "httpMethod" => "POST",
@@ -272,7 +272,7 @@ return array(
         /**
          *    updateArticle() method
          *
-         *    reference: http://docs.shopify.com/api/reference/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "updateArticle" => array(
             "httpMethod" => "PUT",
@@ -358,7 +358,7 @@ return array(
 		/**
          *    getAuthors() method
          *
-         *    reference: http://docs.shopify.com/api/reference/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "getAuthors" => array(
             "httpMethod" => "GET",
@@ -371,7 +371,7 @@ return array(
         /**
          *    getTags() method
          *
-         *    reference: http://docs.shopify.com/api/reference/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "getTags" => array(
             "httpMethod" => "GET",
@@ -396,7 +396,7 @@ return array(
         /**
          *    getBlogTags() method
          *
-         *    reference: http://docs.shopify.com/api/reference/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "getBlogTags" => array(
             "httpMethod" => "GET",
@@ -427,7 +427,7 @@ return array(
         /**
          *    deleteArticle() method
          *
-         *    reference: http://docs.shopify.com/api/reference/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "deleteArticle" => array(
             "httpMethod" => "DELETE",

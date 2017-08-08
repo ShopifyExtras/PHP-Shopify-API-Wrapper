@@ -17,7 +17,7 @@ return array(
         /**
          *    getComments() method
          *
-         *    reference: http://docs.shopify.com/api/comments
+         *    reference: https://help.shopify.com/api/reference/comment
          */
         "getComments" => array(
             "httpMethod" => "GET",
@@ -91,7 +91,7 @@ return array(
         /**
          *    getCommentCount() method
          *
-         *    reference: http://docs.shopify.com/api/comment
+         *    reference: https://help.shopify.com/api/reference/comment
          */
         "getCommentCount" => array(
             "httpMethod" => "GET",
@@ -145,7 +145,7 @@ return array(
         /**
          *    getComment() method
          *
-         *    reference: http://docs.shopify.com/api/comment
+         *    reference: https://help.shopify.com/api/reference/comment
          */
         "getComment" => array(
             "httpMethod" => "GET",
@@ -171,7 +171,7 @@ return array(
         /**
          *    createComment() method
          *
-         *    reference: http://docs.shopify.com/api/comment
+         *    reference: https://help.shopify.com/api/reference/comment
          */
         "createComment" => array(
             "httpMethod" => "POST",
@@ -243,7 +243,7 @@ return array(
         /**
          *    updateComment() method
          *
-         *    reference: http://docs.shopify.com/api/comment
+         *    reference: https://help.shopify.com/api/reference/comment
          */
         "updateComment" => array(
             "httpMethod" => "PUT",
@@ -324,7 +324,7 @@ return array(
 		/**
          *    markCommentAsSpam() method
          *
-         *    reference: http://docs.shopify.com/api/comment
+         *    reference: https://help.shopify.com/api/reference/comment
          */
         "markCommentAsSpam" => array(
             "httpMethod" => "POST",
@@ -344,7 +344,7 @@ return array(
 		/**
          *    markCommentAsNotSpam() method
          *
-         *    reference: http://docs.shopify.com/api/comment
+         *    reference: https://help.shopify.com/api/reference/comment
          */
         "markCommentAsNotSpam" => array(
             "httpMethod" => "POST",
@@ -364,7 +364,7 @@ return array(
         /**
          *    markCommentAsApproved() method
          *
-         *    reference: http://docs.shopify.com/api/comment
+         *    reference: https://help.shopify.com/api/reference/comment
          */
         "markCommentAsApproved" => array(
             "httpMethod" => "POST",
@@ -384,7 +384,7 @@ return array(
         /**
          *    removeComment() method
          *
-         *    reference: http://docs.shopify.com/api/comment
+         *    reference: https://help.shopify.com/api/reference/comment
          */
         "removeComment" => array(
             "httpMethod" => "POST",
@@ -403,7 +403,7 @@ return array(
         /**
          *    restoreComment() method
          *
-         *    reference: http://docs.shopify.com/api/comment
+         *    reference: https://help.shopify.com/api/reference/comment
          */
         "restoreComment" => array(
             "httpMethod" => "POST",

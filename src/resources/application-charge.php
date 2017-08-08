@@ -17,7 +17,7 @@ return array(
         /**
          *    getApplicationCharges() method
          *
-         *    reference: http://docs.shopify.com/api/reference/applicationcharge
+         *    reference: https://help.shopify.com/api/reference/applicationcharge
          */
         "getApplicationCharges" => array(
             "httpMethod" => "GET",
@@ -42,7 +42,7 @@ return array(
         /**
          *    getApplicationCharge() method
          *
-         *    reference: http://docs.shopify.com/api/reference/applicationcharge
+         *    reference: https://help.shopify.com/api/reference/applicationcharge
          */
         "getApplicationCharge" => array(
             "httpMethod" => "GET",
@@ -68,7 +68,7 @@ return array(
         /**
          *    createApplicationCharge() method
          *
-         *    reference: http://docs.shopify.com/api/reference/applicationcharge
+         *    reference: https://help.shopify.com/api/reference/applicationcharge
          */
         "createApplicationCharge" => array(
             "httpMethod" => "POST",
@@ -108,7 +108,7 @@ return array(
         /**
          *    activeApplicationCharge() method
          *
-         *    reference: http://docs.shopify.com/api/reference/applicationcharge
+         *    reference: https://help.shopify.com/api/reference/applicationcharge
          */
         "activeApplicationCharge" => array(
             "httpMethod" => "POST",

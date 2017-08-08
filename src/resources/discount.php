@@ -17,7 +17,7 @@ return array(
         /**
          *    getDiscounts() method
          *
-         *    reference: http://docs.shopify.com/api/discount
+         *    reference: https://help.shopify.com/api/reference/discount
          */
         "getDiscounts" => array(
             "httpMethod" => "GET",
@@ -41,7 +41,7 @@ return array(
         /**
          *    getDiscount() method
          *
-         *    reference: http://docs.shopify.com/api/discount
+         *    reference: https://help.shopify.com/api/reference/discount
          */
         "getDiscount" => array(
             "httpMethod" => "GET",
@@ -62,7 +62,7 @@ return array(
         /**
          *    createDiscount() method
          *
-         *    reference: http://docs.shopify.com/api/discount
+         *    reference: https://help.shopify.com/api/reference/discount
          */
         "createDiscount" => array(
             "httpMethod" => "POST",
@@ -137,7 +137,7 @@ return array(
         /**
          *    deleteDiscount() method
          *
-         *    reference: http://docs.shopify.com/api/discount
+         *    reference: https://help.shopify.com/api/reference/discount
          */
         "deleteDiscount" => array(
             "httpMethod" => "DELETE",
@@ -158,7 +158,7 @@ return array(
         /**
          *    disableDiscount() method
          *
-         *    reference: http://docs.shopify.com/api/discount
+         *    reference: https://help.shopify.com/api/reference/discount
          */
         "disableDiscount" => array(
             "httpMethod" => "POST",
@@ -179,7 +179,7 @@ return array(
         /**
          *    enableDiscount() method
          *
-         *    reference: http://docs.shopify.com/api/discount
+         *    reference: https://help.shopify.com/api/reference/discount
          */
         "enableDiscount" => array(
             "httpMethod" => "POST",

@@ -17,7 +17,7 @@ return array(
         /**
          *    getCustomerAddresses() method
          *
-         *    reference: http://docs.shopify.com/api/customeraddress
+         *    reference: https://help.shopify.com/api/reference/customeraddress
          */
         "getCustomerAddresses" => array(
             "httpMethod" => "GET",
@@ -47,7 +47,7 @@ return array(
         /**
          *    getCustomerAddress() method
          *
-         *    reference: http://docs.shopify.com/api/customeraddress
+         *    reference: https://help.shopify.com/api/reference/customeraddress
          */
         "getCustomerAddress" => array(
             "httpMethod" => "GET",
@@ -74,7 +74,7 @@ return array(
         /**
          *    createCustomerAddress() method
          *
-         *    reference: http://docs.shopify.com/api/customeraddress
+         *    reference: https://help.shopify.com/api/reference/customeraddress
          */
         "createCustomerAddress" => array(
             "httpMethod" => "POST",
@@ -155,7 +155,7 @@ return array(
         /**
          *    updateCustomerAddress() method
          *
-         *    reference: http://docs.shopify.com/api/customeraddress
+         *    reference: https://help.shopify.com/api/reference/customeraddress
          */
         "updateCustomerAddress" => array(
             "httpMethod" => "PUT",
@@ -249,7 +249,7 @@ return array(
         /**
          *    deleteCustomerAddress() method
          *
-         *    reference: http://docs.shopify.com/api/customeraddress
+         *    reference: https://help.shopify.com/api/reference/customeraddress
          */
         "deleteCustomerAddress" => array(
             "httpMethod" => "DELETE",
@@ -274,7 +274,7 @@ return array(
         /**
          *    deleteCustomerAddresses() method
          *
-         *    reference: http://docs.shopify.com/api/customeraddress
+         *    reference: https://help.shopify.com/api/reference/customeraddress
          */
         "deleteCustomerAddresses" => array(
             "httpMethod" => "PUT",
@@ -298,7 +298,7 @@ return array(
         /**
          *    setCustomersDefaultAddress() method
          *
-         *    reference: http://docs.shopify.com/api/customeraddress
+         *    reference: https://help.shopify.com/api/reference/customeraddress
          */
         "setCustomersDefaultAddress" => array(
             "httpMethod" => "DELETE",

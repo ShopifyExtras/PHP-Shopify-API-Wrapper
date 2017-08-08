@@ -17,7 +17,7 @@ return array(
         /**
          *    getProducts() method
          *
-         *    reference: http://docs.shopify.com/api/product
+         *    reference: https://help.shopify.com/api/reference/product
          */
         "getProducts" => array(
             "httpMethod" => "GET",
@@ -107,7 +107,7 @@ return array(
         /**
          *    getProductCount() method
          *
-         *    reference: http://docs.shopify.com/api/product
+         *    reference: https://help.shopify.com/api/reference/product
          */
         "getProductCount" => array(
             "httpMethod" => "GET",
@@ -120,7 +120,7 @@ return array(
         /**
          *    getProduct() method
          *
-         *    reference: http://docs.shopify.com/api/product
+         *    reference: https://help.shopify.com/api/reference/product
          */
         "getProduct" => array(
             "httpMethod" => "GET",
@@ -146,7 +146,7 @@ return array(
          /**
          *    createProduct() method
          *
-         *    reference: http://docs.shopify.com/api/product
+         *    reference: https://help.shopify.com/api/reference/product
          */
         "createProduct" => array(
             "httpMethod" => "POST",
@@ -236,7 +236,7 @@ return array(
         /**
          *    updateProduct() method
          *
-         *    reference: http://docs.shopify.com/api/product
+         *    reference: https://help.shopify.com/api/reference/product
          */
         "updateProduct" => array(
             "httpMethod" => "PUT",
@@ -337,7 +337,7 @@ return array(
         /**
          *    deleteProduct() method
          *
-         *    reference: http://docs.shopify.com/api/product
+         *    reference: https://help.shopify.com/api/reference/product
          */
         "deleteProduct" => array(
             "httpMethod" => "DELETE",

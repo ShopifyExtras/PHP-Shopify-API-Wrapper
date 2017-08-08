@@ -17,7 +17,7 @@ return array(
         /**
          *    getThemes() method
          *
-         *    reference: http://docs.shopify.com/api/theme
+         *    reference: https://help.shopify.com/api/reference/theme
          */
         "getThemes" => array(
             "httpMethod" => "GET",
@@ -41,7 +41,7 @@ return array(
         /**
          *    getTheme() method
          *
-         *    reference: http://docs.shopify.com/api/theme
+         *    reference: https://help.shopify.com/api/reference/theme
          */
         "getTheme" => array(
             "httpMethod" => "GET",
@@ -67,7 +67,7 @@ return array(
         /**
          *    createTheme() method
          *
-         *    reference: http://docs.shopify.com/api/theme
+         *    reference: https://help.shopify.com/api/reference/theme
          */
         "createTheme" => array(
             "httpMethod" => "POST",
@@ -102,7 +102,7 @@ return array(
         /**
          *    updateTheme() method
          *
-         *    reference: http://docs.shopify.com/api/theme
+         *    reference: https://help.shopify.com/api/reference/theme
          */
         "updateTheme" => array(
             "httpMethod" => "PUT",
@@ -143,7 +143,7 @@ return array(
         /**
          *    deleteTheme() method
          *
-         *    reference: http://docs.shopify.com/api/theme
+         *    reference: https://help.shopify.com/api/reference/theme
          */
         "deleteTheme" => array(
             "httpMethod" => "DELETE",

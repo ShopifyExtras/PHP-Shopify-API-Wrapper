@@ -17,7 +17,7 @@ return array(
         /**
          *    getGiftCards() method
          *
-         *    reference: http://docs.shopify.com/api/gift_card
+         *    reference: https://help.shopify.com/api/reference/gift_card
          */
         "getGiftCards" => array(
             "httpMethod" => "GET",
@@ -51,7 +51,7 @@ return array(
         /**
          *    searchGiftCards() method
          *
-         *    reference: http://docs.shopify.com/api/gift_card
+         *    reference: https://help.shopify.com/api/reference/gift_card
          */
         "searchGiftCards" => array(
             "httpMethod" => "GET",
@@ -91,7 +91,7 @@ return array(
         /**
          *    getGiftCardCount() method
          *
-         *    reference: http://docs.shopify.com/api/gift_card
+         *    reference: https://help.shopify.com/api/reference/gift_card
          */
         "getGiftCardCount" => array(
             "httpMethod" => "GET",
@@ -111,7 +111,7 @@ return array(
         /**
          *    getGiftCard() method
          *
-         *    reference: http://docs.shopify.com/api/gift_card
+         *    reference: https://help.shopify.com/api/reference/gift_card
          */
         "getGiftCard" => array(
             "httpMethod" => "GET",
@@ -132,7 +132,7 @@ return array(
         /**
          *    createGiftCard() method
          *
-         *    reference: http://docs.shopify.com/api/gift_card
+         *    reference: https://help.shopify.com/api/reference/gift_card
          */
         "createGiftCard" => array(
             "httpMethod" => "POST",
@@ -182,7 +182,7 @@ return array(
         /**
          *    updateGiftCard() method
          *
-         *    reference: http://docs.shopify.com/api/gift_card
+         *    reference: https://help.shopify.com/api/reference/gift_card
          */
         "updateGiftCard" => array(
             "httpMethod" => "PUT",
@@ -228,7 +228,7 @@ return array(
         /**
          *    disableGiftCard() method
          *
-         *    reference: http://docs.shopify.com/api/gift_card
+         *    reference: https://help.shopify.com/api/reference/gift_card
          */
         "disableGiftCard" => array(
             "httpMethod" => "POST",

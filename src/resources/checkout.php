@@ -17,7 +17,7 @@ return array(
         /**
          *    getCheckouts() method
          *
-         *    reference: http://docs.shopify.com/api/checkout
+         *    reference: https://help.shopify.com/api/reference/checkout
          */
         "getCheckouts" => array(
             "httpMethod" => "GET",
@@ -72,7 +72,7 @@ return array(
         /**
          *    getCheckoutCount() method
          *
-         *    reference: http://docs.shopify.com/api/checkout
+         *    reference: https://help.shopify.com/api/reference/checkout
          */
         "getCheckoutCount" => array(
             "httpMethod" => "GET",

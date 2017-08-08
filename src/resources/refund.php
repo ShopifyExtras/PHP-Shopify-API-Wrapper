@@ -17,7 +17,7 @@ return array(
         /**
          *    getRefund() method
          *
-         *    reference: http://docs.shopify.com/api/refund
+         *    reference: https://help.shopify.com/api/reference/refund
          */
         "getRefund" => array(
             "httpMethod" => "GET",

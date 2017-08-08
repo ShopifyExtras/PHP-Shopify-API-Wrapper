@@ -17,7 +17,7 @@ return array(
         /**
          *    getShop() method
          *
-         *    reference: http://docs.shopify.com/api/shop
+         *    reference: https://help.shopify.com/api/reference/shop
          */
         "getShop" => array(
             "httpMethod" => "GET",

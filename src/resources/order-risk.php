@@ -17,7 +17,7 @@ return array(
         /**
          *    getOrderRisks() method
          *
-         *    reference: http://docs.shopify.com/api/order_risks
+         *    reference: https://help.shopify.com/api/reference/order_risks
          */
         "getOrderRisks" => array(
             "httpMethod" => "GET",
@@ -38,7 +38,7 @@ return array(
         /**
          *    getOrderRisk() method
          *
-         *    reference: http://docs.shopify.com/api/order_risks
+         *    reference: https://help.shopify.com/api/reference/order_risks
          */
         "getOrderRisk" => array(
             "httpMethod" => "GET",
@@ -65,7 +65,7 @@ return array(
         /**
          *    updateOrderRisk() method
          *
-         *    reference: http://docs.shopify.com/api/order_risks
+         *    reference: https://help.shopify.com/api/reference/order_risks
          */
         "updateOrderRisk" => array(
             "httpMethod" => "PUT",
@@ -132,7 +132,7 @@ return array(
         /**
          *    deleteOrderRisk() method
          *
-         *    reference: http://docs.shopify.com/api/order_risks
+         *    reference: https://help.shopify.com/api/reference/order_risks
          */
         "deleteOrderRisk" => array(
             "httpMethod" => "DELETE",

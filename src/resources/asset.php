@@ -17,7 +17,7 @@ return array(
         /**
          *    getAssets() method
          *
-         *    reference: http://docs.shopify.com/api/asset
+         *    reference: https://help.shopify.com/api/reference/asset
          */
         "getAssets" => array(
             "httpMethod" => "GET",
@@ -42,7 +42,7 @@ return array(
         /**
          *    getAsset() method
          *
-         *    reference: http://docs.shopify.com/api/asset
+         *    reference: https://help.shopify.com/api/reference/asset
          */
         "getAsset" => array(
             "httpMethod" => "GET",
@@ -68,7 +68,7 @@ return array(
         /**
          *    updateAsset() method
          *
-         *    reference: http://docs.shopify.com/api/asset
+         *    reference: https://help.shopify.com/api/reference/asset
          */
         "updateAsset" => array(
             "httpMethod" => "PUT",
@@ -119,7 +119,7 @@ return array(
         /**
          *    deleteAsset() method
          *
-         *    reference: http://docs.shopify.com/api/asset
+         *    reference: https://help.shopify.com/api/reference/asset
          */
         "deleteAsset" => array(
             "httpMethod" => "DELETE",

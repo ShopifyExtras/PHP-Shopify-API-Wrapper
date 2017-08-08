@@ -17,7 +17,7 @@ return array(
         /**
          *    getCarrierServices() method
          *
-         *    reference: http://docs.shopify.com/api/carrierservice
+         *    reference: https://help.shopify.com/api/reference/carrierservice
          */
         "getCarrierServices" => array(
             "httpMethod" => "GET",
@@ -162,7 +162,7 @@ return array(
         /**
          *    deleteCarrierService() method
          *
-         *    reference: http://docs.shopify.com/api/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "deleteCarrierService" => array(
             "httpMethod" => "DELETE",

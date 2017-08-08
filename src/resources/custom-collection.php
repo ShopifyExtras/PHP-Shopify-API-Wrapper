@@ -17,7 +17,7 @@ return array(
         /**
          *    getCustomCollections() method
          *
-         *    reference: http://docs.shopify.com/api/customcollection
+         *    reference: https://help.shopify.com/api/reference/customcollection
          */
         "getCustomCollections" => array(
             "httpMethod" => "GET",
@@ -91,7 +91,7 @@ return array(
         /**
          *    getCustomCollectionCount() method
          *
-         *    reference: http://docs.shopify.com/api/customcollection
+         *    reference: https://help.shopify.com/api/reference/customcollection
          */
         "getCustomCollectionCount" => array(
             "httpMethod" => "GET",
@@ -103,7 +103,7 @@ return array(
         /**
          *    getCustomCollection() method
          *
-         *    reference: http://docs.shopify.com/api/customcollection
+         *    reference: https://help.shopify.com/api/reference/customcollection
          */
         "getCustomCollection" => array(
             "httpMethod" => "GET",
@@ -124,7 +124,7 @@ return array(
         /**
          *    createCustomCollection() method
          *
-         *    reference: http://docs.shopify.com/api/customcollection
+         *    reference: https://help.shopify.com/api/reference/customcollection
          */
         "createCustomCollection" => array(
             "httpMethod" => "POST",
@@ -196,7 +196,7 @@ return array(
          /**
          *    updateCustomCollection() method
          *
-         *    reference: http://docs.shopify.com/api/customcollection
+         *    reference: https://help.shopify.com/api/reference/customcollection
          */
         "updateCustomCollection" => array(
             "httpMethod" => "PUT",
@@ -276,7 +276,7 @@ return array(
         /**
          *    deleteCustomCollection() method
          *
-         *    reference: http://docs.shopify.com/api/customcollection
+         *    reference: https://help.shopify.com/api/reference/customcollection
          */
         "deleteCustomCollection" => array(
             "httpMethod" => "DELETE",

@@ -17,7 +17,7 @@ return array(
         /**
          *    getProvinces() method
          *
-         *    reference: http://docs.shopify.com/api/province
+         *    reference: https://help.shopify.com/api/reference/province
          */
         "getProvinces" => array(
             "httpMethod" => "GET",
@@ -48,7 +48,7 @@ return array(
         /**
          *    getProvinceCount() method
          *
-         *    reference: http://docs.shopify.com/api/province
+         *    reference: https://help.shopify.com/api/reference/province
          */
         "getProvinceCount" => array(
             "httpMethod" => "GET",
@@ -74,7 +74,7 @@ return array(
         /**
          *    getProvince() method
          *
-         *    reference: http://docs.shopify.com/api/province
+         *    reference: https://help.shopify.com/api/reference/province
          */
         "getProvince" => array(
             "httpMethod" => "GET",
@@ -106,7 +106,7 @@ return array(
         /**
          *    updateProvince() method
          *
-         *    reference: http://docs.shopify.com/api/province
+         *    reference: https://help.shopify.com/api/reference/province
          */
         "updateProvince" => array(
             "httpMethod" => "PUT",

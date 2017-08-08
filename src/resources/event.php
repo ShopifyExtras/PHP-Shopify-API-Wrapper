@@ -17,7 +17,7 @@ return array(
         /**
          *    getEvents() method
          *
-         *    reference: http://docs.shopify.com/api/event
+         *    reference: https://help.shopify.com/api/reference/event
          */
         "getEvents" => array(
             "httpMethod" => "GET",
@@ -72,7 +72,7 @@ return array(
         /**
          *    getEventCount() method
          *
-         *    reference: http://docs.shopify.com/api/event
+         *    reference: https://help.shopify.com/api/reference/event
          */
         "getEventCount" => array(
             "httpMethod" => "GET",
@@ -97,7 +97,7 @@ return array(
         /**
          *    getEvent() method
          *
-         *    reference: http://docs.shopify.com/api/event
+         *    reference: https://help.shopify.com/api/reference/event
          */
         "getEvent" => array(
             "httpMethod" => "GET",

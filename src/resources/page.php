@@ -17,7 +17,7 @@ return array(
         /**
          *    getPages() method
          *
-         *    reference: http://docs.shopify.com/api/page
+         *    reference: https://help.shopify.com/api/reference/page
          */
         "getPages" => array(
             "httpMethod" => "GET",
@@ -97,7 +97,7 @@ return array(
         /**
          *    getPageCount() method
          *
-         *    reference: http://docs.shopify.com/api/page
+         *    reference: https://help.shopify.com/api/reference/page
          */
         "getPageCount" => array(
             "httpMethod" => "GET",
@@ -152,7 +152,7 @@ return array(
         /**
          *    getPage() method
          *
-         *    reference: http://docs.shopify.com/api/page
+         *    reference: https://help.shopify.com/api/reference/page
          */
         "getPage" => array(
             "httpMethod" => "GET",
@@ -178,7 +178,7 @@ return array(
         /**
          *    createPage() method
          *
-         *    reference: http://docs.shopify.com/api/page
+         *    reference: https://help.shopify.com/api/reference/page
          */
         "createPage" => array(
             "httpMethod" => "POST",
@@ -233,7 +233,7 @@ return array(
         /**
          *    updatePage() method
          *
-         *    reference: http://docs.shopify.com/api/page
+         *    reference: https://help.shopify.com/api/reference/page
          */
         "updatePage" => array(
             "httpMethod" => "PUT",
@@ -294,7 +294,7 @@ return array(
         /**
          *    deletePage() method
          *
-         *    reference: http://docs.shopify.com/api/page
+         *    reference: https://help.shopify.com/api/reference/page
          */
         "deletePage" => array(
             "httpMethod" => "DELETE",

@@ -17,7 +17,7 @@ return array(
         /**
          *    getPolicies() method
          *
-         *    reference: http://docs.shopify.com/api/reference/policy
+         *    reference: https://help.shopify.com/api/reference/policy
          */
         "getPolicies" => array(
             "httpMethod" => "GET",
