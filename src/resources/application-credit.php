@@ -42,7 +42,7 @@ return array(
         "getApplicationCredit" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/application_credits/{id}.json",
-            "summary" => "Retrive a single application credit.",
+            "summary" => "Retrieve a single application credit.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
