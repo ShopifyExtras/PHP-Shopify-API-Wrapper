@@ -17,7 +17,7 @@ return array(
         /**
          *    getApplicationCharges() method
          *
-         *    reference: http://docs.shopify.com/api/applicationcharge
+         *    reference: http://docs.shopify.com/api/reference/applicationcharge
          */
         "getApplicationCharges" => array(
             "httpMethod" => "GET",
@@ -42,12 +42,12 @@ return array(
         /**
          *    getApplicationCharge() method
          *
-         *    reference: http://docs.shopify.com/api/applicationcharge
+         *    reference: http://docs.shopify.com/api/reference/applicationcharge
          */
         "getApplicationCharge" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/application_charges/{id}.json",
-            "summary" => "Retrive a single application charge.",
+            "summary" => "Retrieve a single application charge.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
@@ -68,7 +68,7 @@ return array(
         /**
          *    createApplicationCharge() method
          *
-         *    reference: http://docs.shopify.com/api/applicationcharge
+         *    reference: http://docs.shopify.com/api/reference/applicationcharge
          */
         "createApplicationCharge" => array(
             "httpMethod" => "POST",
@@ -108,7 +108,7 @@ return array(
         /**
          *    activeApplicationCharge() method
          *
-         *    reference: http://docs.shopify.com/api/applicationcharge
+         *    reference: http://docs.shopify.com/api/reference/applicationcharge
          */
         "activeApplicationCharge" => array(
             "httpMethod" => "POST",
@@ -169,113 +169,7 @@ return array(
                 )
             )
         ),
-        
-        /**
-         *    getArticle() method
-         *
-         *    reference: http://docs.shopify.com/api/article
-         */
-        "getArticle" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/blogs/{blog_id}/articles/{article_id}.json",
-            "summary" => "Get a single article by its ID and the ID of the parent blog.",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "blog_id" => array(
-                    "type" => "number",
-                    "location" => "uri",
-                    "description" => "The ID of the Blog.",
-                    "required" => true
-                ),
-                "article_id" => array(
-	                "type" => "number",
-                    "location" => "uri",
-                    "description" => "The ID of the Article.",
-                    "required" => true
-                ),
-                "fields" => array(
-                    "type" => "string",
-                    "location" => "query",
-                    "description" => "comma-separated list of fields to include in the response."
-                )
-            )
-        ),
-        
-        /**
-         *    createArticle() method
-         *
-         *    reference: http://docs.shopify.com/api/article
-         */
-        "createArticle" => array(
-            "httpMethod" => "POST",
-            "uri" => "/admin/blogs/{blog_id}/articles.json",
-            "summary" => "Create a new article for a blog",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "blog_id" => array(
-                    "type" => "number",
-                    "location" => "uri",
-                    "description" => "A unique numeric identifier for the blog containing the article.",
-                    "required" => true
-                ),
-                "article" => array(
-		            "location" => "json",
-		            "parameters" => array(
-		         	    "author" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The name of the author of this article."
-		                ),
-		         	    "title" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The title of the article."
-		                ),
-		                "author" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The name of the author of this article."
-		                ),
-		                "tags" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "Tags are additional short descriptors formatted as a string of comma-separated values. For example, if an article has three tags: tag1, tag2, tag3."
-		                ),
-		                "summary_html" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The text of the summary of the article, complete with HTML markup."
-		                ),
-		                "body_html" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The text of the body of the article, complete with HTML markup."
-		                ),
-		                "template_suffix" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "States the name of the template an article is using if it is using an alternate template. If an article is using the default article.liquid template, the value returned is \"null\"."
-		                ),
-		                "published" => array(
-		                    "type" => "boolean",
-		                    "location" => "json",
-		                    "description" => "States whether or not the article is visible. Valid values are \"true\" for published or \"false\" for hidden."
-		                ),
-		                "published_at" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The date and time when the article was published. The API returns this value in ISO 8601 format."
-		                ),
-		                "user_id" => array(
-			                "type" => "number",
-		                    "location" => "json",
-		                    "description" => "A unique numeric identifier for the author of the article."
-		                )
-					)
-	            )
-            )
-        ),
-        
+
     ),
     
 
