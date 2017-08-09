@@ -358,6 +358,30 @@ return array(
                 )
             )
         ),
+
+        /**
+         * openFulfillment() method
+         */
+        "openFulfillment" => array(
+            "httpMethod" => "POST",
+            "uri" => "/admin/orders/{order_id}/fulfillments/{id}/cancel.json",
+            "summary" => "Transition a fulfillment from pending to open.",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "order_id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID number of the order.",
+                    "required" => true
+                ),
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID number of the fulfilment.",
+                    "required" => true
+                )
+            )
+        ),
     ),
 
     /*
