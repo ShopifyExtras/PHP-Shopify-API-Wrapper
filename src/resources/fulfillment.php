@@ -360,7 +360,9 @@ return array(
         ),
 
         /**
-         * openFulfillment() method
+         *    openFulfillment() method
+         *
+         *    reference: https://help.shopify.com/api/reference/fulfillment
          */
         "openFulfillment" => array(
             "httpMethod" => "POST",

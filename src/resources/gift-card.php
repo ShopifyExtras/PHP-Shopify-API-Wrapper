@@ -56,7 +56,7 @@ return array(
         "searchGiftCards" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/gift_cards/search.json",
-            "summary" => "Retrieve a list of all Gift Cards",
+            "summary" => "Search for gift cards matching supplied query.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "limit" => array(

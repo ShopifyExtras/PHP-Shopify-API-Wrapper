@@ -120,7 +120,9 @@ return array(
         ),
 
         /**
-         * getProductEvents() method
+         *    getProductEvents() method
+         *
+         *    reference: https://help.shopify.com/api/reference/event
          */
         "getProductEvents" => array(
             "httpMethod" => "GET",
