@@ -22,7 +22,7 @@ return array(
         "getProvinces" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/countries/{country_id}/provinces.json",
-            "summary" => "Get a all provinces.",
+            "summary" => "Receive a list of all Provinces.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "country_id" => array(
@@ -79,7 +79,7 @@ return array(
         "getProvince" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/countries/{country_id}/provinces/{id}.json",
-            "summary" => "Get a count of all provinces.",
+            "summary" => "Receive a single Province.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(

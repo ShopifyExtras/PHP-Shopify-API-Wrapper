@@ -497,11 +497,6 @@ return array(
 		                    "location" => "json",
 		                    "description" => "The sum of all the prices of all the items in the order, taxes and discounts included (must be positive)."
 		                ),
-		                "total_price" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The sum of all the prices of all the items in the order, taxes and discounts included (must be positive)."
-		                ),
 		                "total_weight" => array(
 		                    "type" => "string",
 		                    "location" => "json",
@@ -731,11 +726,6 @@ return array(
 		                    "type" => "string",
 		                    "location" => "json",
 		                    "description" => "The sum of all the prices of all the items in the order."
-		                ),
-		                "total_price" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The sum of all the prices of all the items in the order, taxes and discounts included (must be positive)."
 		                ),
 		                "total_price" => array(
 		                    "type" => "string",
