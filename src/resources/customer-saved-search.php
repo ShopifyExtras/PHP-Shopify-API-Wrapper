@@ -30,7 +30,7 @@ return array(
         /**
          *    getCustomerSavedSearchesCount() method
          *
-         *    reference: http://docs.shopify.com/customersavedsearch
+         *    reference: https://help.shopify.com/api/reference/customersavedsearch
          */
         "getCustomerSavedSearchesCount" => array(
             "httpMethod" => "GET",

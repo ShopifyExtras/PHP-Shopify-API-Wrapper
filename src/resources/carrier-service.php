@@ -30,7 +30,7 @@ return array(
         /**
          *    getCarrierService() method
          *
-         *    reference: http://docs.shopify.com/carrierservice
+         *    reference: https://help.shopify.com/api/reference/carrierservice
          */
         "getCarrierService" => array(
             "httpMethod" => "GET",
@@ -51,7 +51,7 @@ return array(
         /**
          *    createCarrierService() method
          *
-         *    reference: http://docs.shopify.com/carrierservice
+         *    reference: https://help.shopify.com/api/reference/carrierservice
          */
         "createCarrierService" => array(
             "httpMethod" => "POST",
@@ -101,7 +101,7 @@ return array(
         /**
          *    updateCarrierService() method
          *
-         *    reference: http://docs.shopify.com/carrierservice
+         *    reference: https://help.shopify.com/api/reference/carrierservice
          */
         "updateCarrierService" => array(
             "httpMethod" => "PUT",

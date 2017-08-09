@@ -17,7 +17,7 @@ return array(
         /**
          *    getCustomerGroups() method
          *
-         *    reference: http://docs.shopify.com/api/customergroup
+         *    reference: https://help.shopify.com/api/reference/customergroup
          */
         "getCustomerGroups" => array(
             "httpMethod" => "GET",
@@ -29,7 +29,7 @@ return array(
         /**
          *    getCustomerGroupCount() method
          *
-         *    reference: http://docs.shopify.com/customergroup
+         *    reference: https://help.shopify.com/api/reference/customergroup
          */
         "getCustomerGroupCount" => array(
             "httpMethod" => "GET",
@@ -41,7 +41,7 @@ return array(
         /**
          *    getCustomerGroup() method
          *
-         *    reference: http://docs.shopify.com/api/customergroup
+         *    reference: https://help.shopify.com/api/reference/customergroup
          */
         "getCustomerGroup" => array(
             "httpMethod" => "GET",
@@ -61,7 +61,7 @@ return array(
         /**
          *    getCustomerGroupCustomers() method
          *
-         *    reference: http://docs.shopify.com/api/customergroup
+         *    reference: https://help.shopify.com/api/reference/customergroup
          */
         "getCustomerGroupCustomers" => array(
             "httpMethod" => "GET",
