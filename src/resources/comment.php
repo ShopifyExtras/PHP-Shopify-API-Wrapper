@@ -150,7 +150,7 @@ return array(
         "getComment" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/comments/{id}.json",
-            "summary" => "Get a single comemnts by its ID.",
+            "summary" => "Get a single comment by its ID.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
@@ -176,7 +176,7 @@ return array(
         "createComment" => array(
             "httpMethod" => "POST",
             "uri" => "/admin/comments.json",
-            "summary" => "Create a new comement for an article.",
+            "summary" => "Create a new comment for an article.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "comment" => array(
@@ -248,7 +248,7 @@ return array(
         "updateComment" => array(
             "httpMethod" => "PUT",
             "uri" => "/admin/comments/{id}.json",
-            "summary" => "Update a comement for an article.",
+            "summary" => "Update a comment for an article.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
             	"id" => array(

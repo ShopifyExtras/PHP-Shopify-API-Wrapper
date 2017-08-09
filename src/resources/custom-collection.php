@@ -108,7 +108,7 @@ return array(
         "getCustomCollection" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/custom_collections/{id}.json",
-            "summary" => "Retrieve a single Blog",
+            "summary" => "Retrieve a single Collection",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
@@ -180,10 +180,6 @@ return array(
                             "location" => "json",
                         ),
                         "collects" => array(
-                            "type" => "string",
-                            "location" => "json",
-                        ),
-                        "image" => array(
                             "type" => "string",
                             "location" => "json",
                         )
@@ -261,10 +257,6 @@ return array(
                             "location" => "json",
                         ),
                         "collects" => array(
-                            "type" => "string",
-                            "location" => "json",
-                        ),
-                        "image" => array(
                             "type" => "string",
                             "location" => "json",
                         )

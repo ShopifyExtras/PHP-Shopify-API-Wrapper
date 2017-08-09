@@ -121,7 +121,7 @@ return array(
         "updateCountry" => array(
 	      	"httpMethod" => "PUT",
             "uri" => "/admin/countries/{id}.json",
-            "summary" => "Create a country.",
+            "summary" => "Update a country.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
 	            "id" => array(
