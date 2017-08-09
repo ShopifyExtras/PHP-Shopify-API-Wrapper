@@ -22,7 +22,7 @@ return array(
         "getCustomerAddresses" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/customers/{id}/addresses.json",
-            "summary" => "Retrieve all addresses for a customer",
+            "summary" => "Retrieve all addresses for a customer.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
@@ -52,7 +52,7 @@ return array(
         "getCustomerAddress" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/customers/{id}/addresses/{addressId}.json",
-            "summary" => "Get a count of all articles from a certain blog",
+            "summary" => "Retrieve a single address for a customer.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
@@ -279,7 +279,7 @@ return array(
         "deleteCustomerAddresses" => array(
             "httpMethod" => "PUT",
             "uri" => "/admin/countries/{id}/addresses/set.json?operation=destroy",
-            "summary" => "Ddestroying multiple customer addresses.",
+            "summary" => "Deletes all the specified addresses for a customer.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
