@@ -120,7 +120,7 @@ return array(
         ),
 
         /**
-         *
+         * getProductEvents() method
          */
         "getProductEvents" => array(
             "httpMethod" => "GET",
@@ -152,12 +152,12 @@ return array(
                 "created_at_min" => array(
                     "type" => "string",
                     "location" => "query",
-                    "description" => "Show articles created after date (format: 2008-12-31 03:00)."
+                    "description" => "Show events created after date (format: 2008-12-31 03:00)."
                 ),
                 "created_at_max" => array(
                     "type" => "string",
                     "location" => "query",
-                    "description" => "Show articles created before date (format: 2008-12-31 03:00)."
+                    "description" => "Show events created before date (format: 2008-12-31 03:00)."
                 ),
                 "filter" => array(
                     "type" => "string",
