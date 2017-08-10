@@ -106,11 +106,11 @@ return array(
 
         
         /**
-         *    activeApplicationCharge() method
+         *    activateApplicationCharge() method
          *
          *    reference: https://help.shopify.com/api/reference/applicationcharge
          */
-        "activeApplicationCharge" => array(
+        "activateApplicationCharge" => array(
             "httpMethod" => "POST",
             "uri" => "/admin/application_charges/{id}/activate.json",
             "summary" => "Activate a previously accepted one-time application charge.",
