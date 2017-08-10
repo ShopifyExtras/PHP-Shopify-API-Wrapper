@@ -65,6 +65,7 @@ return array(
         "product-image",
         "product-variant",
         "province",
+        "policy",
         "recurring-application-charge",
         "redirect",
         "refund",
