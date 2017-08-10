@@ -55,28 +55,28 @@ return array(
                     "description" => "Field and direction to order results by (default: last_order_date DESC)"
                 ),
                 "query" => array(
-	                "type" => "string",
-	                "location" => "query",
-	                "description" => "Text to search customers"
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Text to search customers"
                 ),
                 "page" => array(
-	                "type" => "number",
-	                "location" => "query",
-	                "description" => "Page to show"
+                    "type" => "number",
+                    "location" => "query",
+                    "description" => "Page to show"
                 ),
                 "limit" => array(
-	                "type" => "number",
-	                "location" => "query",
-	                "description" => "Amount of results"
+                    "type" => "number",
+                    "location" => "query",
+                    "description" => "Amount of results"
                 ),
                 "fields" => array(
-	                "type" => "string",
-	                "location" => "query",
-	                "description" => "comma-separated list of fields to include in the response"
-                )	
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "comma-separated list of fields to include in the response"
+                )
             )
         ),
-        
+
 
         /**
          *    getCustomer() method
@@ -345,11 +345,11 @@ return array(
                         )
                     )
                 )
-                
+
 
             )
         ),
-        
+
 
         /**
          *    deleteCustomer() method
@@ -360,6 +360,48 @@ return array(
             "httpMethod" => "DELETE",
             "uri" => "/admin/customers/{id}.json",
             "summary" => "Delete a customer.",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "Unique numeric identifier for the customer.",
+                    "required" => true
+                )
+            )
+        ),
+
+
+        /**
+         *     createAccountActivationUrl() method
+         *
+         *     reference: https://help.shopify.com/api/reference/customer
+         */
+        "createAccountActivationUrl" => array(
+            "httpMethod" => "POST",
+            "uri" => "/admin/customers/{id}/account_activation_url.json",
+            "summary" => "Create account activation URL",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "Unique numeric identifier for the customer.",
+                    "required" => true
+                )
+            )
+        ),
+
+
+        /**
+         *     getCustomerOrders() method
+         *
+         *     reference: https://help.shopify.com/api/reference/customer
+         */
+        "getCustomerOrders" => array(
+            "httpMethod" => "GET",
+            "uri" => "/admin/customers/{id}/orders.json",
+            "summary" => "Retrieve a list of all the orders from a specific customer.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
@@ -382,7 +424,5 @@ return array(
     |
     */
 
-    "models" => array(
-
-    ),
+    "models" => array(),
 );
