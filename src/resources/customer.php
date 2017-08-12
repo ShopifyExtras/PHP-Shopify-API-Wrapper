@@ -23,7 +23,49 @@ return array(
             "httpMethod" => "GET",
             "uri" => "/admin/customers.json",
             "summary" => "Retrieve all customers of a shop",
-            "responseModel" => "defaultJsonResponse"
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "ids" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "A comma-separated list of customer ids"
+                ),
+                "since_id" => array(
+                    "type" => "number",
+                    "location" => "query",
+                    "description" => "Restrict results to after the specified ID"
+                ),
+                "created_at_min" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Show customers created after date (format: 2014-04-25T16:15:47-04:00)"
+                ),
+                "created_at_max" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Show customers created before date (format: 2014-04-25T16:15:47-04:00)"
+                ),
+                "updated_at_min" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Show customers last updated after date (format: 2014-04-25T16:15:47-04:00)"
+                ),
+                "updated_at_max" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Show customers last updated before date (format: 2014-04-25T16:15:47-04:00)"
+                ),
+                "limit" => array(
+                    "type" => "number",
+                    "location" => "query",
+                    "description" => "Amount of results (default:50) (maximum:250)"
+                ),
+                "page" => array(
+                    "type" => "number",
+                    "location" => "query",
+                    "description" => "Page to show (default: 1)"
+                )
+        )
         ),
 
         /**
