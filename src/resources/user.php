@@ -17,7 +17,7 @@ return array(
         /**
          *    getUsers() method
          *
-         *    reference: http://docs.shopify.com/api/user
+         *    reference: https://help.shopify.com/api/reference/user
          */
         "getUsers" => array(
             "httpMethod" => "GET",
@@ -30,7 +30,7 @@ return array(
         /**
          *    getUser() method
          *
-         *    reference: http://docs.shopify.com/api/user
+         *    reference: https://help.shopify.com/api/reference/user
          */
         "getUser" => array(
             "httpMethod" => "GET",

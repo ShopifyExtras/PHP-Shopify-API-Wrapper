@@ -17,7 +17,7 @@ return array(
         /**
          *    getCountries() method
          *
-         *    reference: http://docs.shopify.com/api/country
+         *    reference: https://help.shopify.com/api/reference/country
          */
         "getCountries" => array(
             "httpMethod" => "GET",
@@ -42,7 +42,7 @@ return array(
          /**
          *    getCountryCount() method
          *
-         *    reference: http://docs.shopify.com/api/country
+         *    reference: https://help.shopify.com/api/reference/country
          */
         "getCountryCount" => array(
 	      	"httpMethod" => "GET",
@@ -55,7 +55,7 @@ return array(
          /**
          *    getCountry() method
          *
-         *    reference: http://docs.shopify.com/api/country
+         *    reference: https://help.shopify.com/api/reference/country
          */
         "getCountry" => array(
 	      	"httpMethod" => "GET",
@@ -81,7 +81,7 @@ return array(
         /**
          *    createCountry() method
          *
-         *    reference: http://docs.shopify.com/api/country
+         *    reference: https://help.shopify.com/api/reference/country
          */
         "createCountry" => array(
 	      	"httpMethod" => "POST",
@@ -116,12 +116,12 @@ return array(
         /**
          *    updateCountry() method
          *
-         *    reference: http://docs.shopify.com/api/country
+         *    reference: https://help.shopify.com/api/reference/country
          */
         "updateCountry" => array(
 	      	"httpMethod" => "PUT",
             "uri" => "/admin/countries/{id}.json",
-            "summary" => "Create a country.",
+            "summary" => "Update a country.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
 	            "id" => array(
@@ -162,7 +162,7 @@ return array(
         /**
          *    deleteCountry() method
          *
-         *    reference: http://docs.shopify.com/api/country
+         *    reference: https://help.shopify.com/api/reference/country
          */
         "deleteCountry" => array(
             "httpMethod" => "DELETE",

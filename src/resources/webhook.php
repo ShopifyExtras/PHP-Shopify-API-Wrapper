@@ -17,7 +17,7 @@ return array(
         /**
          *    getWebhooks() method
          *
-         *    reference: http://docs.shopify.com/api/webhook
+         *    reference: https://help.shopify.com/api/reference/webhook
          */
         "getWebhooks" => array(
             "httpMethod" => "GET",
@@ -82,7 +82,7 @@ return array(
         /**
          *    getWebhookCount() method
          *
-         *    reference: http://docs.shopify.com/api/webhook
+         *    reference: https://help.shopify.com/api/reference/webhook
          */
         "getWebhookCount" => array(
             "httpMethod" => "GET",
@@ -107,7 +107,7 @@ return array(
         /**
          *    getWebhook() method
          *
-         *    reference: http://docs.shopify.com/api/webhook
+         *    reference: https://help.shopify.com/api/reference/webhook
          */
         "getWebhook" => array(
             "httpMethod" => "GET",
@@ -134,7 +134,7 @@ return array(
         /**
          *    createWebhook() method
          *
-         *    reference: http://docs.shopify.com/api/webhook
+         *    reference: https://help.shopify.com/api/reference/webhook
          */
         "createWebhook" => array(
             "httpMethod" => "POST",
@@ -174,7 +174,7 @@ return array(
         /**
          *    updateWebhook() method
          *
-         *    reference: http://docs.shopify.com/api/webhook
+         *    reference: https://help.shopify.com/api/reference/webhook
          */
         "updateWebhook" => array(
             "httpMethod" => "PUT",
@@ -225,7 +225,7 @@ return array(
         /**
          *    deleteWebhook() method
          *
-         *    reference: http://docs.shopify.com/api/webhook
+         *    reference: https://help.shopify.com/api/reference/webhook
          */
         "deleteWebhook" => array(
             "httpMethod" => "DELETE",

@@ -17,7 +17,7 @@ return array(
         /**
          *    getFulfillmentServices() method
          *
-         *    reference: http://docs.shopify.com/api/fulfillmentservice
+         *    reference: https://help.shopify.com/api/reference/fulfillmentservice
          */
         "getFulfillmentServices" => array(
             "httpMethod" => "GET",
@@ -36,7 +36,7 @@ return array(
 		/**
          *    getFulfillmentService() method
          *
-         *    reference: http://docs.shopify.com/api/fulfillmentservice
+         *    reference: https://help.shopify.com/api/reference/fulfillmentservice
          */
         "getFulfillmentService" => array(
             "httpMethod" => "GET",
@@ -57,7 +57,7 @@ return array(
 	    /**
          *    createFulfillmentService() method
          *
-         *    reference: http://docs.shopify.com/api/fulfillmentservice
+         *    reference: https://help.shopify.com/api/reference/fulfillmentservice
          */
         "createFulfillmentService" => array(
             "httpMethod" => "POST",
@@ -117,7 +117,7 @@ return array(
 		/**
          *    updateFulfillmentService() method
          *
-         *    reference: http://docs.shopify.com/api/fulfillmentservice
+         *    reference: https://help.shopify.com/api/reference/fulfillmentservice
          */
         "updateFulfillmentService" => array(
             "httpMethod" => "PUT",
@@ -188,7 +188,7 @@ return array(
 	    /**
          *    deleteFulfillmentService() method
          *
-         *    reference: http://docs.shopify.com/api/fulfillmentservice
+         *    reference: https://help.shopify.com/api/reference/fulfillmentservice
          */
         "deleteFulfillmentService" => array(
             "httpMethod" => "DELETE",

@@ -15,25 +15,18 @@ return array(
     "operations" => array(
 
         /**
-         *    getShippingZone() method
+         *    getPolicies() method
          *
-         *    reference: https://help.shopify.com/api/reference/shipping_zone
+         *    reference: https://help.shopify.com/api/reference/policy
          */
-        "getShippingZones" => array(
+        "getPolicies" => array(
             "httpMethod" => "GET",
-            "uri" => "/admin/shipping_zones.json",
-            "summary" => "Get a list of all shipping zones.",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "fields" => array(
-                    "type" => "string",
-                    "location" => "query",
-                    "description" => "comma-separated list of fields to include in the response."
-                )
-            )
-        ), 
+            "uri" => "/admin/policies.json",
+            "summary" => "Retrieve a list of all policies.",
+            "responseModel" => "defaultJsonResponse"
+        ),
     ),
-    
+
 
     /*
     |--------------------------------------------------------------------------

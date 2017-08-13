@@ -17,7 +17,7 @@ return array(
         /**
          *    getEvents() method
          *
-         *    reference: http://docs.shopify.com/api/event
+         *    reference: https://help.shopify.com/api/reference/event
          */
         "getEvents" => array(
             "httpMethod" => "GET",
@@ -72,7 +72,7 @@ return array(
         /**
          *    getEventCount() method
          *
-         *    reference: http://docs.shopify.com/api/event
+         *    reference: https://help.shopify.com/api/reference/event
          */
         "getEventCount" => array(
             "httpMethod" => "GET",
@@ -97,7 +97,7 @@ return array(
         /**
          *    getEvent() method
          *
-         *    reference: http://docs.shopify.com/api/event
+         *    reference: https://help.shopify.com/api/reference/event
          */
         "getEvent" => array(
             "httpMethod" => "GET",
@@ -118,6 +118,66 @@ return array(
                 )
             )
         ),
+
+        /**
+         *    getProductEvents() method
+         *
+         *    reference: https://help.shopify.com/api/reference/event
+         */
+        "getProductEvents" => array(
+            "httpMethod" => "GET",
+            "uri" => "/admin/products/{id}/events.json",
+            "summary" => "Retrieve all events for a specific product.",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "string",
+                    "location" => "uri",
+                    "description" => "The ID of the Product.",
+                    "required" => true
+                ),
+                "limit" => array(
+                    "type" => "number",
+                    "location" => "query",
+                    "description" => "Amount of results (default: 50) (maximum: 250)."
+                ),
+                "page" => array(
+                    "type" => "number",
+                    "location" => "query",
+                    "description" => "Page to show (default: 1)."
+                ),
+                "since_id" => array(
+                    "type" => "number",
+                    "location" => "query",
+                    "description" => "Restrict results to after the specified ID."
+                ),
+                "created_at_min" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Show events created after date (format: 2008-12-31 03:00)."
+                ),
+                "created_at_max" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Show events created before date (format: 2008-12-31 03:00)."
+                ),
+                "filter" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Only show events specified in filter."
+                ),
+                "verb" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Only show events of a certain kind."
+                ),
+                "fields" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Comma-separated list of fields to include in the response."
+                )
+            )
+        )
         
     ),
 

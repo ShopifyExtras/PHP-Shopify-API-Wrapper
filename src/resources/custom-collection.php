@@ -17,7 +17,7 @@ return array(
         /**
          *    getCustomCollections() method
          *
-         *    reference: http://docs.shopify.com/api/customcollection
+         *    reference: https://help.shopify.com/api/reference/customcollection
          */
         "getCustomCollections" => array(
             "httpMethod" => "GET",
@@ -91,7 +91,7 @@ return array(
         /**
          *    getCustomCollectionCount() method
          *
-         *    reference: http://docs.shopify.com/api/customcollection
+         *    reference: https://help.shopify.com/api/reference/customcollection
          */
         "getCustomCollectionCount" => array(
             "httpMethod" => "GET",
@@ -103,12 +103,12 @@ return array(
         /**
          *    getCustomCollection() method
          *
-         *    reference: http://docs.shopify.com/api/customcollection
+         *    reference: https://help.shopify.com/api/reference/customcollection
          */
         "getCustomCollection" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/custom_collections/{id}.json",
-            "summary" => "Retrieve a single Blog",
+            "summary" => "Retrieve a single Collection",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
@@ -124,7 +124,7 @@ return array(
         /**
          *    createCustomCollection() method
          *
-         *    reference: http://docs.shopify.com/api/customcollection
+         *    reference: https://help.shopify.com/api/reference/customcollection
          */
         "createCustomCollection" => array(
             "httpMethod" => "POST",
@@ -182,10 +182,6 @@ return array(
                         "collects" => array(
                             "type" => "string",
                             "location" => "json",
-                        ),
-                        "image" => array(
-                            "type" => "string",
-                            "location" => "json",
                         )
                     )
                 )
@@ -196,7 +192,7 @@ return array(
          /**
          *    updateCustomCollection() method
          *
-         *    reference: http://docs.shopify.com/api/customcollection
+         *    reference: https://help.shopify.com/api/reference/customcollection
          */
         "updateCustomCollection" => array(
             "httpMethod" => "PUT",
@@ -263,10 +259,6 @@ return array(
                         "collects" => array(
                             "type" => "string",
                             "location" => "json",
-                        ),
-                        "image" => array(
-                            "type" => "string",
-                            "location" => "json",
                         )
                     )
                 )
@@ -276,7 +268,7 @@ return array(
         /**
          *    deleteCustomCollection() method
          *
-         *    reference: http://docs.shopify.com/api/customcollection
+         *    reference: https://help.shopify.com/api/reference/customcollection
          */
         "deleteCustomCollection" => array(
             "httpMethod" => "DELETE",

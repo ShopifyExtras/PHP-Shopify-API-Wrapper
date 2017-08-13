@@ -17,7 +17,7 @@ return array(
         /**
          *    getProducts() method
          *
-         *    reference: http://docs.shopify.com/api/product
+         *    reference: https://help.shopify.com/api/reference/product
          */
         "getProducts" => array(
             "httpMethod" => "GET",
@@ -103,11 +103,10 @@ return array(
             )
         ),
 
-        
         /**
          *    getProductCount() method
          *
-         *    reference: http://docs.shopify.com/api/product
+         *    reference: https://help.shopify.com/api/reference/product
          */
         "getProductCount" => array(
             "httpMethod" => "GET",
@@ -115,12 +114,11 @@ return array(
             "summary" => "Retrieve a count of all Products",
             "responseModel" => "defaultJsonResponse"
         ),
-        
 
         /**
          *    getProduct() method
          *
-         *    reference: http://docs.shopify.com/api/product
+         *    reference: https://help.shopify.com/api/reference/product
          */
         "getProduct" => array(
             "httpMethod" => "GET",
@@ -134,19 +132,18 @@ return array(
                     "description" => "The ID of the Product.",
                     "required" => true
                 ),
-		"fields" => array(
-		    "type" => "string",
-		    "location" => "query",
-   		    "description" => "comma-separated list of fields to include in the response"
+                "fields" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "comma-separated list of fields to include in the response"
                 )
             )
         ),
-        
 
          /**
          *    createProduct() method
          *
-         *    reference: http://docs.shopify.com/api/product
+         *    reference: https://help.shopify.com/api/reference/product
          */
         "createProduct" => array(
             "httpMethod" => "POST",
@@ -165,7 +162,7 @@ return array(
                         "vendor" => array(
                             "type" => "string",
                             "location" => "json",
-                            "description" => "A human-friendly unique string for the page automatically generated from its title. This is used in shop themes by the Liquid templating language to refer to the page."
+                            "description" => "The name of the vendor of the product."
                         ),
                         "product_type" => array(
                             "type" => "string",
@@ -217,11 +214,6 @@ return array(
                             "location" => "json",
                             "description" => "A list of variant objects, each one representing a slightly different version of the product. For example, if a product comes in different sizes and colors, each size and color permutation (such as small black, medium black, large blue), would be a variant."
                         ),
-                        "vendor" => array(
-                            "type" => "string",
-                            "location" => "json",
-                            "description" => "The name of the vendor of the product."
-                        ),
                         "published" => array(
                             "type" => "boolean",
                             "location" => "json",
@@ -232,11 +224,10 @@ return array(
             )
         ),
 
-
         /**
          *    updateProduct() method
          *
-         *    reference: http://docs.shopify.com/api/product
+         *    reference: https://help.shopify.com/api/reference/product
          */
         "updateProduct" => array(
             "httpMethod" => "PUT",
@@ -266,7 +257,7 @@ return array(
                         "vendor" => array(
                             "type" => "string",
                             "location" => "json",
-                            "description" => "A human-friendly unique string for the page automatically generated from its title. This is used in shop themes by the Liquid templating language to refer to the page."
+                            "description" => "The name of the vendor of the product."
                         ),
                         "product_type" => array(
                             "type" => "string",
@@ -318,11 +309,6 @@ return array(
                             "location" => "json",
                             "description" => "A list of variant objects, each one representing a slightly different version of the product. For example, if a product comes in different sizes and colors, each size and color permutation (such as small black, medium black, large blue), would be a variant."
                         ),
-                        "vendor" => array(
-                            "type" => "string",
-                            "location" => "json",
-                            "description" => "The name of the vendor of the product."
-                        ),
                         "published" => array(
                             "type" => "boolean",
                             "location" => "json",
@@ -333,11 +319,10 @@ return array(
             )
         ),
 
-
         /**
          *    deleteProduct() method
          *
-         *    reference: http://docs.shopify.com/api/product
+         *    reference: https://help.shopify.com/api/reference/product
          */
         "deleteProduct" => array(
             "httpMethod" => "DELETE",
@@ -353,7 +338,6 @@ return array(
                 )
             )
         )
-        
     ),
 
     /*
@@ -365,7 +349,6 @@ return array(
     | from the operation methods.
     |
     */
-
     "models" => array(
 
     ),

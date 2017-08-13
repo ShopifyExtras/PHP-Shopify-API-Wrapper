@@ -17,7 +17,7 @@ return array(
         /**
          *    getCustomerSavedSearches() method
          *
-         *    reference: http://docs.shopify.com/api/customersavedsearch
+         *    reference: https://help.shopify.com/api/reference/customersavedsearch
          */
         "getCustomerSavedSearches" => array(
             "httpMethod" => "GET",
@@ -30,7 +30,7 @@ return array(
         /**
          *    getCustomerSavedSearchesCount() method
          *
-         *    reference: http://docs.shopify.com/customersavedsearch
+         *    reference: https://help.shopify.com/api/reference/customersavedsearch
          */
         "getCustomerSavedSearchesCount" => array(
             "httpMethod" => "GET",
@@ -43,7 +43,7 @@ return array(
         /**
          *    getCustomerSavedSearch() method
          *
-         *    reference: http://docs.shopify.com/api/customersavedsearch
+         *    reference: https://help.shopify.com/api/reference/customersavedsearch
          */
         "getCustomerSavedSearch" => array(
             "httpMethod" => "GET",
@@ -64,7 +64,7 @@ return array(
         /**
          *    getCustomerSavedSearchCustomers() method
          *
-         *    reference: http://docs.shopify.com/api/customersavedsearch
+         *    reference: https://help.shopify.com/api/reference/customersavedsearch
          */
         "getCustomerSavedSearchCustomers" => array(
             "httpMethod" => "GET",
@@ -85,7 +85,7 @@ return array(
         /**
          *    createCustomerSavedSearch() method
          *
-         *    reference: http://docs.shopify.com/api/customersavedsearch
+         *    reference: https://help.shopify.com/api/reference/customersavedsearch
          */
         "createCustomerSavedSearch" => array(
             "httpMethod" => "POST",
@@ -145,7 +145,7 @@ return array(
         /**
          *    updateCustomerSavedSearch() method
          *
-         *    reference: http://docs.shopify.com/api/customersavedsearch
+         *    reference: https://help.shopify.com/api/reference/customersavedsearch
          */
         "updateCustomerSavedSearch" => array(
             "httpMethod" => "PUT",
@@ -214,7 +214,7 @@ return array(
         /**
          *    deleteCustomerSavedSearch() method
          *
-         *    reference: http://docs.shopify.com/api/customersavedsearch
+         *    reference: https://help.shopify.com/api/reference/customersavedsearch
          */
         "deleteCustomerSavedSearch" => array(
             "httpMethod" => "DELETE",

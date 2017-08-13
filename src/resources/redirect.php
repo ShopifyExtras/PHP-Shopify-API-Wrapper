@@ -17,7 +17,7 @@ return array(
         /**
          *    getRedirects() method
          *
-         *    reference: http://docs.shopify.com/api/redirect
+         *    reference: https://help.shopify.com/api/reference/redirect
          */
         "getRedirects" => array(
             "httpMethod" => "GET",
@@ -62,7 +62,7 @@ return array(
         /**
          *    getRedirectsCount() method
          *
-         *    reference: http://docs.shopify.com/api/redirect
+         *    reference: https://help.shopify.com/api/reference/redirect
          */
         "getRedirectsCount" => array(
             "httpMethod" => "GET",
@@ -87,7 +87,7 @@ return array(
         /**
          *    getRedirect() method
          *
-         *    reference: http://docs.shopify.com/api/redirect
+         *    reference: https://help.shopify.com/api/reference/redirect
          */
         "getRedirect" => array(
             "httpMethod" => "GET",
@@ -113,7 +113,7 @@ return array(
         /**
          *    createRedirect() method
          *
-         *    reference: http://docs.shopify.com/api/redirect
+         *    reference: https://help.shopify.com/api/reference/redirect
          */
         "createRedirect" => array(
             "httpMethod" => "POST",
@@ -143,7 +143,7 @@ return array(
         /**
          *    updateRedirect() method
          *
-         *    reference: http://docs.shopify.com/api/redirect
+         *    reference: https://help.shopify.com/api/reference/redirect
          */
         "updateRedirect" => array(
             "httpMethod" => "PUT",
@@ -181,7 +181,7 @@ return array(
         /**
          *    deleteRedirect() method
          *
-         *    reference: http://docs.shopify.com/api/redirect
+         *    reference: https://help.shopify.com/api/reference/redirect
          */
         "deleteRedirect" => array(
             "httpMethod" => "DELETE",

@@ -17,7 +17,7 @@ return array(
         /**
          *    getRecurringApplicationCharges() method
          *
-         *    reference: http://docs.shopify.com/api/recurringapplicationcharge
+         *    reference: https://help.shopify.com/api/reference/recurringapplicationcharge
          */
         "getRecurringApplicationCharges" => array(
             "httpMethod" => "GET",
@@ -40,7 +40,7 @@ return array(
         /**
          *    getRecurringApplicationCharge() method
          *
-         *    reference: http://docs.shopify.com/api/recurringapplicationcharge
+         *    reference: https://help.shopify.com/api/reference/recurringapplicationcharge
          */
         "getRecurringApplicationCharge" => array(
             "httpMethod" => "GET",
@@ -60,7 +60,7 @@ return array(
         /**
          *    createRecurringApplicationCharge() method
          *
-         *    reference: http://docs.shopify.com/api/recurringapplicationcharge
+         *    reference: https://help.shopify.com/api/reference/recurringapplicationcharge
          */
         "createRecurringApplicationCharge" => array(
             "httpMethod" => "POST",
@@ -116,7 +116,7 @@ return array(
          /**
          *    activateRecurringApplicationCharge() method
          *
-         *    reference: http://docs.shopify.com/api/recurringapplicationcharge
+         *    reference: https://help.shopify.com/api/reference/recurringapplicationcharge
          */
         "activateRecurringApplicationCharge" => array(
             "httpMethod" => "POST",
@@ -135,7 +135,7 @@ return array(
         /**
          *    deleteRecurringApplicationCharges() method
          *
-         *    reference: http://docs.shopify.com/api/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "deleteRecurringApplicationCharges" => array(
             "httpMethod" => "DELETE",

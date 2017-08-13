@@ -17,7 +17,7 @@ return array(
         /**
          *    getProductVariants() method
          *
-         *    reference: http://docs.shopify.com/api/product_variant
+         *    reference: https://help.shopify.com/api/reference/product_variant
          */
         "getProductVariants" => array(
             "httpMethod" => "GET",
@@ -58,7 +58,7 @@ return array(
         /**
          *    getProductVariantCount() method
          *
-         *    reference: http://docs.shopify.com/api/product_variant
+         *    reference: https://help.shopify.com/api/reference/product_variant
          */
         "getProductVariantCount" => array(
             "httpMethod" => "GET",
@@ -79,7 +79,7 @@ return array(
         /**
          *    getProductVariant() method
          *
-         *    reference: http://docs.shopify.com/api/product_variant
+         *    reference: https://help.shopify.com/api/reference/product_variant
          */
         "getProductVariant" => array(
             "httpMethod" => "GET",
@@ -104,7 +104,7 @@ return array(
         /**
          *    getProductVariantMetafields() method
          *
-         *    reference: http://docs.shopify.com/api/product_variant
+         *    reference: https://help.shopify.com/api/reference/product_variant
          */
         "getProductVariantMetafields" => array(
             "httpMethod" => "GET",
@@ -126,7 +126,7 @@ return array(
          /**
          *    createProductVariant() method
          *
-         *    reference: http://docs.shopify.com/api/product_variant
+         *    reference: https://help.shopify.com/api/reference/product_variant
          */
         "createProductVariant" => array(
             "httpMethod" => "POST",
@@ -247,7 +247,7 @@ return array(
          /**
          *    updateProductVariant() method
          *
-         *    reference: http://docs.shopify.com/api/product_variant
+         *    reference: https://help.shopify.com/api/reference/product_variant
          */
         "updateProductVariant" => array(
             "httpMethod" => "PUT",
@@ -373,7 +373,7 @@ return array(
         /**
          *    deleteProductVariant() method
          *
-         *    reference: http://docs.shopify.com/api/product_variant
+         *    reference: https://help.shopify.com/api/reference/product_variant
          */
         "deleteProductVariant" => array(
             "httpMethod" => "DELETE",

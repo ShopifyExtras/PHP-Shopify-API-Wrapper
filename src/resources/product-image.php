@@ -17,7 +17,7 @@ return array(
         /**
          *    getProductImages() method
          *
-         *    reference: http://docs.shopify.com/api/product_image
+         *    reference: https://help.shopify.com/api/reference/product_image
          */
         "getProductImages" => array(
             "httpMethod" => "GET",
@@ -48,7 +48,7 @@ return array(
         /**
          *    getProductImageCount() method
          *
-         *    reference: http://docs.shopify.com/api/product_image
+         *    reference: https://help.shopify.com/api/reference/product_image
          */
         "getProductImageCount" => array(
             "httpMethod" => "GET",
@@ -104,7 +104,7 @@ return array(
         /**
          *    getProductImage() method
          *
-         *    reference: http://docs.shopify.com/api/product_image
+         *    reference: https://help.shopify.com/api/reference/product_image
          */
         "getProductImage" => array(
             "httpMethod" => "GET",
@@ -125,7 +125,7 @@ return array(
          /**
          *    createProductImage() method
          *
-         *    reference: http://docs.shopify.com/api/product_image
+         *    reference: https://help.shopify.com/api/reference/product_image
          */
         "createProductImage" => array(
             "httpMethod" => "POST",
@@ -181,7 +181,7 @@ return array(
         /**
          *    updateProductImage() method
          *
-         *    reference: http://docs.shopify.com/api/product_image
+         *    reference: https://help.shopify.com/api/reference/product_image
          */
         "updateProductImage" => array(
             "httpMethod" => "POST",
@@ -253,7 +253,7 @@ return array(
         /**
          *    deleteProductImage() method
          *
-         *    reference: http://docs.shopify.com/api/product_image
+         *    reference: https://help.shopify.com/api/reference/product_image
          */
         "deleteProductImage" => array(
             "httpMethod" => "DELETE",

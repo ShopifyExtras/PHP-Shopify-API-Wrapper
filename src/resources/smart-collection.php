@@ -17,7 +17,7 @@ return array(
         /**
          *    getSmartCollections() method
          *
-         *    reference: http://docs.shopify.com/api/smartcollection
+         *    reference: https://help.shopify.com/api/reference/smartcollection
          */
         "getSmartCollections" => array(
             "httpMethod" => "GET",
@@ -92,7 +92,7 @@ return array(
         /**
          *    getSmartCollectionsCount() method
          *
-         *    reference: http://docs.shopify.com/api/smartcollection
+         *    reference: https://help.shopify.com/api/reference/smartcollection
          */
         "getSmartCollectionsCount" => array(
             "httpMethod" => "GET",
@@ -142,7 +142,7 @@ return array(
         /**
          *    getSmartCollection() method
          *
-         *    reference: http://docs.shopify.com/api/smartcollection
+         *    reference: https://help.shopify.com/api/reference/smartcollection
          */
         "getSmartCollection" => array(
             "httpMethod" => "POST",
@@ -168,7 +168,7 @@ return array(
         /**
          *    createSmartCollection() method
          *
-         *    reference: http://docs.shopify.com/api/smartcollection
+         *    reference: https://help.shopify.com/api/reference/smartcollection
          */
         "createSmartCollection" => array(
             "httpMethod" => "POST",
@@ -243,7 +243,7 @@ return array(
 		/**
          *    updateSmartCollection() method
          *
-         *    reference: http://docs.shopify.com/api/smartcollection
+         *    reference: https://help.shopify.com/api/reference/smartcollection
          */
         "updateSmartCollection" => array(
             "httpMethod" => "PUT",
@@ -329,7 +329,7 @@ return array(
 		/**
          *    updateSmartCollectionOrder() method
          *
-         *    reference: http://docs.shopify.com/api/smartcollection
+         *    reference: https://help.shopify.com/api/reference/smartcollection
          */
         "updateSmartCollectionOrder" => array(
             "httpMethod" => "PUT",
@@ -370,7 +370,7 @@ return array(
         /**
          *    deleteSmartCollection() method
          *
-         *    reference: http://docs.shopify.com/api/smartcollection
+         *    reference: https://help.shopify.com/api/reference/smartcollection
          */
         "deleteSmartCollection" => array(
             "httpMethod" => "DELETE",

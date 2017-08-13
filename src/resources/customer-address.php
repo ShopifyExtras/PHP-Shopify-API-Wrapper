@@ -17,12 +17,12 @@ return array(
         /**
          *    getCustomerAddresses() method
          *
-         *    reference: http://docs.shopify.com/api/customeraddress
+         *    reference: https://help.shopify.com/api/reference/customeraddress
          */
         "getCustomerAddresses" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/customers/{id}/addresses.json",
-            "summary" => "Retrieve all addresses for a customer",
+            "summary" => "Retrieve all addresses for a customer.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
@@ -47,12 +47,12 @@ return array(
         /**
          *    getCustomerAddress() method
          *
-         *    reference: http://docs.shopify.com/api/customeraddress
+         *    reference: https://help.shopify.com/api/reference/customeraddress
          */
         "getCustomerAddress" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/customers/{id}/addresses/{addressId}.json",
-            "summary" => "Get a count of all articles from a certain blog",
+            "summary" => "Retrieve a single address for a customer.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
@@ -74,7 +74,7 @@ return array(
         /**
          *    createCustomerAddress() method
          *
-         *    reference: http://docs.shopify.com/api/customeraddress
+         *    reference: https://help.shopify.com/api/reference/customeraddress
          */
         "createCustomerAddress" => array(
             "httpMethod" => "POST",
@@ -155,7 +155,7 @@ return array(
         /**
          *    updateCustomerAddress() method
          *
-         *    reference: http://docs.shopify.com/api/customeraddress
+         *    reference: https://help.shopify.com/api/reference/customeraddress
          */
         "updateCustomerAddress" => array(
             "httpMethod" => "PUT",
@@ -249,7 +249,7 @@ return array(
         /**
          *    deleteCustomerAddress() method
          *
-         *    reference: http://docs.shopify.com/api/customeraddress
+         *    reference: https://help.shopify.com/api/reference/customeraddress
          */
         "deleteCustomerAddress" => array(
             "httpMethod" => "DELETE",
@@ -274,12 +274,12 @@ return array(
         /**
          *    deleteCustomerAddresses() method
          *
-         *    reference: http://docs.shopify.com/api/customeraddress
+         *    reference: https://help.shopify.com/api/reference/customeraddress
          */
         "deleteCustomerAddresses" => array(
             "httpMethod" => "PUT",
             "uri" => "/admin/countries/{id}/addresses/set.json?operation=destroy",
-            "summary" => "Ddestroying multiple customer addresses.",
+            "summary" => "Deletes all the specified addresses for a customer.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
@@ -298,7 +298,7 @@ return array(
         /**
          *    setCustomersDefaultAddress() method
          *
-         *    reference: http://docs.shopify.com/api/customeraddress
+         *    reference: https://help.shopify.com/api/reference/customeraddress
          */
         "setCustomersDefaultAddress" => array(
             "httpMethod" => "DELETE",

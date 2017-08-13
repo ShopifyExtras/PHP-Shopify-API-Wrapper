@@ -17,12 +17,12 @@ return array(
         /**
          *    getArticles() method
          *
-         *    reference: http://docs.shopify.com/api/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "getArticles" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/blogs/{blog_id}/articles.json",
-            "summary" => "Get a list of all articles from a certain blog.",
+            "summary" => "Get a list of all articles from a specific blog.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "blog_id" => array(
@@ -81,6 +81,21 @@ return array(
                     "location" => "query",
                     "description" => "published - Show only published articles. unpublished - Show only unpublished articles. any - Show all articles (default)."
                 ),
+                "handle" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Filter by article handle"
+                ),
+                "tag" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Filter by article tag"
+                ),
+                "author" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Filter by article author"
+                ),
                 "fields" => array(
                     "type" => "string",
                     "location" => "query",
@@ -93,12 +108,12 @@ return array(
         /**
          *    getArticlesCount() method
          *
-         *    reference: http://docs.shopify.com/api/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "getArticlesCount" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/blogs/{blog_id}/articles/count.json",
-            "summary" => "Get a count of all articles from a certain blog.",
+            "summary" => "Get a count of all articles from a specific blog.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "blog_id" => array(
@@ -149,12 +164,12 @@ return array(
         /**
          *    getArticle() method
          *
-         *    reference: http://docs.shopify.com/api/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "getArticle" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/blogs/{blog_id}/articles/{article_id}.json",
-            "summary" => "Get a single article by its ID and the ID of the parent blog.",
+            "summary" => "Get a single article by its ID from a specific blog.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "blog_id" => array(
@@ -181,12 +196,12 @@ return array(
         /**
          *    createArticle() method
          *
-         *    reference: http://docs.shopify.com/api/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "createArticle" => array(
             "httpMethod" => "POST",
             "uri" => "/admin/blogs/{blog_id}/articles.json",
-            "summary" => "Create a new article for a blog",
+            "summary" => "Create a new article for a specific blog",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "blog_id" => array(
@@ -257,12 +272,12 @@ return array(
         /**
          *    updateArticle() method
          *
-         *    reference: http://docs.shopify.com/api/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "updateArticle" => array(
             "httpMethod" => "PUT",
             "uri" => "/admin/blogs/{blog_id}/articles/{article_id}.json",
-            "summary" => "Create a new article for a blog.",
+            "summary" => "Update an article from a specific blog.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "blog_id" => array(
@@ -343,7 +358,7 @@ return array(
 		/**
          *    getAuthors() method
          *
-         *    reference: http://docs.shopify.com/api/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "getAuthors" => array(
             "httpMethod" => "GET",
@@ -356,7 +371,7 @@ return array(
         /**
          *    getTags() method
          *
-         *    reference: http://docs.shopify.com/api/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "getTags" => array(
             "httpMethod" => "GET",
@@ -381,7 +396,7 @@ return array(
         /**
          *    getBlogTags() method
          *
-         *    reference: http://docs.shopify.com/api/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "getBlogTags" => array(
             "httpMethod" => "GET",
@@ -412,12 +427,12 @@ return array(
         /**
          *    deleteArticle() method
          *
-         *    reference: http://docs.shopify.com/api/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "deleteArticle" => array(
             "httpMethod" => "DELETE",
             "uri" => "/admin/blogs/{blog_id}/articles/{article_id}.json",
-            "summary" => "Delete an article of a blog.",
+            "summary" => "Delete an article from a specific blog.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "blog_id" => array(

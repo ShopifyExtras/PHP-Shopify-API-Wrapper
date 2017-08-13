@@ -22,7 +22,7 @@ return array(
         "getDiscountCodes" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/price_rules/{id}/discount_codes.json",
-            "summary" => "Retrieve a list of all discount codes",
+            "summary" => "Retrieve a list of all discount codes.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
@@ -42,7 +42,7 @@ return array(
         "searchDiscountCodes" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/discount_codes/lookup?code=discountCode",
-            "summary" => "Retrieve a list of all discount codes",
+            "summary" => "Search by discount code.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "code" => array(

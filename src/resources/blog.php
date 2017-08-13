@@ -17,7 +17,7 @@ return array(
         /**
          *    getBlogs() method
          *
-         *    reference: http://docs.shopify.com/api/blog
+         *    reference: https://help.shopify.com/api/reference/blog
          */
         "getBlogs" => array(
             "httpMethod" => "GET",
@@ -47,7 +47,7 @@ return array(
         /**
          *    getBlogCount() method
          *
-         *    reference: http://docs.shopify.com/api/blog
+         *    reference: https://help.shopify.com/api/reference/blog
          */
         "getBlogCount" => array(
             "httpMethod" => "GET",
@@ -60,7 +60,7 @@ return array(
         /**
          *    getBlog() method
          *
-         *    reference: http://docs.shopify.com/api/blog
+         *    reference: https://help.shopify.com/api/reference/blog
          */
         "getBlog" => array(
             "httpMethod" => "GET",
@@ -86,7 +86,7 @@ return array(
         /**
          *    createBlog() method
          *
-         *    reference: http://docs.shopify.com/api/blog
+         *    reference: https://help.shopify.com/api/reference/blog
          */
         "createBlog" => array(
             "httpMethod" => "POST",
@@ -137,7 +137,7 @@ yes: Readers can post comments to blog articles without moderation."
 		/**
          *    updateBlog() method
          *
-         *    reference: http://docs.shopify.com/api/blog
+         *    reference: https://help.shopify.com/api/reference/blog
          */
         "updateBlog" => array(
             "httpMethod" => "PUT",
@@ -199,7 +199,7 @@ yes: Readers can post comments to blog articles without moderation."
         /**
          *    deleteBlog() method
          *
-         *    reference: http://docs.shopify.com/api/article
+         *    reference: https://help.shopify.com/api/reference/article
          */
         "deleteBlog" => array(
             "httpMethod" => "DELETE",

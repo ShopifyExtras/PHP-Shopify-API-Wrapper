@@ -17,19 +17,61 @@ return array(
         /**
          *    getCustomers() method
          *
-         *    reference: http://docs.shopify.com/api/customer
+         *    reference: https://help.shopify.com/api/reference/customer
          */
         "getCustomers" => array(
             "httpMethod" => "GET",
             "uri" => "/admin/customers.json",
             "summary" => "Retrieve all customers of a shop",
-            "responseModel" => "defaultJsonResponse"
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "ids" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "A comma-separated list of customer ids"
+                ),
+                "since_id" => array(
+                    "type" => "number",
+                    "location" => "query",
+                    "description" => "Restrict results to after the specified ID"
+                ),
+                "created_at_min" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Show customers created after date (format: 2014-04-25T16:15:47-04:00)"
+                ),
+                "created_at_max" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Show customers created before date (format: 2014-04-25T16:15:47-04:00)"
+                ),
+                "updated_at_min" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Show customers last updated after date (format: 2014-04-25T16:15:47-04:00)"
+                ),
+                "updated_at_max" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Show customers last updated before date (format: 2014-04-25T16:15:47-04:00)"
+                ),
+                "limit" => array(
+                    "type" => "number",
+                    "location" => "query",
+                    "description" => "Amount of results (default:50) (maximum:250)"
+                ),
+                "page" => array(
+                    "type" => "number",
+                    "location" => "query",
+                    "description" => "Page to show (default: 1)"
+                )
+        )
         ),
 
         /**
          *    getCustomerCount() method
          *
-         *    reference: http://docs.shopify.com/api/customer
+         *    reference: https://help.shopify.com/api/reference/customer
          */
         "getCustomerCount" => array(
             "httpMethod" => "GET",
@@ -41,7 +83,7 @@ return array(
         /**
          *    getCustomerSearch() method
          *
-         *    reference: http://docs.shopify.com/api/customer
+         *    reference: https://help.shopify.com/api/reference/customer
          */
         "getCustomerSearch" => array(
             "httpMethod" => "GET",
@@ -55,33 +97,33 @@ return array(
                     "description" => "Field and direction to order results by (default: last_order_date DESC)"
                 ),
                 "query" => array(
-	                "type" => "string",
-	                "location" => "query",
-	                "description" => "Text to search customers"
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Text to search customers"
                 ),
                 "page" => array(
-	                "type" => "number",
-	                "location" => "query",
-	                "description" => "Page to show"
+                    "type" => "number",
+                    "location" => "query",
+                    "description" => "Page to show"
                 ),
                 "limit" => array(
-	                "type" => "number",
-	                "location" => "query",
-	                "description" => "Amount of results"
+                    "type" => "number",
+                    "location" => "query",
+                    "description" => "Amount of results"
                 ),
                 "fields" => array(
-	                "type" => "string",
-	                "location" => "query",
-	                "description" => "comma-separated list of fields to include in the response"
-                )	
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "comma-separated list of fields to include in the response"
+                )
             )
         ),
-        
+
 
         /**
          *    getCustomer() method
          *
-         *    reference: http://docs.shopify.com/api/customer
+         *    reference: https://help.shopify.com/api/reference/customer
          */
         "getCustomer" => array(
             "httpMethod" => "GET",
@@ -101,7 +143,7 @@ return array(
         /**
          *    createCustomer() method
          *
-         *    reference: http://docs.shopify.com/api/customer
+         *    reference: https://help.shopify.com/api/reference/customer
          */
         "createCustomer" => array(
             "httpMethod" => "POST",
@@ -221,7 +263,7 @@ return array(
         /**
          *    updateCustomer() method
          *
-         *    reference: http://docs.shopify.com/api/customer
+         *    reference: https://help.shopify.com/api/reference/customer
          */
         "updateCustomer" => array(
             "httpMethod" => "PUT",
@@ -345,21 +387,63 @@ return array(
                         )
                     )
                 )
-                
+
 
             )
         ),
-        
+
 
         /**
          *    deleteCustomer() method
          *
-         *    reference: http://docs.shopify.com/api/customer
+         *    reference: https://help.shopify.com/api/reference/customer
          */
         "deleteCustomer" => array(
             "httpMethod" => "DELETE",
             "uri" => "/admin/customers/{id}.json",
             "summary" => "Delete a customer.",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "Unique numeric identifier for the customer.",
+                    "required" => true
+                )
+            )
+        ),
+
+
+        /**
+         *     createAccountActivationUrl() method
+         *
+         *     reference: https://help.shopify.com/api/reference/customer
+         */
+        "createAccountActivationUrl" => array(
+            "httpMethod" => "POST",
+            "uri" => "/admin/customers/{id}/account_activation_url.json",
+            "summary" => "Create account activation URL",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "Unique numeric identifier for the customer.",
+                    "required" => true
+                )
+            )
+        ),
+
+
+        /**
+         *     getCustomerOrders() method
+         *
+         *     reference: https://help.shopify.com/api/reference/customer
+         */
+        "getCustomerOrders" => array(
+            "httpMethod" => "GET",
+            "uri" => "/admin/customers/{id}/orders.json",
+            "summary" => "Retrieve a list of all the orders from a specific customer.",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
                 "id" => array(
@@ -382,7 +466,5 @@ return array(
     |
     */
 
-    "models" => array(
-
-    ),
+    "models" => array(),
 );

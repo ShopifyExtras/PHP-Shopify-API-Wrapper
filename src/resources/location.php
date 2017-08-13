@@ -17,7 +17,7 @@ return array(
         /**
          *    getLocations() method
          *
-         *    reference: http://docs.shopify.com/api/location
+         *    reference: https://help.shopify.com/api/reference/location
          */
         "getLocations" => array(
             "httpMethod" => "GET",
@@ -30,7 +30,7 @@ return array(
         /**
          *    getLocation() method
          *
-         *    reference: http://docs.shopify.com/api/location
+         *    reference: https://help.shopify.com/api/reference/location
          */
         "getLocation" => array(
             "httpMethod" => "GET",
