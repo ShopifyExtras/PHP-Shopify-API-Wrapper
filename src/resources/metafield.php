@@ -291,6 +291,53 @@ return array(
         ),
 
 
+
+        /**
+         *    createCollectionMetafield() method
+         *
+         *    reference: https://help.shopify.com/api/reference/metafield
+         */
+        "createCollectionMetafield" => array(
+            "httpMethod" => "POST",
+            "uri" => "/admin/collections/{id}/metafields.json",
+            "summary" => "Create a new metafield for a collection",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Collection.",
+                    "required" => true
+                ),
+                "metafield" => array(
+                    "location" => "json",
+                    "parameters" => array(
+                        "namespace" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Namespace for the Metafield."
+                        ),
+                        "key" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Key for the Metafield."
+                        ),
+                        "value" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Value of the Metafield."
+                        ),
+                        "value_type" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Value Type of the Metafield."
+                        )
+                    )
+                )
+            )
+        ),
+
+
          /**
          *    createProductMetafield() method
          *
@@ -424,6 +471,54 @@ return array(
         ),
 
 
+
+        /**
+         *    updateCollectionMetafield() method
+         *
+         *    reference: https://help.shopify.com/api/reference/metafield
+         */
+        "updateCollectionMetafield" => array(
+            "httpMethod" => "PUT",
+            "uri" => "/admin/collections/{id}/metafields/{metafield_id}.json",
+            "summary" => "Update a Collection Metafield",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Collection.",
+                    "required" => true
+                ),
+                "metafield_id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Metafield.",
+                    "required" => true
+                ),
+                "metafield" => array(
+                    "location" => "json",
+                    "parameters" => array(
+                        "metafieldId" => array(
+                            "type" => "number",
+                            "location" => "json",
+                            "description" => "The ID for the Metafield."
+                        ),
+                        "value" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Value of the Metafield."
+                        ),
+                        "value_type" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Value Type of the Metafield."
+                        )
+                    )
+                )
+            )
+        ),
+
+
         /**
          *    updateProductMetafield() method
          *
@@ -538,6 +633,31 @@ return array(
             )
         ),
 
+        /**
+         *    deleteCollectionMetafield() method
+         *
+         *    reference: https://help.shopify.com/api/reference/metafield
+         */
+        "deleteCollectionMetafield" => array(
+            "httpMethod" => "DELETE",
+            "uri" => "/admin/collections/{id}/metafields/{metafieldId}.json",
+            "summary" => "Delete a Collection Metafield",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Product.",
+                    "required" => true
+                ),
+                "metafieldId" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Metafield.",
+                    "required" => true
+                )
+            )
+        ),
 
         /**
          *    deleteProductMetafield() method
