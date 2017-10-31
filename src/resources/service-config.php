@@ -53,6 +53,7 @@ return array(
         "fulfillment",
         "fulfillment-service",
         "gift-card",
+        "gift-card-adjustment",
         "location",
         "metafield",
         "order",
