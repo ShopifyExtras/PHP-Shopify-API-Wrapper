@@ -30,6 +30,11 @@ return array(
                     "location" => "query",
                     "description" => "Amount of results (default: 50) (maximum: 250)"
                 ),
+                "title" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "Filter by product title"
+                ),
                 "page" => array(
                     "type" => "integer",
                     "location" => "query",
