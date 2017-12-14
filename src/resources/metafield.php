@@ -95,6 +95,10 @@ return array(
                     "location" => "uri",
                     "description" => "The ID of the Product.",
                     "required" => true
+                ),
+                "namespace" => array(
+                    "location" => "json",
+		    "description" => "The namespace of the metafield"	
                 )
             )
         ),
