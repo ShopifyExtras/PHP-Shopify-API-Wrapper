@@ -99,6 +99,11 @@ return array(
                 "namespace" => array(
                     "location" => "json",
 		    "description" => "The namespace of the metafield"	
+                ),
+                "fields" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "comma-separated list of fields to include in the response"
                 )
             )
         ),
