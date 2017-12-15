@@ -25,6 +25,10 @@ return array(
             "summary" => "Retrieve a list of all Products",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
+                "ids" => array(
+                    "location" => "query",
+                    "description" => "Filter by Ids"
+                ),
                 "limit" => array(
                     "location" => "query",
                     "description" => "Amount of results (default: 50) (maximum: 250)"
