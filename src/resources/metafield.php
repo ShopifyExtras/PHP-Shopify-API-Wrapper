@@ -55,7 +55,7 @@ return array(
                     "location" => "query",
                     "description" => "Show metafields last updated before date (format: 2008-12-31 03:00)"
                 ),
-                "namepace" => array(
+                "namespace" => array(
                     "type" => "string",
                     "location" => "query",
                     "description" => "Show metafields with given namespace"
@@ -95,6 +95,15 @@ return array(
                     "location" => "uri",
                     "description" => "The ID of the Product.",
                     "required" => true
+                ),
+                "namespace" => array(
+                    "location" => "json",
+		    "description" => "The namespace of the metafield"	
+                ),
+                "fields" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "comma-separated list of fields to include in the response"
                 )
             )
         ),
