@@ -36,7 +36,7 @@ return array(
                     "description" => "Page to show (default: 1)"
                 ),
                 "since_id" => array(
-                    "type" => "integer",
+                    "type" => "string",
                     "location" => "query",
                     "description" => "Restrict results to after the specified ID"
                 ),
@@ -134,10 +134,10 @@ return array(
                     "description" => "The ID of the Product.",
                     "required" => true
                 ),
-		"fields" => array(
-		    "type" => "string",
-		    "location" => "query",
-   		    "description" => "comma-separated list of fields to include in the response"
+                "fields" => array(
+                    "type" => "string",
+                    "location" => "query",
+                    "description" => "comma-separated list of fields to include in the response"
                 )
             )
         ),
