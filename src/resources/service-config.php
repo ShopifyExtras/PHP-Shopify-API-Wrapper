@@ -54,6 +54,8 @@ return array(
         "fulfillment-service",
         "gift-card",
         "gift-card-adjustment",
+        /* "inventory-item", */
+        "inventory-level",
         "location",
         "metafield",
         "order",
