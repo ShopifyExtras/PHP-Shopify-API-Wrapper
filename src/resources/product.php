@@ -36,7 +36,7 @@ return array(
                     "description" => "Page to show (default: 1)"
                 ),
                 "since_id" => array(
-                    "type" => "integer",
+                    "type" => "string",
                     "location" => "query",
                     "description" => "Restrict results to after the specified ID"
                 ),
